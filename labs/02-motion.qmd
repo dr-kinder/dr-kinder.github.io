@@ -72,12 +72,12 @@ Once you are familiar with the detector and the software, move on to the next ph
 In the second phase of this investigation, you will predict the motion that corresponds to a
 given graph, then test your hypotheses.
 
-Below are five target graphs — three of position, two of velocity. Notice what's missing: no
-units, no tick marks, no numbers. Your goal is to reproduce the **shape** of each graph, not
-land on a specific sequence of positions or velocities. That's deliberate, and worth sitting
-with: we're starting to talk about reference frames and vectors in class, and position and
-velocity are only ever defined relative to some choice of origin, direction, and scale — none of
-which the graph itself pins down for you.
+Below are five target graphs — three of position, two of velocity, one of the position graphs an
+inverted parabola. Notice what's missing: no units, no tick marks, no numbers. Your goal is to
+reproduce the **shape** of each graph, not land on a specific sequence of positions or
+velocities. That's deliberate, and worth sitting with: we're starting to talk about reference
+frames and vectors in class, and position and velocity are only ever defined relative to some
+choice of origin, direction, and scale — none of which the graph itself pins down for you.
 
 Match all five:
 
@@ -108,7 +108,7 @@ def show_plot(t, y, ylabel, ylim_pad=0.3):
     plt.show()
 ```
 
-**Position 1** — out, pause, back faster:
+**Position 1**
 
 ```{python}
 #| echo: false
@@ -119,7 +119,7 @@ y_fine = np.interp(t_fine, t, y)
 show_plot(t_fine, y_fine, "Position")
 ```
 
-**Position 2** — staircase:
+**Position 2**
 
 ```{python}
 #| echo: false
@@ -128,7 +128,7 @@ y = np.array([0, 3, 3, 3, 3, 6, 6, 6, 6, 2])
 show_plot(t, y, "Position")
 ```
 
-**Position 3** — an inverted parabola:
+**Position 3**
 
 ```{python}
 #| echo: false
@@ -137,7 +137,7 @@ y_fine = -(t_fine - 4) ** 2 + 16
 show_plot(t_fine, y_fine, "Position")
 ```
 
-**Velocity 1** — rest, then a quick start and stop:
+**Velocity 1**
 
 ```{python}
 #| echo: false
@@ -146,7 +146,7 @@ y = np.array([0, 0, 5,    5, -4,   -4, 0,    0])
 show_plot(t, y, "Velocity")
 ```
 
-**Velocity 2** — rest, then a long, steady deceleration through zero:
+**Velocity 2**
 
 ```{python}
 #| echo: false
