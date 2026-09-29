@@ -1,5 +1,6 @@
 ---
 title: "Visualizing Motion"
+jupyter: python3
 ---
 
 **Objectives**
@@ -80,15 +81,79 @@ which the graph itself pins down for you.
 
 Match all five:
 
-![Position 1](assets/motion-graphs/position-1.png){width=60%}
+```{python}
+#| echo: false
+import numpy as np
+import matplotlib.pyplot as plt
 
-![Position 2](assets/motion-graphs/position-2.png){width=60%}
+def bare_axes(ax, ylabel):
+    """No ticks, no tick labels, no units -- shape only."""
+    ax.set_xticks([])
+    ax.set_yticks([])
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_position(("data", 0))
+    ax.set_xlabel("Time", fontsize=13)
+    ax.set_ylabel(ylabel, fontsize=13)
+    ax.axhline(0, color="0.75", linewidth=1, linestyle="--", zorder=0)
 
-![Position 3 — an inverted parabola](assets/motion-graphs/position-3.png){width=60%}
+def show_plot(t, y, ylabel, ylim_pad=0.3):
+    fig, ax = plt.subplots(figsize=(5, 3.5))
+    ax.plot(t, y, color="#1f6f8b", linewidth=2.5)
+    bare_axes(ax, ylabel)
+    ymax = max(abs(y.min()), abs(y.max())) * (1 + ylim_pad)
+    ax.set_ylim(-ymax if y.min() < 0 else -0.15 * ymax, ymax)
+    ax.set_xlim(t.min() - 0.2, t.max() + 0.2)
+    fig.tight_layout()
+    plt.show()
+```
 
-![Velocity 1](assets/motion-graphs/velocity-1.png){width=60%}
+**Position 1** — out, pause, back faster:
 
-![Velocity 2](assets/motion-graphs/velocity-2.png){width=60%}
+```{python}
+#| echo: false
+t = np.array([0, 3, 5, 8])
+y = np.array([0, 6, 6, 0])
+t_fine = np.linspace(0, 8, 400)
+y_fine = np.interp(t_fine, t, y)
+show_plot(t_fine, y_fine, "Position")
+```
+
+**Position 2** — staircase:
+
+```{python}
+#| echo: false
+t = np.array([0, 1.5, 1.5, 3, 3, 4.5, 4.5, 6, 6, 7.5])
+y = np.array([0, 3, 3, 3, 3, 6, 6, 6, 6, 2])
+show_plot(t, y, "Position")
+```
+
+**Position 3** — an inverted parabola:
+
+```{python}
+#| echo: false
+t_fine = np.linspace(0, 8, 400)
+y_fine = -(t_fine - 4) ** 2 + 16
+show_plot(t_fine, y_fine, "Position")
+```
+
+**Velocity 1** — rest, then a quick start and stop:
+
+```{python}
+#| echo: false
+t = np.array([0, 1, 1.15, 4, 4.15, 7, 7.15, 8])
+y = np.array([0, 0, 5,    5, -4,   -4, 0,    0])
+show_plot(t, y, "Velocity")
+```
+
+**Velocity 2** — rest, then a long, steady deceleration through zero:
+
+```{python}
+#| echo: false
+t = np.array([0, 1, 1.5, 3, 7,  8.5, 9, 9.5])
+y = np.array([0, 0, 5,   5, -4, -4,  0, 0])
+show_plot(t, y, "Velocity")
+```
 
 For each graph, first look at the plot and discuss how you should move so that your motion
 matches it. Record your prediction. Then make your best effort to reproduce the graph with your
