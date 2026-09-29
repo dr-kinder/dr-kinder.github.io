@@ -79,7 +79,10 @@ local function read_group(s, i)
   return nil, i -- unbalanced; bail out and leave the source untouched
 end
 
-local function process(s)
+-- Full HTML rewrite: rebuilds \num/\si/\SI entirely, since MathJax has none
+-- of them. `micro_repl` is the replacement text used for the "u" prefix
+-- fix ("\\mu" for HTML -- a plain math symbol MathJax already knows).
+local function process(s, unit_fn)
   s = global_symbols(s)
   local out, i, n = {}, 1, #s
   while i <= n do
@@ -90,7 +93,7 @@ local function process(s)
       if val then
         local unit, j2 = read_group(s, j1)
         if unit then
-          table.insert(out, transform_num(val) .. "\\," .. transform_unit(unit))
+          table.insert(out, transform_num(val) .. "\\," .. unit_fn(unit))
           i = j2
           matched = true
         end
@@ -105,7 +108,7 @@ local function process(s)
     elseif s:sub(i, i + 2) == "\\si" and s:sub(i + 3, i + 3) == "{" then
       local unit, j1 = read_group(s, i + 3)
       if unit then
-        table.insert(out, transform_unit(unit))
+        table.insert(out, unit_fn(unit))
         i = j1
         matched = true
       end
@@ -119,11 +122,58 @@ local function process(s)
   return table.concat(out)
 end
 
--- HTML only. For PDF/LaTeX output, the real siunitx package is loaded
--- instead (see labs/_metadata.yml) -- full fidelity, no approximation
--- needed, since that path has an actual TeX engine to run it.
+-- PDF/LaTeX: real siunitx handles \num, \si, \SI, ".", \per, \degree,
+-- \angstrom natively and correctly -- leave all of that alone. The one gap:
+-- siunitx has no ASCII "u" shorthand for the micro prefix, and
+-- \DeclareSIPrefix can't add one (verified directly -- it only sets the
+-- printed symbol for a prefix's own named command, not a new input token
+-- for the compact-letter parser; a fresh \DeclareSIPrefix with micro's own
+-- symbol still left "\si{um}" as literal "um"). What does work, verified:
+-- mixing the real \micro command with literal letters inside \si{}, e.g.
+-- "\si{\micro m}" -- so this only rewrites the "u" prefix inside \si{}/\SI{}
+-- unit arguments to "\micro ", and passes everything else through as
+-- original source, untouched, for siunitx itself to parse.
+local function pdf_fix_unit(unit)
+  return unit:gsub("(%f[%a])u(%a+)", "\\micro %2")
+end
+
+local function process_pdf_micro(s)
+  local out, i, n = {}, 1, #s
+  while i <= n do
+    local matched = false
+
+    if s:sub(i, i + 3) == "\\SI{" then
+      local val, j1 = read_group(s, i + 3)
+      if val then
+        local unit, j2 = read_group(s, j1)
+        if unit then
+          table.insert(out, "\\SI{" .. val .. "}{" .. pdf_fix_unit(unit) .. "}")
+          i = j2
+          matched = true
+        end
+      end
+    elseif s:sub(i, i + 2) == "\\si" and s:sub(i + 3, i + 3) == "{" then
+      local unit, j1 = read_group(s, i + 3)
+      if unit then
+        table.insert(out, "\\si{" .. pdf_fix_unit(unit) .. "}")
+        i = j1
+        matched = true
+      end
+    end
+
+    if not matched then
+      table.insert(out, s:sub(i, i))
+      i = i + 1
+    end
+  end
+  return table.concat(out)
+end
+
 function Math(el)
-  if not FORMAT:match("html") then return el end
-  el.text = process(el.text)
+  if FORMAT:match("html") then
+    el.text = process(el.text, transform_unit)
+  else
+    el.text = process_pdf_micro(el.text)
+  end
   return el
 end
