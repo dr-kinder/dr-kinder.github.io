@@ -2,9 +2,133 @@
 title: "PHY 221 — Classical Mechanics"
 ---
 
-Studio-format course combining lecture and lab. Textbook: *Six Ideas That Shaped Physics*,
-Units C (Conservation Laws) and N (Newton's Laws).
+Fall 2026 · CEET 234A · MWF
 
-_This page is a placeholder — course content is still being migrated here._
+**Instructor:** Jesse Kinder, Professor of Physics
+**Office:** SE 214, or SE 204 (open study/group-work space)
+**Office hours:** Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m.
+**Text:** *Six Ideas That Shaped Physics*, Thomas A. Moore — Units C (Conservation Laws) and N
+(Newton's Laws), 4th edition (3rd edition is fine).
 
-Grades, assignments, and quizzes are managed in Canvas.
+## Format
+
+This is a studio course: lecture and lab are one class, not two. Physics education research is
+consistent on one point — you learn physics by doing it, not by watching someone talk about it —
+so most of our time together is discussion, problem solving, and hands-on lab work. Come
+prepared: read the assigned section *before* class, and bring pencil, paper, and a calculator
+(laptop/tablet welcome too).
+
+**A typical class:**
+
+- Your questions (~10 min)
+- Quick problems, key ideas (~20 min)
+- Group work on a Rich Context problem (~30 min)
+- Lab activity (~60 min)
+
+## Grading
+
+Grades shouldn't get in the way of learning, so this course doesn't run on point totals. There
+are three tiers: **Fail**, **Pass** (with an argued grade of D, C, or B), and **Mastery (A)**.
+
+**To pass**, you need all of:
+
+- 6 labs and lab memos completed satisfactorily
+- Problem-solving evidence from 6 chapters in each unit
+- 60% or higher on both unit quizzes (Canvas, open book/note, retake as often as you want
+  through Week 10 — only your best score counts)
+
+**If you pass**, you argue your own grade — D, C, or B — from the evidence in your portfolio:
+effort, progress, and mastery over the term. Rough guide: D is minimal effort and progress; C is
+good, regular effort with most work complete; B is strong, consistent effort with a complete,
+well-organized portfolio.
+
+**For an A**, you additionally need to pass an A-level exam — a chalk talk or written exam,
+entirely optional, scheduled during office hours — for each unit. These test whether you can
+think like a physicist under pressure, not whether you can do algebra. You can attempt them more
+than once.
+
+## Portfolio
+
+Everything you do for this class — problem solving, group work, lab memos, data and analysis,
+grade reflections — goes in your portfolio, a folder shared with you on OneDrive. This is where
+your case for a grade comes from, so keep it current, not reconstructed in Week 10.
+
+## Schedule
+
+The **bold** problems are to be done AFTER we discuss the chapter in class. Solutions will be
+made available for these, the following Monday, for self-assessment and corrections. (You can
+substitute a different problem of the same category and request a solution.)
+
+The _italicized_ problems are to be done BEFORE we discuss the chapter in class.
+
+| Week | Date | Lab | Reading | Problems |
+| ---- | ---- | --- | ------- | -------- |
+| 1    |      | Measurement and Uncertainty | | **1.M6, 1.R3** |
+| | 9/30 | | — | — |
+| | 10/2 | | C1 | _T1,T3,B1,B5,B6_ |
+| 2 | | Visualizing Motion | | |
+| | 10/5 | | C2 | |
+| | 10/7 | | C3 | |
+| | 10/9 | | C4 | |
+| 3 | | Collisions | | |
+| | 10/12 | | C5 | |
+| | 10/14 | | C6 | |
+| | 10/16 | | C7 | |
+| 4 | | Work and Energy | | |
+| | 10/19 | | C8 | |
+| | 10/21 | | C9 | |
+| | 10/23 | | C10 | |
+| 5 | | Rotation | | |
+| | 10/26 | | C11 | |
+| | 10/28 | | C12 | |
+| | 10/30 | | C13 | |
+| 6 | | Simple Machines | | |
+| | 11/2 | | C14 | |
+| | 11/4 | | N1 | |
+| | 11/6 | | N2 | |
+| 7 | | Newton's Second Law | | |
+| | 11/9 | | N3 | |
+| | 11/11 | | — (no class) | |
+| | 11/13 | | N4 | |
+| 8 | | Friction | | |
+| | 11/16 | | N5 | |
+| | 11/18 | | N6 | |
+| | 11/20 | | N7 | |
+| 9 | | | | |
+| | 11/23 | | — | |
+| | 11/25 | | — (no class) | |
+| | 11/27 | | — (no class) | |
+| 10 | | Projectile | | |
+| | 11/30 | | N8 | |
+| | 12/2 | | N9 | |
+| | 12/4 | | N10 | |
+| 11 | | Gravity | | |
+| | 12/7 | | N11 | |
+| | 12/9 | | N12 | |
+| | 12/11 | | — (flex) | |
+
+## Contact
+
+Grades, assignments, and quizzes live on Canvas.
+
+## Academic Integrity
+
+Work with others, use outside resources, learn from peers — but submit your own original work.
+Presenting someone else's work as your own undermines the portfolio system this course runs on:
+it stops being *evidence of your learning*. Confirmed plagiarism or cheating means the work in
+question doesn't count as portfolio evidence, and reporting to the Student Affairs Office is
+required regardless. Review Oregon Tech's
+[Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/document/student-academic-integrity-policy.pdf)
+if you're not already familiar with it.
+
+## Accessibility
+
+If you need accommodation because of a disability, contact me at the start of the term and reach
+out to [Disability Services](http://www.oit.edu/academics/ssc/disability-services) — we rely on
+them to coordinate accommodations.
+
+## University Policies
+
+Oregon Tech's [Commission on College Teaching syllabus statements](https://www.oit.edu/faculty-staff/resources/committees/commission-college-teaching/oregon-tech-syllabi)
+and the "Campus-Wide Syllabus Information" document on Canvas are part of this syllabus. Where
+they conflict with this document, this document takes precedence.
