@@ -1,0 +1,140 @@
+---
+title: "PHY 221 — Classical Mechanics"
+format: pdf
+---
+
+Fall 2026 · CEET 234A · MWF
+
+**Instructor:** Jesse Kinder, Professor of Physics\
+**Office:** SE 214, or SE 204 (open study/group-work space)\
+**Office hours:** Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m.\
+**Text:** *Six Ideas That Shaped Physics*, Thomas A. Moore — Units C (Conservation Laws) and N
+(Newton's Laws), 4th edition (3rd edition is fine).
+
+Grades, assignments, and quizzes live on Canvas. Everything else is here.
+
+## Learning Objectives
+
+By the end of this course, you should be able to:
+
+- **Think like a physicist.** Apply the fundamental principles of classical mechanics to
+  explain, analyze, and predict real-world phenomena.
+- **Do experiments like a scientist.** Keep a record, make careful observations, collect and
+  analyze data, design experiments to test hypotheses, and communicate your findings clearly.
+- **Solve problems.** Apply Polya's problem-solving heuristic. Think critically. Communicate
+  solutions clearly.
+
+## Format
+
+This is a studio course: lecture and lab are combined in one class. Physics education research is
+consistent on one point — you learn physics by doing it, not by watching someone talk about it —
+so most of our time together is discussion, problem solving, and hands-on lab work. Come
+prepared: read the assigned material *before* class, and bring pencil, a calculator,
+and your laptop or tablet.
+
+**A typical class:**
+
+- Your questions (~10 min)
+- Quick problems, discussion of key ideas (~20 min)
+- Group work on problem solving (~30 min)
+- Lab activity (~60 min)
+
+## Grading
+
+Grades shouldn't get in the way of learning, so this course doesn't run on point totals. There
+are three tiers: **Fail**, **Pass** (with an argued grade of D, C, or B), and **Mastery (A)**.
+
+**To pass**, you need all of:
+
+- 6 labs and lab memos completed satisfactorily
+- Problem-solving evidence from 6 chapters in each unit
+- 60% or higher on both unit quizzes (Canvas, open book/note, retake as often as you want
+  — only your best score counts)
+
+**If you pass**, you argue your own grade — D, C, or B — from the evidence in your portfolio:
+effort, progress, and mastery over the term. Rough guide: D is minimal effort and progress; C is
+good, regular effort with most work complete; B is strong, consistent effort with a complete,
+well-organized portfolio.
+
+**For an A**, you additionally need to pass an A-level exam — a chalk talk or written exam,
+entirely optional, scheduled during office hours — for each unit. These test whether you can
+think like a physicist on your own, not whether you can do algebra, query Google, or prompt
+AI. You can attempt them more than once.
+
+## Portfolio
+
+Aside from your lab notebook, everything you do for this class — problem solving, group work,
+lab memos, data and analysis, grade reflections — goes in your portfolio, a folder shared with
+you on OneDrive. This is where your case for a grade comes from, so keep it current.
+
+## Schedule
+
+| Week | Date | Lab | Reading |
+| ---- | ---- | --- | ------- |
+| 1    |      | [Measurement and Uncertainty](https://dr-kinder.github.io/labs/01-uncertainty.html) | |
+| | 9/30 | | — |
+| | 10/2 | | C1 |
+| 2 | | [Visualizing Motion](https://dr-kinder.github.io/labs/02-motion.html) | |
+| | 10/5 | | C2 |
+| | 10/7 | | C3 |
+| | 10/9 | | C4 |
+| 3 | | [Collisions](https://dr-kinder.github.io/labs/07-collisions.html) | |
+| | 10/12 | | C5 |
+| | 10/14 | | C6 |
+| | 10/16 | | C7 |
+| 4 | | [Work and Energy](https://dr-kinder.github.io/labs/10-work-and-energy.html) | |
+| | 10/19 | | C8 |
+| | 10/21 | | C9 |
+| | 10/23 | | C10 |
+| 5 | | [Rotation](https://dr-kinder.github.io/labs/08-rotation.html) | |
+| | 10/26 | | C11 |
+| | 10/28 | | C12 |
+| | 10/30 | | C13 |
+| 6 | | [Simple Machines](https://dr-kinder.github.io/labs/09-simple-machines.html) | |
+| | 11/2 | | C14 |
+| | 11/4 | | N1 |
+| | 11/6 | | N2 |
+| 7 | | [Newton's Second Law](https://dr-kinder.github.io/labs/05-newtons-second.html) | |
+| | 11/9 | | N3 |
+| | 11/11 | | — (no class) |
+| | 11/13 | | N4 |
+| 8 | | [Friction](https://dr-kinder.github.io/labs/06-friction.html) | |
+| | 11/16 | | N5 |
+| | 11/18 | | N6 |
+| | 11/20 | | N7 |
+| 9 | | | |
+| | 11/23 | | — |
+| | 11/25 | | — (no class) |
+| | 11/27 | | — (no class) |
+| 10 | | [Projectile](https://dr-kinder.github.io/labs/04-projectile.html) | |
+| | 11/30 | | N8 |
+| | 12/2 | | N9 |
+| | 12/4 | | N10 |
+| 11 | | [Gravity](https://dr-kinder.github.io/labs/03-gravity.html) | |
+| | 12/7 | | N11 |
+| | 12/9 | | N12 |
+| | 12/11 | | — (flex) |
+
+[Introductory Physics Labs](https://dr-kinder.github.io/labs/index.html)
+
+## Academic Integrity
+
+Work with others, use outside resources, learn from peers — but submit your own original work.
+Presenting someone else's work as your own undermines the portfolio system this course runs on:
+it stops being *evidence of your learning*. Confirmed plagiarism or cheating means the work in
+question doesn't count as portfolio evidence, and reporting to the Student Affairs Office is
+required regardless. Review Oregon Tech's
+[Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/document/student-academic-integrity-policy.pdf)
+if you're not already familiar with it.
+
+## Accessibility
+
+If you need accommodation because of a disability, contact me at the start of the term and reach
+out to [Disability Services](http://www.oit.edu/academics/ssc/disability-services) — we rely on
+them to coordinate accommodations.
+
+## University Policies
+
+Oregon Tech's [Commission on College Teaching syllabus statements](https://www.oit.edu/faculty-staff/resources/committees/commission-college-teaching/oregon-tech-syllabi)
+and the "Campus-Wide Syllabus Information" document on Canvas are part of this syllabus. Where
+they conflict with this document, this document takes precedence.

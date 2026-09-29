@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: _site
+  render:
+    - "*.qmd"
+    - "!phy-221/canvas-syllabus.qmd"
 
 filters:
   - _filters/num-si.lua
