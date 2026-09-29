@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jesse Kinder</title>
+<title>Work and Energy – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-761fc14e25ebc0e942fc86aa4dfe65fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-761fc14e25ebc0e942fc86aa4dfe65fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,17 +89,46 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jesse Kinder</span>
     </a>
   </div>
@@ -110,19 +139,19 @@ window.MathJax = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./phy-221/index.html"> 
+    <a class="nav-link" href="../phy-221/index.html"> 
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./modern-physics/index.html"> 
+    <a class="nav-link" href="../modern-physics/index.html"> 
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/10-work-and-energy.html">Work and Energy</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/10-work-and-energy.html">Work and Energy</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Jesse Kinder</h1>
+<h1 class="title">Work and Energy</h1>
 </div>
 
 
@@ -159,31 +342,47 @@ window.MathJax = {
 </header>
 
 
-<p>Professor of Physics, Oregon Institute of Technology Klamath Falls, OR — SE214</p>
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses</h2>
+<p><strong>Objectives</strong></p>
 <ul>
-<li><a href="./phy-221/index.html">PHY 221 — Classical Mechanics</a></li>
-<li><a href="./modern-physics/index.html">Modern Physics</a></li>
-<li><a href="./labs/index.html">Introductory Physics Labs</a></li>
+<li>Investigate impulse and work.</li>
+<li>Design and carry out an experiment to investigate conservation of energy.</li>
+</ul>
+<p>Work describes a transfer of energy between systems. Work can change the kinetic energy of a system or its potential energy. Although work can transfer energy between systems, Newton’s laws imply that the total energy in the universe is conserved. This yields the work-energy theorem: <span class="math inline">\(W = \Delta K + \Delta U.\)</span></p>
+<p>This lab consists of two parts.</p>
+<ol type="1">
+<li>Investigate impulse, work, and energy with a motion cart.</li>
+<li>Design and carry out an experiment to investigate conservation of energy.</li>
+</ol>
+<p><strong>Keep detailed notes.</strong> Record your setup, procedure, data, and observations in your lab notebook. Data will include tables and plots. In your memo, summarize your findings and discuss any conclusions you draw from your data.</p>
+<section id="impulse-work-and-energy" class="level2">
+<h2 class="anchored" data-anchor-id="impulse-work-and-energy">Impulse, Work, and Energy</h2>
+<p>Some of the motion carts in the lab are equipped with a launcher. The launcher provides a reasonably reproducible force each time it is used.</p>
+<p>Discuss the following questions with your group before you begin taking measurements.</p>
+<ul>
+<li>How can you measure the <strong><em>impulse</em></strong> <span class="math inline">\(\vec{J}\)</span> generated by the launcher?</li>
+<li>How can you measure the <strong><em>work</em></strong> <span class="math inline">\(W\)</span> done by the launcher?</li>
+<li>Do you think the launcher delivers the same impulse each time it is used?</li>
+<li>Do you think the launcher does the same amount of work each time it is used?</li>
+<li>If you double the mass of a cart, what will happen to the final speed of the cart?</li>
+<li>What would a plot of final velocity versus mass look like?</li>
+</ul>
+<p>Use a motion cart to measure the impulse and work for at least five different cart masses. Take multiple measurements for each mass and make your best estimate of the impulse and work generated by the launcher.</p>
+<p><strong>Make a plot of final velocity versus mass of the cart.</strong></p>
+<ul>
+<li>Did the launcher deliver the same impulse each time it was used?</li>
+<li>Did the launcher do the same work each time it was used?</li>
 </ul>
 </section>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>I am a computational and theoretical physicist who loves to teach. I enjoy working with students on research projects and bringing contemporary physics research into the classroom.</p>
+<section id="conservation-of-energy" class="level2">
+<h2 class="anchored" data-anchor-id="conservation-of-energy">Conservation of Energy</h2>
+<p>The principle of conservation of energy is this: <strong><em>The total energy in a closed system is constant.</em></strong></p>
+<p>Work with your lab group to design an experiment to investigate the conservation of energy. Your experiment should include the following elements.</p>
 <ul>
-<li>Ph.D., Physics and Astronomy, University of Pennsylvania</li>
-<li>M.S., Physics and Astronomy, University of Pennsylvania</li>
-<li>B.A., Physics and Astronomy, DePauw University</li>
+<li>A system in which both potential and kinetic energy can change</li>
+<li>A theoretical prediction that you can test with measurements</li>
+<li>A numerical test of conservation of energy</li>
 </ul>
-</section>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>Nanotechnology, quantum chemistry, biological physics, epidemic models, radio astronomy, gravitational lensing, and quantum computing. My doctoral work focused on modifying the electronic and optical properties of carbon nanotubes using electromagnetic fields.</p>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>Grades, assignments, and office hours for enrolled students are in Canvas. Everyone else can reach me through the <a href="https://www.oit.edu/directory/jesse-kinder">OIT directory</a>.</p>
+<p><strong>Keep a good record of your work.</strong> Someone reading your notebook should be able to replicate your work and verify your findings.</p>
 
 
 </section>

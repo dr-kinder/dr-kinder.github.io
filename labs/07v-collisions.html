@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>PHY 221 — Classical Mechanics – Jesse Kinder</title>
+<title>Collision Simulations – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -89,10 +89,39 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -114,7 +143,7 @@ window.MathJax = {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../phy-221/index.html" aria-current="page"> 
+    <a class="nav-link" href="../phy-221/index.html"> 
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
@@ -122,7 +151,7 @@ window.MathJax = {
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/07v-collisions.html">Collision Simulations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/07v-collisions.html">Collision Simulations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">PHY 221 — Classical Mechanics</h1>
+<h1 class="title">Collision Simulations</h1>
 </div>
 
 
@@ -159,379 +342,298 @@ window.MathJax = {
 </header>
 
 
-<p>Fall 2026 · CEET 234A · MWF</p>
-<p><strong>Instructor:</strong> Jesse Kinder, Professor of Physics<br>
-<strong>Office:</strong> SE 214, or SE 204 (open study/group-work space)<br>
-<strong>Office hours:</strong> Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m.<br>
-<strong>Text:</strong> <em>Six Ideas That Shaped Physics</em>, Thomas A. Moore — Units C (Conservation Laws) and N (Newton’s Laws), 4th edition (3rd edition is fine).</p>
-<p>Grades, assignments, and quizzes live on Canvas. Everything else is here.</p>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<p>By the end of this course, you should be able to:</p>
+<p><strong>Objectives</strong></p>
 <ul>
-<li><strong>Think like a physicist.</strong> Apply the fundamental principles of classical mechanics to explain, analyze, and predict real-world phenomena.</li>
-<li><strong>Do experiments like a scientist.</strong> Keep a record, make careful observations, collect and analyze data, design experiments to test hypotheses, and communicate your findings clearly.</li>
-<li><strong>Solve problems.</strong> Apply Polya’s problem-solving heuristic. Think critically. Communicate solutions clearly.</li>
+<li>Observe a wide variety of collisions.</li>
+<li>Investigate conservation of momentum and energy in collisions.</li>
 </ul>
-</section>
-<section id="format" class="level2">
-<h2 class="anchored" data-anchor-id="format">Format</h2>
-<p>This is a studio course: lecture and lab are combined in one class. Physics education research is consistent on one point — you learn physics by doing it, not by watching someone talk about it — so most of our time together is discussion, problem solving, and hands-on lab work. Come prepared: read the assigned material <em>before</em> class, and bring pencil, a calculator, and your laptop or tablet.</p>
-<p><strong>A typical class:</strong></p>
+<p>One-dimensional collisions are an excellent topic for study in an introductory physics course. The analysis is straightforward (but not necessarily simple!) and simple equipment permits an experimental test of important principles like conservation of energy and momentum.</p>
+<p>In this lab, you and your group will explore collisions in one and two dimensions. The lab consists of two parts.</p>
+<ol type="1">
+<li>Observe 1D collisions. Make predictions and qualitative observations of collisions in one dimension.</li>
+<li>Analyze 2D collisions. Analyze conservation of energy and momentum in two dimensions.</li>
+</ol>
+<p>Record your setup, procedure, data, and observations in your lab notes. <strong>Keep detailed notes.</strong> Data for this lab will include tables and plots. In your memo, summarize your findings and describe any conclusions you draw from them.</p>
+<section id="observe-1d-collisions" class="level2">
+<h2 class="anchored" data-anchor-id="observe-1d-collisions">Observe 1D Collisions</h2>
+<p>In this first portion of the lab, we will focus on qualitative observations. Open the <a href="http://physics.bu.edu/~duffy/HTML5/collisions_1D.html"><code>Collisions</code></a> lab from <a href="http://physics.bu.edu/~duffy/classroom.html"><code>Andrew Duffy</code></a>. Use it to investigate the following collisions. For each, follow the three-step process:</p>
 <ul>
-<li>Your questions (~10 min)</li>
-<li>Quick problems, discussion of key ideas (~20 min)</li>
-<li>Group work on problem solving (~30 min)</li>
-<li>Lab activity (~60 min)</li>
+<li><strong>Predict.</strong> What do you expect to happen?</li>
+<li><strong>Observe.</strong> What actually happened? Does the same thing happen every time?</li>
+<li><strong>Analyze.</strong> Resolve any conflicts between your predictions and observations.</li>
 </ul>
+<p>Discuss any surprises or easy predictions in your memo. Try to draw some general conclusions about the patterns you observe, too.</p>
+<section id="elastic-collisions" class="level3">
+<h3 class="anchored" data-anchor-id="elastic-collisions">Elastic Collisions</h3>
+<p>For the following, set “Elasticity of the collision” to 1.0. The carts will collide and bounce off of each other.</p>
+<ol type="1">
+<li><strong>Equal Masses, One Stationary.</strong> One cart moves to the right. The other is at rest.</li>
+<li><strong>Equal Masses, Head On.</strong> One cart moves to the right. The other moves to the left.</li>
+<li><strong>Equal Masses, Same Direction.</strong> One cart moves quickly. The other moves slowly.</li>
+<li><strong>Different Masses, One Stationary.</strong> A large cart moves to the right. A small cart is at rest.</li>
+<li><strong>Different Masses, One Stationary, Again.</strong> A small cart moves to the right. A large cart is at rest.</li>
+<li><strong>Different Masses, Head On.</strong> A large cart moves to the right. A small cart moves to the left.</li>
+<li><strong>Different Masses, Same Direction.</strong> A large cart moves quickly. A small cart moves slowly.</li>
+<li><strong>Different Masses, Same Direction, Again.</strong> A small cart moves quickly. A large cart moves slowly.</li>
+</ol>
 </section>
-<section id="grading" class="level2">
-<h2 class="anchored" data-anchor-id="grading">Grading</h2>
-<p>Grades shouldn’t get in the way of learning, so this course doesn’t run on point totals. There are three tiers: <strong>Fail</strong>, <strong>Pass</strong> (with an argued grade of D, C, or B), and <strong>Mastery (A)</strong>.</p>
-<p><strong>To pass</strong>, you need all of:</p>
-<ul>
-<li>6 labs and lab memos completed satisfactorily</li>
-<li>Problem-solving evidence from 6 chapters in each unit</li>
-<li>60% or higher on both unit quizzes (Canvas, open book/note, retake as often as you want — only your best score counts)</li>
-</ul>
-<p><strong>If you pass</strong>, you argue your own grade — D, C, or B — from the evidence in your portfolio: effort, progress, and mastery over the term. Rough guide: D is minimal effort and progress; C is good, regular effort with most work complete; B is strong, consistent effort with a complete, well-organized portfolio.</p>
-<p><strong>For an A</strong>, you additionally need to pass an A-level exam — a chalk talk or written exam, entirely optional, scheduled during office hours — for each unit. These test whether you can think like a physicist on your own, not whether you can do algebra, query Google, or prompt AI. You can attempt them more than once.</p>
+<section id="inelastic-collisions" class="level3">
+<h3 class="anchored" data-anchor-id="inelastic-collisions">Inelastic Collisions</h3>
+<p>For the following, set “Elasticity of the collision” to 0.0. The carts will collide and stick together.</p>
+<ol type="1">
+<li><strong>Equal Masses, Head On, Same Speed.</strong> One cart moves right. The other moves left at the same speed.</li>
+<li><strong>Different Masses, Head On.</strong> A large cart moves right. A small cart moves left.</li>
+<li><strong>Different Masses, One Stationary.</strong> A large cart moves right. A small cart is at rest.</li>
+<li><strong>Different Masses, One Stationary, Again.</strong> A small cart moves right. A large cart is at rest.</li>
+<li><strong>Different Masses, Same Direction.</strong> A large cart moves quickly. A small cart moves slowly.</li>
+<li><strong>Different Masses, Same Direction, Again.</strong> A small cart moves quickly. A large cart moves slowly.</li>
+</ol>
 </section>
-<section id="portfolio" class="level2">
-<h2 class="anchored" data-anchor-id="portfolio">Portfolio</h2>
-<p>Aside from your lab notebook, everything you do for this class — problem solving, group work, lab memos, data and analysis, grade reflections — goes in your portfolio, a folder shared with you on OneDrive. This is where your case for a grade comes from, so keep it current.</p>
 </section>
-<section id="schedule" class="level2">
-<h2 class="anchored" data-anchor-id="schedule">Schedule</h2>
+<section id="analyze-2d-collisions" class="level2">
+<h2 class="anchored" data-anchor-id="analyze-2d-collisions">Analyze 2D Collisions</h2>
+<p><strong>Conservation of Momentum</strong> — In any collision, Newton’s Second and Third Laws imply that momentum should be conserved. The momentum of a single particle is <span class="math inline">\(\vec{p} = m\vec{v}.\)</span> If momentum is conserved, then we expect the <strong>total momentum</strong> to be constant in a collision. In particular, the momentum before and after a collision between two objects (<span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>) should be the same: <span class="math display">\[\vec{P}_{\tt total} = M_{A} \vec{V}_{A1} + M_{B} \vec{V}_{B1} = M_{A} \vec{V}_{A2} + M_{B} \vec{V}_{B2}\]</span> Momentum is a vector. Conservation of momentum implies that, in two dimensions, the horizontal and vertical components of the total momentum are conserved independently.</p>
+<p><strong>Kinetic Energy</strong> — The kinetic energy of a particle is <span class="math display">\[E = \dfrac{1}{2} MV^2 = \dfrac{P^2}{2M}\]</span> In a perfect elastic collision, total kinetic energy is conserved. In an inelastic collision, a fraction of kinetic energy is converted to other forms — often heat. We can characterize a collision by looking at the change in energy: <span class="math display">\[
+E_1 = \dfrac{1}{2} M_A V_{A1}{}^2 + \dfrac{1}{2} M_B V_{B1}{}^2
+\qquad \qquad \qquad
+E_2 = \dfrac{1}{2} M_A V_{A2}{}^2 + \dfrac{1}{2} M_B V_{B2}{}^2
+\qquad \qquad \qquad
+\Delta E = E_2 - E_1
+\]</span></p>
+<section id="collect-data" class="level3">
+<h3 class="anchored" data-anchor-id="collect-data">Collect Data</h3>
+<p>In this portion of the lab, the goal is to determine the degree to which momentum and kinetic energy are conserved in a simulated collision of curling stones. Open the <a href="http://thephysicsaviary.com/Physics/Programs/Labs/CurlingStoneMomentumLab/"><code>Curling Stone Momentum Lab</code></a> from <a href="https://www.thephysicsaviary.com/"><code>The Physics Aviary</code></a>. Play with the simulation to figure out how it works. When you are ready, begin collecting data.</p>
+<p>Take data for 3 different collisions. For the first, use the following parameters in the table. You can choose the parameters for the other two as long as (1) the masses are not equal, and (2) the separation is greater than <span class="math inline">\(0\,\mathsf{cm}\)</span>.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Week</th>
-<th>Date</th>
-<th>Lab</th>
-<th>Reading</th>
-<th>Problems</th>
+<th>Trial</th>
+<th>Separation [<span class="math inline">\(\mathsf{cm}\)</span>]</th>
+<th>Red Mass [<span class="math inline">\(\mathsf{kg}\)</span>]</th>
+<th>Yellow Mass [<span class="math inline">\(\mathsf{kg}\)</span>]</th>
+<th>Red Speed [<span class="math inline">\(\mathsf{m/s}\)</span>]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>50</td>
+<td>16</td>
+<td>16</td>
+<td>4</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Record the final speed and angle of both stones, and carry out the following analysis for each collision.</p>
+</section>
+<section id="analysis-conservation-of-momentum" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-conservation-of-momentum">Analysis: Conservation of Momentum</h3>
+<p>Use trigonometry to compute the initial and final momentum of each stone in the horizontal direction and the vertical direction. Calculate the change in momentum. The following tables may be a useful way to organize the calculations.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trial</th>
+<th><span class="math inline">\(P_{\tt red, in, x}\)</span></th>
+<th><span class="math inline">\(P_{\tt yellow, in, x}\)</span></th>
+<th><span class="math inline">\(P_{\tt total, in, x}\)</span></th>
+<th><span class="math inline">\(P_{\tt red, out, x}\)</span></th>
+<th><span class="math inline">\(P_{\tt yellow, out, x}\)</span></th>
+<th><span class="math inline">\(P_{\tt total, out, x}\)</span></th>
+<th><span class="math inline">\(\Delta P_{\tt total, x}\)</span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>1</td>
 <td></td>
-<td><a href="../labs/01-uncertainty.html">Measurement and Uncertainty</a></td>
 <td></td>
-<td><strong>1.M6, 1.R3</strong></td>
-</tr>
-<tr class="even">
 <td></td>
-<td>9/30</td>
 <td></td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr class="odd">
 <td></td>
-<td>10/2</td>
 <td></td>
-<td>C1</td>
-<td><em>T1,T3,B1,B5,B6</em></td>
+<td></td>
 </tr>
 <tr class="even">
 <td>2</td>
 <td></td>
-<td><a href="../labs/02-motion.html">Visualizing Motion</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td></td>
-<td>10/5</td>
-<td></td>
-<td>C2</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>10/7</td>
-<td></td>
-<td>C3</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10/9</td>
-<td></td>
-<td>C4</td>
-<td></td>
-</tr>
-<tr class="even">
 <td>3</td>
 <td></td>
-<td><a href="../labs/07-collisions.html">Collisions</a></td>
 <td></td>
 <td></td>
-</tr>
-<tr class="odd">
 <td></td>
-<td>10/12</td>
 <td></td>
-<td>C5</td>
 <td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>10/14</td>
-<td></td>
-<td>C6</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10/16</td>
-<td></td>
-<td>C7</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>4</td>
-<td></td>
-<td><a href="../labs/10-work-and-energy.html">Work and Energy</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10/19</td>
-<td></td>
-<td>C8</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>10/21</td>
-<td></td>
-<td>C9</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10/23</td>
-<td></td>
-<td>C10</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>5</td>
-<td></td>
-<td><a href="../labs/08-rotation.html">Rotation</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10/26</td>
-<td></td>
-<td>C11</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>10/28</td>
-<td></td>
-<td>C12</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>10/30</td>
-<td></td>
-<td>C13</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>6</td>
-<td></td>
-<td><a href="../labs/09-simple-machines.html">Simple Machines</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/2</td>
-<td></td>
-<td>C14</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>11/4</td>
-<td></td>
-<td>N1</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/6</td>
-<td></td>
-<td>N2</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>7</td>
-<td></td>
-<td><a href="../labs/05-newtons-second.html">Newton’s Second Law</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/9</td>
-<td></td>
-<td>N3</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>11/11</td>
-<td></td>
-<td>— (no class)</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/13</td>
-<td></td>
-<td>N4</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>8</td>
-<td></td>
-<td><a href="../labs/06-friction.html">Friction</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/16</td>
-<td></td>
-<td>N5</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>11/18</td>
-<td></td>
-<td>N6</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/20</td>
-<td></td>
-<td>N7</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>9</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/23</td>
-<td></td>
-<td>—</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>11/25</td>
-<td></td>
-<td>— (no class)</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/27</td>
-<td></td>
-<td>— (no class)</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10</td>
-<td></td>
-<td><a href="../labs/04-projectile.html">Projectile</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>11/30</td>
-<td></td>
-<td>N8</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>12/2</td>
-<td></td>
-<td>N9</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>12/4</td>
-<td></td>
-<td>N10</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>11</td>
-<td></td>
-<td><a href="../labs/03-gravity.html">Gravity</a></td>
-<td></td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>12/7</td>
-<td></td>
-<td>N11</td>
-<td></td>
-</tr>
-<tr class="even">
-<td></td>
-<td>12/9</td>
-<td></td>
-<td>N12</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td></td>
-<td>12/11</td>
-<td></td>
-<td>— (flex)</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p>Attempt the <em>italicized</em> problems BEFORE we discuss the chapter in class.</p>
-<p>The <strong>bold</strong> problems are to be done AFTER we discuss the chapter in class. Solutions will be made available for self-assessment and corrections. (You can substitute a different problem of the same category from the same chapter and request a solution.)</p>
-<p><a href="../labs/index.html">Introductory Physics Labs</a></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trial</th>
+<th><span class="math inline">\(P_{\tt red, in, y}\)</span></th>
+<th><span class="math inline">\(P_{\tt yellow, in, y}\)</span></th>
+<th><span class="math inline">\(P_{\tt total, in, y}\)</span></th>
+<th><span class="math inline">\(P_{\tt red, out, y}\)</span></th>
+<th><span class="math inline">\(P_{\tt yellow, out, y}\)</span></th>
+<th><span class="math inline">\(P_{\tt total, out, y}\)</span></th>
+<th><span class="math inline">\(\Delta P_{\tt total, y}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> Direction matters! Make sure you account for the direction of the outgoing stones when calculating components of momentum. If one stone is moving upward and the other is moving downward, their vertical components of momentum should have opposite signs. If one stone is moving right and the other is moving left, their horizontal components of momentum should have opposite signs.</p>
 </section>
-<section id="academic-integrity" class="level2">
-<h2 class="anchored" data-anchor-id="academic-integrity">Academic Integrity</h2>
-<p>Work with others, use outside resources, learn from peers — but submit your own original work. Presenting someone else’s work as your own undermines the portfolio system this course runs on: it stops being <em>evidence of your learning</em>. Confirmed plagiarism or cheating means the work in question doesn’t count as portfolio evidence, and reporting to the Student Affairs Office is required regardless. Review Oregon Tech’s <a href="https://www.oit.edu/sites/default/files/document/student-academic-integrity-policy.pdf">Student Academic Integrity Policy</a> if you’re not already familiar with it.</p>
+<section id="analysis-conservation-of-energy" class="level3">
+<h3 class="anchored" data-anchor-id="analysis-conservation-of-energy">Analysis: Conservation of Energy</h3>
+<p>Compute the initial and final kinetic energy of each stone. Calculate the change in kinetic energy. The following table may be a useful way to organize the calculations.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trial</th>
+<th><span class="math inline">\(E_{\tt red, in}\)</span></th>
+<th><span class="math inline">\(E_{\tt yellow, in}\)</span></th>
+<th><span class="math inline">\(E_{\tt total, in}\)</span></th>
+<th><span class="math inline">\(E_{\tt red, out}\)</span></th>
+<th><span class="math inline">\(E_{\tt yellow, out}\)</span></th>
+<th><span class="math inline">\(E_{\tt total, out}\)</span></th>
+<th><span class="math inline">\(\Delta E_{\tt total}\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Based on your calculations, is momentum conserved in this simulation?</li>
+<li>Based on your calculations, is this a simulation of an elastic or an inelastic collision?</li>
+</ul>
 </section>
-<section id="accessibility" class="level2">
-<h2 class="anchored" data-anchor-id="accessibility">Accessibility</h2>
-<p>If you need accommodation because of a disability, contact me at the start of the term and reach out to <a href="http://www.oit.edu/academics/ssc/disability-services">Disability Services</a> — we rely on them to coordinate accommodations.</p>
 </section>
-<section id="university-policies" class="level2">
-<h2 class="anchored" data-anchor-id="university-policies">University Policies</h2>
-<p>Oregon Tech’s <a href="https://www.oit.edu/faculty-staff/resources/committees/commission-college-teaching/oregon-tech-syllabi">Commission on College Teaching syllabus statements</a> and the “Campus-Wide Syllabus Information” document on Canvas are part of this syllabus. Where they conflict with this document, this document takes precedence.</p>
+<section id="further-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="further-exploration">Further Exploration</h2>
+<p>The following activities are not required. If you have the time and the inclination, you may carry out these investigations for extra credit. You are also free to use any of the materials available in the lab to carry out your own investigations. You need to <strong>keep a record of your work</strong> (setup, procedure, data, analysis) to get credit for your efforts.</p>
+<p><strong>Ballistic Pendulum.</strong> The total momentum and energy in a system are conserved, but energy can change forms. In a ballistic pendulum, the initial kinetic energy of a bullet is partially converted to gravitational potential energy. The rest is dissipated as heat. Open the <a href="http://ophysics.com/e3.html"><code>Ballistic Pendulum</code></a> simulation from <a href="http://ophysics.com"><code>oPhysics</code></a> and investigate this system.</p>
+<p>Measure the change in height as the pendulum swings. Use the mass of the block and bullet to determine its total energy after the collision, and compute the fraction of initial kinetic energy lost in the collision. Is this an elastic or an inelastic collision?</p>
 
 
 </section>

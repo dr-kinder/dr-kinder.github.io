@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modern Physics – Jesse Kinder</title>
+<title>Visualizing Motion with Simulations – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -89,10 +89,39 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,11 +147,11 @@ window.MathJax = {
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../modern-physics/index.html" aria-current="page"> 
+    <a class="nav-link" href="../modern-physics/index.html"> 
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/02v-motion.html">Visualizing Motion with Simulations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/02v-motion.html">Visualizing Motion with Simulations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Modern Physics</h1>
+<h1 class="title">Visualizing Motion with Simulations</h1>
 </div>
 
 
@@ -159,11 +342,106 @@ window.MathJax = {
 </header>
 
 
-<p>Co-taught course covering <em>Six Ideas That Shaped Physics</em>, Units R (Relativity) and Q (Quantum).</p>
-<p><em>This page is a placeholder — course content is still being migrated here.</em></p>
-<p>Grades, assignments, and quizzes are managed in Canvas.</p>
+<p><strong>Objectives</strong></p>
+<ul>
+<li>Make precise graphs.</li>
+<li>Compare constant velocity and constant acceleration.</li>
+<li>Create and interpret plots of motion.</li>
+</ul>
+<p>Motion lies at the foundation of classical mechanics. In class, we will develop a mathematical description of motion. We will explore this in lab, too. However, today our goal is to develop an intuition for kinematics. We will use a variety of simulations to visualize the position, velocity, and acceleration of moving objects as a function of time. By the end of the lab, you should be able to describe the motion that corresponds to a particular graph and make plots to represent the motion of an object.</p>
+<p>There are three stages to today’s investigation:</p>
+<ol type="1">
+<li>Plot the position and velocity of a moving particle.</li>
+<li>Match the motion of an object to a given motion graph.</li>
+<li>Predict the graphs that will be created by a motion you plan.</li>
+</ol>
+<p>Describe your procedure, and record your data and observations in your lab notes. <strong>Keep detailed notes.</strong> Data for this lab will include several plots as well as qualitative observations. In your memo, summarize your findings and describe any conclusions you draw from them.</p>
+<section id="key-ideas" class="level2">
+<h2 class="anchored" data-anchor-id="key-ideas">Key Ideas</h2>
+<p>There are four important quantities in kinematics: time, position, velocity, and acceleration. We will denote these by <span class="math inline">\(t\)</span>, <span class="math inline">\(s(t)\)</span>, <span class="math inline">\(v(t)\)</span>, and <span class="math inline">\(a(t)\)</span> respectively. Position, velocity, and acceleration are related as follows: <span class="math display">\[v(t) = \diff{s}{t}
+  \qquad \qquad
+  a(t) = \diff{v}{t}\]</span> We will not need to take derivatives today. However, this relation allows us to interpret motion graphs as follows:</p>
+<ul>
+<li><strong>Velocity is the slope of position; acceleration is the slope of velocity.</strong></li>
+<li>If a function is increasing, then its slope is positive (and vice versa).</li>
+<li>If a function is decreasing, then its slope is negative (and vice versa).</li>
+<li>If a function is constant, then its slope is zero (and vice versa).</li>
+</ul>
+<p>Use these ideas today as you try to interpret your motion graphs.</p>
+</section>
+<section id="graph-the-motion" class="level2">
+<h2 class="anchored" data-anchor-id="graph-the-motion">Graph the Motion</h2>
+<p>It is important to be able to move between different representations of motion — from tables of numbers to graphs of position and velocity. In this first portion of the lab, you will translate a series of snapshots of the position of two objects into graphs of position versus time.</p>
+<p>Open the <a href="http://physics.bu.edu/~duffy/HTML5/motion_diagrams.html"><code>Comparing motion diagrams</code></a> simulation from <a href="http://physics.bu.edu/~duffy/classroom.html">Andrew Duffy</a>. This simulation gives you slider that will adjust the initial position, velocity, and acceleration of two different particles. When you press the “Play” button, you will see the corresponding motion of the two particles, along with a snapshots of their position every two seconds. Play around with the sliders and run a few trials to learn how the simulation works.</p>
+<p>Once you are familiar with how the simulation works, set the sliders to the following values:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Car</th>
+<th>Position [m]</th>
+<th>Velocity [m/s]</th>
+<th>Acceleration [m/s/s]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0</td>
+<td>10</td>
+<td>-0.5</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0.5</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Run the simulation.</li>
+<li>Make a <strong>table</strong> of the position of each particle every 2 seconds.</li>
+<li>Make a <strong>motion graph</strong> of position versus time for each particle.</li>
+</ol>
+<p>Comment on any interesting or unexpected features of your simulation, data, or plot.</p>
+</section>
+<section id="race" class="level2">
+<h2 class="anchored" data-anchor-id="race">Race</h2>
+<p>In this simulation, we will compare motion with constant velocity to motion with constant acceleration.</p>
+<p>Open the <a href="http://physics.bu.edu/~duffy/HTML5/1Dmotion_constantv_constanta.html"><code>Constant velocity vs. constant acceleration</code></a> simulation from <a href="http://physics.bu.edu/~duffy/classroom.html">Andrew Duffy</a>. This simulation pits a red car with a “running start” against a blue car that starts from rest. However, the red car moves with <strong>constant speed</strong> while the blue car moves with <strong>constant acceleration.</strong></p>
+<p>Play around with the simulation to see how it works. Set up a few races. Observe both the position graphs and the velocity graphs during a few races. Jot down any general patterns or interesting results you observe. Can you draw any conclusions about which car wins the race? We are going to explore two scenarios.</p>
+<p><strong>Race 1:</strong> Start Car 1 (red) at position 0, and set its velocity to the maximum of <span class="math inline">\(\Quantity{10}{m/s}\)</span>. Set the acceleration of Car 2 (blue) to its maximum value of <span class="math inline">\(\Quantity{2}{m/s^2}\)</span>.</p>
+<ul>
+<li><strong>Before you run the simulation …</strong> Which car do you think will win the race? Why?</li>
+<li>Run the race. <strong>Describe what happens.</strong> Sketch both the position graph and the velocity graph for this race.</li>
+</ul>
+<p><strong>Race 2:</strong> For this race, Start Car 1 (red) at position 0, and set the acceleration of Car 2 (blue) to <span class="math inline">\(\Quantity{1}{m/s^2}\)</span>. By trial and error, determine the minimum initial speed that Car 1 needs to win the race.</p>
+</section>
+<section id="match-motion-to-a-graph" class="level2">
+<h2 class="anchored" data-anchor-id="match-motion-to-a-graph">Match Motion to a Graph</h2>
+<p>You have now seen several examples of motion with constant velocity and with constant acceleration. In this final portion of the lab, we are going to try to match specific motion graphs by adjusting the position, velocity, and acceleration of a moving particle.</p>
+<p>Open the <a href="http://physics.bu.edu/~duffy/HTML5/1Dmotion_graph_matching.html"><code>Graph matching</code></a> simulation from <a href="http://physics.bu.edu/~duffy/classroom.html">Andrew Duffy</a>. This simulation has the same sliders as previous simulations, but it also has a collection of 10 motion graphs you can attempt to match. First, select the “No match” option and make a few trial runs to observe the graphs you create when you change position, velocity, and acceleration while the particle is moving.</p>
+<p>When you are ready, attempt to match at least 4 graphs.</p>
+<ul>
+<li>Match at least 2 <strong>position</strong> graphs: Graph 3 and Graph 4.</li>
+<li>Match at least 2 <strong>velocity</strong> graphs: Graph 9 and Graph 10.</li>
+</ul>
+<p>For each graph, <strong>make a prediction before you start the simulation.</strong> First look at the plot and consider how you will reproduce the motion graph. Record your prediction. Then, make your best effort reproduce the graph. Strive for accuracy — but not perfection — in your graph matching. Sketch your best result, export the graph, or take a screenshot. (You can right-click on a graph to copy it to the clipboard, and then paste it into another document.) Once you have successfully reproduced a graph, compare your prediction with how you actually matched the graph. Discuss any surprises or challenges in your notes or in your memo.</p>
+</section>
+<section id="further-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="further-exploration">Further Exploration</h2>
+<p>The following activities are not required. If you have the time and the inclination, you may carry out these investigations for extra credit. You are also free to use any of the materials available in the lab to carry out your own investigations. You need to <strong>keep a record of your work</strong> (setup, procedure, data, analysis) to get credit for your efforts.</p>
+<p><strong>More Motion Graphs:</strong> The following simulations from <a href="http://ophysics.com"><code>oPhysics</code></a> allow you to input a graph of either velocity or acceleration and observe the resulting motion:</p>
+<ul>
+<li>You can input a velocity graph in <a href="http://ophysics.com/k4b.html"><code>Position, Velocity, and Acceleration vs. Time Graphs</code></a>.</li>
+<li>You can input an acceleration graph in <a href="http://ophysics.com/k5.html"><code>Kinematics Graphs: Adjust the Acceleration</code></a>.</li>
+</ul>
+<p>Make the most interesting graphs you can and include a screenshot in your notes.</p>
+<p><strong>Video Analysis:</strong> Download the <a href="https://physlets.org/tracker/"><code>Tracker</code></a> video analysis software. Load one of the videos that come with the program, create your own using a smartphone, or download a video from the Web. Use Tracker to analyze the motion of an object in the video. Include a screenshot of your video and graphs, or export the graphs and include them with your memo and notes.</p>
+<p>You don’t have to limit yourself to these suggestions. Feel free to play with other simulations on these Web sites. Record your procedure, data, and observations in your lab notes if you would like extra points for your efforts.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

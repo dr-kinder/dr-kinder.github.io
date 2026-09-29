@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modern Physics – Jesse Kinder</title>
+<title>Friction Simulations – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -89,10 +89,39 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,11 +147,11 @@ window.MathJax = {
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../modern-physics/index.html" aria-current="page"> 
+    <a class="nav-link" href="../modern-physics/index.html"> 
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/06v-friction.html">Friction Simulations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/06v-friction.html">Friction Simulations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Modern Physics</h1>
+<h1 class="title">Friction Simulations</h1>
 </div>
 
 
@@ -159,11 +342,155 @@ window.MathJax = {
 </header>
 
 
-<p>Co-taught course covering <em>Six Ideas That Shaped Physics</em>, Units R (Relativity) and Q (Quantum).</p>
-<p><em>This page is a placeholder — course content is still being migrated here.</em></p>
-<p>Grades, assignments, and quizzes are managed in Canvas.</p>
+<p><strong>Objectives</strong></p>
+<ul>
+<li>Determine the coefficients of friction.</li>
+<li>Investigate drag forces in fluids.</li>
+</ul>
+<p>Friction is a ubiquitous phenomenon in the real world, but it is frequently ignored in introductory physics courses. Today, we will examine some of the effects of friction.</p>
+<p>This lab consists of three major parts</p>
+<ol type="1">
+<li>Measure the coefficients of static and kinetic friction.</li>
+<li>Measure the critical angle of an object on an inclined plane.</li>
+<li>Investigate drag forces in fluids.</li>
+</ol>
+<p>You will investigate three different simulations today. <strong>Keep detailed notes.</strong> Record your setup, procedure, data, and observations in your lab notes. Data will include tables and plots. In your memo, summarize your findings and discuss any conclusions you draw from your data.</p>
+<section id="static-and-kinetic-friction" class="level2">
+<h2 class="anchored" data-anchor-id="static-and-kinetic-friction">Static and Kinetic Friction</h2>
+<p>Despite the complex interactions that give rise to friction, the force obeys a simple law: <span class="math display">\[f = \mu N.\]</span> The force due to friction is directly proportional to the normal force acting on an object. The constant of proportionality, <span class="math inline">\(\mu\)</span>, is called the <strong>coefficient of friction.</strong> If an object is stationary, the constant is called the <strong>coefficient of static friction,</strong> and the formula gives the maximum force that can be applied before the object starts slipping. If the object is sliding along, it is called the <strong>coefficient of kinetic friction.</strong> Typically, the coefficient of kinetic friction is less than the coefficient of static friction: it is harder to get something moving than it is to keep it going.</p>
+<p>Open the <a href="http://thephysicsaviary.com/Physics/Programs/Labs/ForceFriction/"><code>Friction Lab</code></a> from <a href="https://www.thephysicsaviary.com/"><code>Physics Aviary</code></a>. This simulation provides a force sensor to investigate friction for different blocks and surfaces. The simulation will gradually increase the force you are pulling with until the block starts to slide, then pull the block with constant velocity. Play with the simulation to see how it works.</p>
+<p><strong>Predict.</strong> Before you start making measurements, consider the following questions.</p>
+<ul>
+<li>How can you use the graph of Force vs.&nbsp;Time to determine the coefficients of friction?</li>
+<li>What will happen to the force required to move the block if you increase its mass?</li>
+<li>What will happen to coefficients of friction if you increase the mass of the block?</li>
+</ul>
+<p><strong>Measure.</strong></p>
+<ul>
+<li>Determine the coefficients of static friction and kinetic friction for 3 different interfaces.</li>
+<li>Investigate the dependence of the forces and coefficients on the mass of the block and orientation of the block. Pick one pair of surfaces and measure the coefficients for 3 different masses: <span class="math inline">\(100\,\mathsf{g}\)</span>, <span class="math inline">\(2000\,\mathsf{g}\)</span>, and one intermediate value of your choice.</li>
+</ul>
+<p><strong>Analyze.</strong> Summarize your results and discuss your findings in your lab memo.</p>
+</section>
+<section id="critical-angle" class="level2">
+<h2 class="anchored" data-anchor-id="critical-angle">Critical Angle</h2>
+<p>Direct measurements with a spring scale or force sensor provide one way to measure the coefficient of friction. A simple alternative is the following.</p>
+<ol type="1">
+<li>Place an object on a board.</li>
+<li>Tilt the board until the object starts to slide down.</li>
+<li>Use Newton’s Second Law and trig to calculate the coefficient of friction.</li>
+</ol>
+<p>The maximum angle <span class="math inline">\(\theta\)</span> to which you can tilt the ramp before the object starts sliding down is called the <strong>critical angle.</strong></p>
+<p>We can investigate this relationship with the <a href="http://thephysicsaviary.com/Physics/Programs/Labs/ForcesOnInclineLab/"><code>Forces on an Incline</code></a> simulation from <a href="https://www.thephysicsaviary.com/"><code>Physics Aviary</code></a>. Play with the simulation to see how it works.</p>
+<p><strong>Predict.</strong> Discuss the following questions before you begin.</p>
+<ul>
+<li>What effect will increasing the coefficient of friction have on the critical angle?</li>
+<li>What effect will increasing the mass of the block have on the critical angle?</li>
+</ul>
+<p><strong>Measure.</strong></p>
+<ul>
+<li>Hold the mass constant and measure the critical angle for at least 5 different coefficients of friction.</li>
+<li>Hold coefficients of friction constant and measure the critical angle for at least 3 different masses.</li>
+</ul>
+<p><strong>Analyze.</strong> Summarize your results and discuss your findings in your lab memo.</p>
+<ul>
+<li>There is a relation between the critical angle and the coefficient of friction. Make 4 plots and try to determine this relationship:
+<ol type="1">
+<li><span class="math inline">\(\theta\)</span> vs.&nbsp;<span class="math inline">\(\mu\)</span></li>
+<li><span class="math inline">\(\cos \theta\)</span> vs.&nbsp;<span class="math inline">\(\mu\)</span></li>
+<li><span class="math inline">\(\sin \theta\)</span> vs.&nbsp;<span class="math inline">\(\mu\)</span></li>
+<li><span class="math inline">\(\tan \theta\)</span> vs.&nbsp;<span class="math inline">\(\mu\)</span></li>
+</ol></li>
+<li>What trends do you notice in the relationship between critical angle and mass?</li>
+</ul>
+</section>
+<section id="drag-forces" class="level2">
+<h2 class="anchored" data-anchor-id="drag-forces">Drag Forces</h2>
+<p>In the last portion of today’s lab, we will investigate the drag forces in fluids.</p>
+<p>Open up the <a href="http://physics.bu.edu/~duffy/HTML5/ball_in_viscous_fluid.html"><code>Ball in Viscous Fluid</code></a> simulation from <a href="http://physics.bu.edu/~duffy/classroom.html"><code>Andrew Duffy</code></a>. This simulation gives you control over the properties of a ball bearing and the fluid it is dropped in, and allows you to view its position, velocity, and acceleration graphs. Play around with the simulation to see how it works.</p>
+<p><strong>Predict.</strong> Before you make any measurements, consider the following questions.</p>
+<ul>
+<li>If you drop a ball bearing in air, what will its position, velocity, and acceleration graphs look like?</li>
+<li>If you drop the same ball bearing in honey, what will its position, velocity, and acceleration graphs look like as a function of time?</li>
+<li>The simulation gives us control over the ball bearing’s density and radius. We can also vary the <strong>viscosity</strong> by choosing different fluids. (Loosely speaking, the viscosity is the “thickness” of the fluid. It is large for honey, intermediate for oil, and small for water.) Which factors do you think will affect the motion of the ball bearing the most? How? Why?</li>
+</ul>
+<p><strong>Measure.</strong></p>
+<ul>
+<li>First make a series of comparisons of steel ball bearings. Our “control” will be a large steel bearing in honey. We will compare it with a small bearing in other fluids.</li>
+</ul>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 13%">
+<col style="width: 16%">
+<col style="width: 15%">
+<col style="width: 13%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Trial</th>
+<th>Density 1</th>
+<th>Radius 1</th>
+<th>Fluid 1</th>
+<th>Density 2</th>
+<th>Radius 2</th>
+<th>Fluid 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Steel</td>
+<td><span class="math inline">\(6\,\mathsf{mm}\)</span></td>
+<td>Honey</td>
+<td>Steel</td>
+<td><span class="math inline">\(2\,\mathsf{mm}\)</span></td>
+<td>Water</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Steel</td>
+<td><span class="math inline">\(6\,\mathsf{mm}\)</span></td>
+<td>Honey</td>
+<td>Steel</td>
+<td><span class="math inline">\(2\,\mathsf{mm}\)</span></td>
+<td>Olive Oil</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Steel</td>
+<td><span class="math inline">\(6\,\mathsf{mm}\)</span></td>
+<td>Honey</td>
+<td>Steel</td>
+<td><span class="math inline">\(2\,\mathsf{mm}\)</span></td>
+<td>Honey</td>
+</tr>
+</tbody>
+</table>
+<p>For each trial, look at all three kinematic graphs: Position vs.&nbsp;Time, Velocity vs.&nbsp;Time, and Acceleration vs.&nbsp;Time.</p>
+<ul>
+<li>Measure the final velocity as a function of radius for a steel ball bearing in honey. Record the final velocity for five possible radii.</li>
+</ul>
+<p><strong>Analyze.</strong> Summarize your results and discuss your findings in your lab memo.</p>
+<ul>
+<li>Plot the final velocity of a steel bearing in honey as a function of radius using linear, semilog, and log-log plots, and try to determine the mathematical relationship between velocity and radius.</li>
+</ul>
+</section>
+<section id="further-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="further-exploration">Further Exploration</h2>
+<p>The following activities are not required. If you have the time and the inclination, you may carry out these investigations for extra credit. You are also free to use any of the materials available in the lab to carry out your own investigations. You need to <strong>keep a record of your work</strong> (setup, procedure, data, analysis) to get credit for your efforts.</p>
+<p><strong>Further Investigations:</strong> Carry out more or different experiments with any of the simulations you used today. Describe your experimental design, your hypothesis, and your results. For example, you could make another series of measurements with the fluids simulation: you could repeat the radius measurements for a different density in a different fluid (e.g., rubber in olive oil), or design your own experiment.</p>
+<p><strong>Theoretical Analysis:</strong> The drag force on a sphere in a viscous fluid is <span class="math inline">\(f = -\zeta v\)</span>, where <span class="math inline">\(\zeta\)</span> is the drag coefficient. If the ball is falling under the influence of gravity, it will eventually reach a <strong>terminal velocity.</strong></p>
+<ol type="a">
+<li>Derive terminal velocity. Your result should depend on the mass of the sphere <span class="math inline">\(M\)</span>, the acceleration due to gravity <span class="math inline">\(g\)</span>, and the drag coefficient <span class="math inline">\(\zeta\)</span>. (You can use dimensional analysis or Newton’s Second Law.)</li>
+<li>The drag coefficient for a sphere in a viscous fluid is predicted to be <span class="math inline">\(\zeta = 6 \pi \eta R\)</span>, where <span class="math inline">\(\eta\)</span> is the viscosity of the fluid and <span class="math inline">\(R\)</span> is the radius of the sphere. The mass of the sphere will be <span class="math inline">\(M = \frac{4}{3} \pi \rho R^3\)</span>, where <span class="math inline">\(\rho\)</span> is the density of the sphere and <span class="math inline">\(R\)</span> is its radius. Use these relationships and your result from (a) to find another expression for the terminal velocity that depends on <span class="math inline">\(R\)</span>, <span class="math inline">\(\eta\)</span>, <span class="math inline">\(\rho\)</span>, <span class="math inline">\(g\)</span>.</li>
+<li>How does your result from (b) compare with the plot you made in Part 3?</li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jesse Kinder</title>
+<title>Projectile Motion with Simulations – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-761fc14e25ebc0e942fc86aa4dfe65fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-761fc14e25ebc0e942fc86aa4dfe65fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,17 +89,46 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jesse Kinder</span>
     </a>
   </div>
@@ -110,19 +139,19 @@ window.MathJax = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./phy-221/index.html"> 
+    <a class="nav-link" href="../phy-221/index.html"> 
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./modern-physics/index.html"> 
+    <a class="nav-link" href="../modern-physics/index.html"> 
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/04v-projectile.html">Projectile Motion with Simulations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/04v-projectile.html">Projectile Motion with Simulations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Jesse Kinder</h1>
+<h1 class="title">Projectile Motion with Simulations</h1>
 </div>
 
 
@@ -159,31 +342,99 @@ window.MathJax = {
 </header>
 
 
-<p>Professor of Physics, Oregon Institute of Technology Klamath Falls, OR — SE214</p>
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses</h2>
+<p><strong>Objectives</strong></p>
 <ul>
-<li><a href="./phy-221/index.html">PHY 221 — Classical Mechanics</a></li>
-<li><a href="./modern-physics/index.html">Modern Physics</a></li>
-<li><a href="./labs/index.html">Introductory Physics Labs</a></li>
+<li>Investigate projectile motion in two dimensions.</li>
+<li>Hit a target without “practice” shots.</li>
+<li>Analyze the effects of air resistance.</li>
 </ul>
+<p>In this lab, we will explore two-dimensional kinematics, the mathematical analysis of motion in two dimensions. Our focus will be the motion of a projectile. We will investigate a launcher, and then construct a mathematical model to predict where a projectile will land for a given launch angle, speed, and height. Finally, we will investigate how air resistance affects the range of a projectile.</p>
+<p>There are three stages of this investigation:</p>
+<ol type="1">
+<li>Investigate the range of a projectile.</li>
+<li>Analyze and predict projectile range as a function of launch angle.</li>
+<li>Hit a target selected and placed by your instructor.</li>
+</ol>
+<p>You can — and should — apply your knowledge of kinematics in this lab.</p>
+<p>Record your setup, procedure, data, and observations in your lab notes. <strong>Keep detailed notes.</strong> Data for this lab will include data tables and plots. In your memo, summarize your findings and describe how you tackled the design and measurement problems of this lab.</p>
+<section id="horizontal-range" class="level2">
+<h2 class="anchored" data-anchor-id="horizontal-range">Horizontal Range</h2>
+<p>When a projectile is fired horizontally, it moves with <strong>constant velocity</strong> in the horizontal direction and falls with <strong>constant acceleration</strong> in the vertical direction. In this portion of the experiment, we will investigate the range of a projectile as a function of <strong>height</strong> and <strong>initial speed.</strong></p>
+<p>Start by opening the <a href="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html"><code>Projectile Motion</code></a> simulation from <a href="https://phet.colorado.edu/en/simulations/category/physics"><code>PhET</code></a>. Use the “Intro” option. This simulation gives you control over several factors that affect the range of a projectile. Play with the simulation to learn how it works.</p>
+<section id="range-vs.-height" class="level3">
+<h3 class="anchored" data-anchor-id="range-vs.-height">Range vs.&nbsp;Height</h3>
+<p>Select an object and set the initial speed between 10 and <span class="math inline">\(20\,\mathsf{m/s}\)</span>. Adjust the launch angle to zero (horizontal). Turn off air resistance. Hold these parameters constant as you investigate the range of the projectile as a function of launch height.</p>
+<p><strong>Create a table and a plot of range vs.&nbsp;height.</strong> Record the range of the projectile for at least 5 different heights that span the range of 2 to <span class="math inline">\(15\,\mathsf{m}\)</span>.</p>
 </section>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>I am a computational and theoretical physicist who loves to teach. I enjoy working with students on research projects and bringing contemporary physics research into the classroom.</p>
-<ul>
-<li>Ph.D., Physics and Astronomy, University of Pennsylvania</li>
-<li>M.S., Physics and Astronomy, University of Pennsylvania</li>
-<li>B.A., Physics and Astronomy, DePauw University</li>
-</ul>
+<section id="range-vs.-speed" class="level3">
+<h3 class="anchored" data-anchor-id="range-vs.-speed">Range vs.&nbsp;Speed</h3>
+<p>Select an object and set the initial height between 10 and <span class="math inline">\(20\,\mathsf{m}\)</span>. Adjust the launch angle to zero (horizontal). Turn off air resistance. Hold these parameters constant as you investigate the range of the projectile as a function of launch speed.</p>
+<p><strong>Create a table and a plot of range vs.&nbsp;speed.</strong> Record the range of the projectile for at least 5 different speeds that span the range of 0 to <span class="math inline">\(20\,\mathsf{m/s}\)</span>.</p>
 </section>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>Nanotechnology, quantum chemistry, biological physics, epidemic models, radio astronomy, gravitational lensing, and quantum computing. My doctoral work focused on modifying the electronic and optical properties of carbon nanotubes using electromagnetic fields.</p>
+<section id="analysis" class="level3">
+<h3 class="anchored" data-anchor-id="analysis">Analysis</h3>
+<p>Use kinematics to derive a formula for range <span class="math inline">\(D\)</span> as a function of launch height <span class="math inline">\(H\)</span> and launch speed <span class="math inline">\(V\)</span> for a horizontal shot. Compare this function with your data.</p>
 </section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>Grades, assignments, and office hours for enrolled students are in Canvas. Everyone else can reach me through the <a href="https://www.oit.edu/directory/jesse-kinder">OIT directory</a>.</p>
+</section>
+<section id="target-practice" class="level2">
+<h2 class="anchored" data-anchor-id="target-practice">Target Practice</h2>
+<p>It is possible to solve the kinematic equations for distance as a function of launch angle — as long as we ignore air resistance. However, in this portion of the lab, we will use <strong>interpolation</strong> to predict the range of a projectile given its launch angle. (Interpolation means using measured values of a function to predict values between the data points.)</p>
+<p>Open the <a href="https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html"><code>Projectile Motion</code></a> simulation from <a href="https://phet.colorado.edu/en/simulations/category/physics"><code>PhET</code></a>. Use the “Lab” option. This simulation gives you fine control over almost every factor that affects the range of a projectile. Play around with the new options to learn how they work.</p>
+<section id="collect-your-data" class="level3">
+<h3 class="anchored" data-anchor-id="collect-your-data">Collect Your Data</h3>
+<p>Select an object and set the initial height to <span class="math inline">\(7\,\mathsf{m}\)</span> and set the initial speed to <span class="math inline">\(17\,\mathsf{m/s}\)</span>. Turn off air resistance. Hold these parameters constant as you investigate the range of the projectile as a function of launch angle.</p>
+<p><strong>Create a table and a plot of range vs.&nbsp;launch angle.</strong> Record the range of the projectile for at least 5 different angles. Make sure the projectile range covers a wide range of distances from <span class="math inline">\(5\,\mathsf{m}\)</span> to <span class="math inline">\(30\,\mathsf{m}\)</span>.</p>
+</section>
+<section id="use-your-data" class="level3">
+<h3 class="anchored" data-anchor-id="use-your-data">Use Your Data</h3>
+<p>Use your data to predict the angle required to hit the following target distances and then record the actual range of the projectile.</p>
+<p><strong>Do not use trial and error!</strong> You must explain how you used your data to predict each angle. You can use the plot, use linear interpolation, fit a mathematical function to your data, create a deep neural network, etc. The point of this exercise is to <strong>use your data to make the prediction.</strong> (If you are not sure where to begin, try the Wikipedia page for <a href="https://en.wikipedia.org/wiki/Linear_interpolation"><code>Linear Interpolation</code></a>.)</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Target Distance [<code>m</code>]</th>
+<th>Predicted Angle</th>
+<th>Actual Distance [<code>m</code>]</th>
+<th>Optimal Angle</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>8.4 <code>m</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>18.2 <code>m</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>29.0 <code>m</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>After you have made your predictions and measurements — and only after — use trial and error to find the optimal launch angle. Discuss agreement or disagreement with your model in your memo.</p>
+</section>
+</section>
+<section id="further-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="further-exploration">Further Exploration</h2>
+<p>The following activities are not required. If you have the time and the inclination, you may carry out these investigations for extra credit. You are also free to use any of the materials available in the lab to carry out your own investigations. You need to <strong>keep a record of your work</strong> (setup, procedure, data, analysis) to get credit for your efforts.</p>
+<p><strong>Air Resistance:</strong> We have ignored air resistance in our analysis of projectile motion, but it can make a big difference. Use either the “Lab” or the “Drag” option of the simulation to explore the effects of air resistance.</p>
+<p>Set the launch height, launch speed, and launch angle to give you a range of about <span class="math inline">\(20\,\mathsf{m}\)</span> for the default projectile. <strong>Make a table and a plot of the range for one of the following parameters:</strong> mass, drag coefficient, elevation. Take at least 5 data points that cover the full range of allowed values. Discuss the relationship you observe. Is it linear or nonlinear? Can you think of a physical reason for the effect — e.g., <em>why</em> might the range depend on the elevation? You can repeat this analysis for all three factors, for up to 3 bonus points.</p>
+<p><strong>Theoretical Analysis:</strong> Derive the theoretical function that should fit your data from Part 2 of the experiment. I.e., use kinematics to derive a mathematical formula for distance as a function of angle <span class="math inline">\(D(\theta)\)</span> for a given launch height <span class="math inline">\(H\)</span> and speed <span class="math inline">\(V\)</span>.</p>
+<p><strong>Video Analysis:</strong> Use slow-motion video and the Tracker software to analyze the motion of a real projectile that you set in motion: a free throw, a baseball, any tossed object. Determine the launch speed of the projectile and its range.</p>
 
 
 </section>

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jesse Kinder</title>
+<title>Simple Machines – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +29,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-761fc14e25ebc0e942fc86aa4dfe65fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-761fc14e25ebc0e942fc86aa4dfe65fb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,17 +89,46 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Jesse Kinder</span>
     </a>
   </div>
@@ -110,19 +139,19 @@ window.MathJax = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./phy-221/index.html"> 
+    <a class="nav-link" href="../phy-221/index.html"> 
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./modern-physics/index.html"> 
+    <a class="nav-link" href="../modern-physics/index.html"> 
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/09-simple-machines.html">Simple Machines</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/09-simple-machines.html">Simple Machines</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Jesse Kinder</h1>
+<h1 class="title">Simple Machines</h1>
 </div>
 
 
@@ -159,36 +342,104 @@ window.MathJax = {
 </header>
 
 
-<p>Professor of Physics, Oregon Institute of Technology Klamath Falls, OR — SE214</p>
-<section id="courses" class="level2">
-<h2 class="anchored" data-anchor-id="courses">Courses</h2>
+<p><strong>Objectives</strong></p>
 <ul>
-<li><a href="./phy-221/index.html">PHY 221 — Classical Mechanics</a></li>
-<li><a href="./modern-physics/index.html">Modern Physics</a></li>
-<li><a href="./labs/index.html">Introductory Physics Labs</a></li>
+<li>Investigate levers, ramps, and pulleys.</li>
+<li>Measure the mechanical advantage of simple machines.</li>
+<li>Apply the principles of static equilibrium.</li>
 </ul>
+<p>Simple machines are devices that change the direction or magnitude of an applied force. Renaissance scholars identified six such machines. We will explore three today: the pulley, the ramp, and the lever.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Unlike early Renaissance scholars, we have classical mechanics to aid us! We will analyze these devices using forces, work, and energy.</p>
+<p>This lab consists of three major parts</p>
+<ol type="1">
+<li>Investigate a simple pulley system.</li>
+<li>Investigate an inclined plane.</li>
+<li>Investigate three different classes of levers.</li>
+</ol>
+<p>You will have your choice among several methods today. <strong>Keep detailed notes.</strong> Record your setup, procedure, data, and observations in your lab notebook. Data will include tables and plots. In your memo, summarize your findings and discuss any conclusions you draw from your data.</p>
+<section id="mechanical-advantage" class="level2">
+<h2 class="anchored" data-anchor-id="mechanical-advantage">Mechanical Advantage</h2>
+<p>A simple machine is a device for redirecting or multiplying a <strong><em>force.</em></strong> We often think of such machines in terms of the <strong>applied force</strong> and the <strong>load.</strong> The applied force is the force you put into the machine. The load is the force the machine applies to something else. In this lab, it will be the weight you lift.</p>
+<p>The <strong>mechanical advantage</strong> of a machine is the ratio of the load to the applied force:</p>
+<pre><code>                           load
+mechanical advantage = -------------
+                       applied force</code></pre>
+<p>For example, if you apply a force of <span class="math inline">\(100\,\mathsf{lbs}\)</span> and you are able to lift a load of <span class="math inline">\(200\,\mathsf{lbs}\)</span>, the system has a mechanical advantage of 2: It doubles your applied force. In principle, the mechanical advantage is a constant for a particular machine. Thus, if we measure and plot the load as a function of applied force, the mechanical advantage will be the slope of this line.</p>
+<p>Note, however, that conservation of energy implies that the <strong><em>work</em></strong> done by each force be equal in magnitude. When a system is in equilibrium, the net work for any small displacement of the system must be zero. This is known as the <strong>principle of virtual work.</strong></p>
+<p>There are at least three ways to measure forces in this lab. One approach is to use the weight of a known mass. If you hang a <span class="math inline">\(100\,\mathsf{g}\)</span> mass from a pulley, the applied force will be equal to the weight: <span class="math inline">\(0.980\,\mathsf{N}\)</span>. A second approach is to use a spring scale. A third option is a strain gauge force sensor that connects to the LabQuest interface. You can record and read out force data on LoggerPro.</p>
+<p>You may use any of these methods. Be sure to investigate the equipment before you start collecting data. You should understand the proper use and limitations of any equipment you use.</p>
 </section>
-<section id="background" class="level2">
-<h2 class="anchored" data-anchor-id="background">Background</h2>
-<p>I am a computational and theoretical physicist who loves to teach. I enjoy working with students on research projects and bringing contemporary physics research into the classroom.</p>
+<section id="pulley" class="level2">
+<h2 class="anchored" data-anchor-id="pulley">Pulley</h2>
+<p>In a pulley system, a mass hangs on one side of the pulley (the load) and you apply a force by pulling on a string on the other side of the pulley (the applied force). The mechanical advantage of a pulley is the ratio of the load to the applied force.</p>
+<p><strong>Predict.</strong> Consider the following questions before you make any measurements.</p>
 <ul>
-<li>Ph.D., Physics and Astronomy, University of Pennsylvania</li>
-<li>M.S., Physics and Astronomy, University of Pennsylvania</li>
-<li>B.A., Physics and Astronomy, DePauw University</li>
+<li>Will the mechanical advantage depend on the angle at which you apply the force?</li>
+<li>Will the mechanical advantage depend on the size of the pulley wheel?</li>
+<li>What do you think the mechanical advantage of your pulley will be?</li>
 </ul>
+<p><strong>Measure.</strong></p>
+<ul>
+<li>Measure the applied force for a fixed load at three different angles.</li>
+<li>Measure the applied force for three different loads at a fixed angle.</li>
+</ul>
+<p><strong>Reflect.</strong> Were your predictions correct? Can you explain your findings? In your memo, discuss useful applications for a simple pulley, in light of your measurements.</p>
 </section>
-<section id="research" class="level2">
-<h2 class="anchored" data-anchor-id="research">Research</h2>
-<p>Nanotechnology, quantum chemistry, biological physics, epidemic models, radio astronomy, gravitational lensing, and quantum computing. My doctoral work focused on modifying the electronic and optical properties of carbon nanotubes using electromagnetic fields.</p>
+<section id="inclined-plane" class="level2">
+<h2 class="anchored" data-anchor-id="inclined-plane">Inclined Plane</h2>
+<p>An inclined plane can be used to raise a weight gradually instead of lifting it directly. We can use a pulley to apply a force to a string (applied force) and pull a cart (load) up the ramp.</p>
+<p><strong>Predict.</strong> Consider the following questions before you make any measurements.</p>
+<ul>
+<li>How will the angle of the ramp affect its mechanical advantage?</li>
+<li>How can you lift the largest weight using the smallest force with a ramp?</li>
+</ul>
+<p><strong>Measure.</strong></p>
+<ul>
+<li>Measure the applied force for three different loads at two different angles (6 trials total).</li>
+</ul>
+<p><strong>Analyze.</strong></p>
+<ul>
+<li>Plot load vs.&nbsp;applied force. Compute the slope or calculate the mechanical advantage directly for each angle you investigated.</li>
+</ul>
+<p><strong>Reflect.</strong> Were your predictions correct? Can you explain your findings? In your memo, discuss useful applications for an inclined plane, in light of your measurements.</p>
 </section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p>Grades, assignments, and office hours for enrolled students are in Canvas. Everyone else can reach me through the <a href="https://www.oit.edu/directory/jesse-kinder">OIT directory</a>.</p>
+<section id="lever" class="level2">
+<h2 class="anchored" data-anchor-id="lever">Lever</h2>
+<p>A lever uses a beam and a fulcrum (a pivot point) to multiply an applied force. It may also redirect the applied force. A <strong>Class 1</strong> lever places the load and applied force on opposite sides of the fulcrum — like a teeter-totter or a balance. A <strong>Class 2</strong> lever places the load and applied force are on the same side of the fulcrum, with the load closer to the fulcrum — like a crowbar. A <strong>Class 3</strong> lever places the load and applied force are on the same side of the fulcrum, with the applied force closer to the fulcrum — like a bicep or a fishing pole.</p>
+<p><strong>Predict.</strong> Consider the following questions before you make any measurements.</p>
+<ul>
+<li>Do you think one kind of lever can generate a larger mechanical advantage than the others?</li>
+<li>Can you balance a <span class="math inline">\(1\,\mathsf{kg}\)</span> mass with a <span class="math inline">\(100\,\mathsf{g}\)</span> mass using a lever?</li>
+</ul>
+<p><strong>Measure.</strong> Experiment with all three types of lever.</p>
+<ol type="1">
+<li><p><strong>Class 1 Lever:</strong> Suspend a meter stick from a post. Use two additional meter stick hangers to investigate the relation between load, applied force, and distance from the fulcrum.</p></li>
+<li><p><strong>Class 2 Lever:</strong> Anchor one end of a meter stick so that it can pivot freely. Use two meter stick hangers to investigate the relation between load, applied force, and distance from the fulcrum.</p></li>
+<li><p><strong>Class 3 Lever:</strong> Anchor one end of a meter stick so that it can pivot freely. Use two meter stick hangers to investigate the relation between load, applied force, and distance from the fulcrum.</p></li>
+</ol>
+<p><strong>Analyze.</strong> Use your data for at least one equilibrium configuration of each lever to …</p>
+<ul>
+<li>Compute the mechanical advantage.</li>
+<li>Compute <span class="math inline">\(\textsf{force} \times \textsf{distance}\)</span>.</li>
+</ul>
+<p><strong>Reflect.</strong> Can you explain your findings? In your memo, discuss useful applications for the three different classes of levers, in light of your measurements.</p>
+</section>
+<section id="further-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="further-exploration">Further Exploration</h2>
+<p>The following activities are not required. If you have the time and the inclination, you may carry out these investigations for extra credit. You are also free to use any of the materials available in the lab to carry out your own investigations. You need to <strong>keep a record of your work</strong> (setup, procedure, data, analysis) to get credit for your efforts.</p>
+<p><strong>Complex Machine:</strong> Combine three or more simple machines into a single complex machine. Take a photo. Make measurements of the load and applied force.</p>
+<p><strong>Lever Investigation:</strong> Suspend a meter stick from a post. Use additional meter stick hangers to investigate the relation between mass and distance from the fulcrum for three or more masses hanging in equilibrium.</p>
+<p><strong>Theoretical Analysis:</strong> Apply the conditions for static equilibrium to your data for each of the levers you investigated. For the loads you studied, how does the applied force you measured compare with the theoretical prediction? Don’t neglect the mass of the meter stick and the meter stick hangers!</p>
 
 
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The other three are the wheel and axle, the wedge, and the screw.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

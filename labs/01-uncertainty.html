@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modern Physics – Jesse Kinder</title>
+<title>Measurement and Uncertainty – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -89,10 +89,39 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,11 +147,11 @@ window.MathJax = {
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../modern-physics/index.html" aria-current="page"> 
+    <a class="nav-link" href="../modern-physics/index.html"> 
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Measurement and Uncertainty</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Measurement and Uncertainty</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Modern Physics</h1>
+<h1 class="title">Measurement and Uncertainty</h1>
 </div>
 
 
@@ -159,11 +342,104 @@ window.MathJax = {
 </header>
 
 
-<p>Co-taught course covering <em>Six Ideas That Shaped Physics</em>, Units R (Relativity) and Q (Quantum).</p>
-<p><em>This page is a placeholder — course content is still being migrated here.</em></p>
-<p>Grades, assignments, and quizzes are managed in Canvas.</p>
+<p><strong>Objectives</strong></p>
+<ul>
+<li>Practice keeping a record of your work in the lab.</li>
+<li>Determine the densities of an unknown metal and wood.</li>
+<li>Review significant figures.</li>
+<li>Simulate a random process.</li>
+</ul>
+<p>In this lab, you and your group will make a series of measurements to determine the densities of aluminum, copper, and wood. You will also work through a simulation of a random process. The purpose of the exercise is to practice keeping a good record of your work in lab and to analyze the uncertainty of a series of measurements.</p>
+<p>Describe your apparatus and procedure, and record your data, analysis, and observations in your lab notebook. <strong>Keep detailed notes.</strong> Data for this lab will include several numerical measurements. In your memo, summarize your findings and observations and describe any conclusions you draw from the data and this exercise.</p>
+<section id="find-the-density" class="level2">
+<h2 class="anchored" data-anchor-id="find-the-density">Find the Density</h2>
+<p>The density of an object is the ratio of its mass to its volume: <span class="math inline">\(\rho = M/V\)</span>. Density is an <strong>intrinsic property</strong> of a material: a gold ring and a gold bar may have different masses and take up different volumes, but they will have the same density because they are made of gold. In SI units, density is reported in <span class="math inline">\(\mathsf{kg/m^3}\)</span>. It is also common to report density in <span class="math inline">\(\mathsf{g/cm^3}\)</span>.</p>
+<p>In the lab, you will find cylinders of a variety of materials: wood, aluminum, copper, steel, brass. Work with your lab group to determine the density of three of these objects. Each person should make measurements on one wood sample, one aluminum sample, and one other metal sample. If you would like, you can make more measurements on different samples.</p>
+<ul>
+<li>What data will you need?</li>
+<li>What measurements will you make?</li>
+<li>How will you use your measurements to determine the density?</li>
+</ul>
+<p><strong>Organize your measurements and calculations in a table.</strong></p>
+<p>Once you have taken your measurements, determine the density of each substance. You will have to decide how to report your final result, since you will have at least two sets of measurements for each material. Try to use your data as effectively as possible. Estimate the uncertainty in your reported value, too.</p>
+<p>After you have completed your calculations, enter your results in this online form: <a href="https://forms.gle/pJRgJ2LpYsSebUfc7" class="uri">https://forms.gle/pJRgJ2LpYsSebUfc7</a>. You only need to submit one form for your group.</p>
+<p>If you finish quickly, make more measurements. Try a spherical sample.</p>
+</section>
+<section id="calculation-exercises" class="level2">
+<h2 class="anchored" data-anchor-id="calculation-exercises">Calculation Exercises</h2>
+<p>See the “Calculation Exercises” handout. <em>(Not yet ported to this site — ask in class if you need it before then.)</em></p>
+</section>
+<section id="random-processes" class="level2">
+<h2 class="anchored" data-anchor-id="random-processes">Random Processes</h2>
+<p>Many measurements involve randomness and uncertainty. This is often called <strong>experimental error</strong>, even though they do not imply any mistake in the measurements. Some processes are inherently unpredictable: flipping a coin, rolling a dice, radioactive decay, genetic mutations, earthquakes, the movement of the stock market. But even measuring the length of an aluminum cylinder will not give exactly the same result every time. There may be fluctuations in the length due to vibrations or thermal expansion, and it may be difficult to determine exactly where the end of the bar falls between divisions on your ruler.</p>
+<p>Even with randomness and experimental error, we can still summarize a set of observations with two very useful numbers. In this portion of the lab, we will examine a random process and use statistics to summarize our observations.</p>
+<section id="qualitative-observations" class="level3">
+<h3 class="anchored" data-anchor-id="qualitative-observations">Qualitative Observations</h3>
+<p>Open the <a href="https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_en.html"><code>Plinko Probability</code></a> simulation from <a href="https://phet.colorado.edu/en/simulations/category/physics"><code>PhET</code></a>. Select the “Intro” simulation. Press the green Play button to observe the path of a single ball.</p>
+<p>You just observed a <strong>random walk.</strong> The probability of the ball bouncing left or right when it hits a peg is 50 percent. Before you observe more trials, consider the following questions.</p>
+<ul>
+<li>Can you predict where the next ball will land?</li>
+<li>Are all ending positions equally likely? Or are some positions more likely than others?</li>
+</ul>
+<p>Now we are going to make repeated observations of these random walks.</p>
+<ul>
+<li>Hit the play button 9 more times, so that you have a total of 10 balls in the bins. Record how many balls are in each bin, and draw or sketch a <strong>histogram</strong> of this set of observations that shows the number of balls in each bin.</li>
+<li>What patterns do you observe?</li>
+</ul>
+<p>Now we are going to look at random walks in sets of 10 at a time.</p>
+<ul>
+<li>Clear the bins. Select the “<span class="math inline">\(\times 10\)</span>” option near the Play button. Hit the Play button. Compare the result to your previous histogram of 10 balls. How is it similar? How is it different?</li>
+<li>Clear the bins and hit Play at least 4 more times. What patterns do you observe?</li>
+</ul>
+<p>Now we are going to look at random walks in sets of 100 at a time.</p>
+<ul>
+<li>Clear the bins. Select the “<span class="math inline">\(\times 100\)</span>” option near the Play button. Hit the Play button. Compare the result to your observations of a single ball and of 10 balls. How is it similar? How is it different?</li>
+<li>Clear the bins and hit Play at least 4 more times. What patterns do you observe?</li>
+</ul>
+<p>You are starting to see the effect of <strong>The Law of Large Numbers.</strong> The outcome of any individual random process is unpredictable, but when we make repeated observations of the same process, clear patterns emerge. Now we will use mathematics to explore those patterns.</p>
+</section>
+<section id="statistics" class="level3">
+<h3 class="anchored" data-anchor-id="statistics">Statistics</h3>
+<p>There are two numbers that are useful in describing almost any random process: the mean and the standard deviation. The <strong>mean</strong> <span class="math inline">\(\bar{x}\)</span> of a set of numbers is the average value of those numbers. The <strong>standard deviation</strong> <span class="math inline">\(s\)</span> quantifies the spread of the data around the mean. Their mathematical definitions are</p>
+<p><span class="math display">\[\begin{align*}
+\bar{x} &amp; = \dfrac{1}{N} \sum_{i=1}^{N} x_i                        &amp;&amp; \text{Mean} \\
+s       &amp; = \sqrt{\dfrac{1}{N-1} \sum_{i=1}^{N} (x_i - \bar{x})^2} &amp;&amp; \text{Standard Deviation}
+\end{align*}\]</span></p>
+<p>Open the <a href="https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_en.html"><code>Plinko Probability</code></a> simulation from <a href="https://phet.colorado.edu/en/simulations/category/physics"><code>PhET</code></a>. Select the “Lab” simulation. Play with the simulation to see how it works.</p>
+<ul>
+<li>Make 5 measurements of 10 balls falling through the Plinko game. Record the mean <span class="math inline">\(\bar{x}\)</span> for each trial.</li>
+<li>Make 5 measurements of approximately 100 balls falling through the Plinko game. Record the mean <span class="math inline">\(\bar{x}\)</span> for each trial.</li>
+<li>Make 1 measurement of approximately 1,000 balls falling through the Plinko game. Record the mean <span class="math inline">\(\bar{x}\)</span> for this trial.</li>
+<li>What trends, similarities, and differences you observe in these three sets of measurements?</li>
+</ul>
+</section>
+</section>
+<section id="further-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="further-exploration">Further Exploration</h2>
+<p>The following activities are not required. If you have the time and the inclination, you may carry out these investigations for extra credit. You need to <strong>keep a record of your work</strong> (procedure, data, analysis) to get credit for your efforts.</p>
+<section id="more-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="more-statistics">More Statistics</h3>
+<p>Continue the analysis of “Statistics.”</p>
+<ul>
+<li>Make 5 more measurements (10 total) of 10 balls falling through the Plinko game. Record the mean <span class="math inline">\(\bar{x}\)</span> for each trial.</li>
+<li>Make 5 more measurements (10 total) of approximately 100 balls falling through the Plinko game. Record the mean <span class="math inline">\(\bar{x}\)</span> for each trial.</li>
+<li>Compute the “mean of the means” and the “standard deviation of the means” for these two data sets.</li>
+<li>The standard deviation is often used as a measure of uncertainty. What happens to the uncertainty of the mean value as you make more measurements?</li>
+</ul>
+</section>
+<section id="poisson-process" class="level3">
+<h3 class="anchored" data-anchor-id="poisson-process">Poisson Process</h3>
+<p>The random walks we have observed up to this point are unbiased: a step in either direction is equally likely. Another important random process is a <strong>Poisson process,</strong> in which the probability of an event is small. We can simulate a Poisson process with a <strong>biased random walk.</strong></p>
+<p>Open the <a href="https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_en.html"><code>Plinko Probability</code></a> simulation from <a href="https://phet.colorado.edu/en/simulations/category/physics"><code>PhET</code></a>. Select the “Lab” simulation.</p>
+<ul>
+<li>Set the number of rows to 20 and the “Binary Probability” to <code>0.01</code>. This means a ball has only a 1 percent chance of bouncing to the right and a 99 percent chance of bouncing to the left each time it hits a peg. Before you hit Play, <strong>predict what the resulting distribution will look like.</strong> What will be its mean? Its standard deviation? How will it be similar to an unbiased random walk? How will it be different?</li>
+<li>Let the simulation run until <span class="math inline">\(N &gt; 1000\)</span>. Sketch the resulting distribution.</li>
+<li>Repeat for a probability of <code>0.05</code>. What similarities do you notice with the previous data? What are the major differences?</li>
+</ul>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

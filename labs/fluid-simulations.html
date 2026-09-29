@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Modern Physics – Jesse Kinder</title>
+<title>Fluid Simulations – Jesse Kinder</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -89,10 +89,39 @@ window.MathJax = {
 };
 </script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -118,11 +147,11 @@ window.MathJax = {
 <span class="menu-text">PHY 221</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../modern-physics/index.html" aria-current="page"> 
+    <a class="nav-link" href="../modern-physics/index.html"> 
 <span class="menu-text">Modern Physics</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../labs/index.html"> 
+    <a class="nav-link active" href="../labs/index.html" aria-current="page"> 
 <span class="menu-text">Labs</span></a>
   </li>  
 </ul>
@@ -131,18 +160,172 @@ window.MathJax = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/fluid-simulations.html">Fluid Simulations</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Labs</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/writing-guide.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab Writing Guide</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Labs</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/01-uncertainty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Measurement and Uncertainty</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/02v-motion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visualizing Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/03v-gravity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Acceleration Due to Gravity (Remote)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/04v-projectile.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projectile Motion with Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/05v-newtons-second.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Newton’s Second Law — Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/06v-friction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Friction Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collisions</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/07v-collisions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collision Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Rotation and Angular Momentum</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/08v-rotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Angular Momentum Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/09v-simple-machines.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simple Machines Simulations</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/10-work-and-energy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Work and Energy</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../labs/fluid-simulations.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Fluid Simulations</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../labs/01-uncertainty.html">Labs</a></li><li class="breadcrumb-item"><a href="../labs/fluid-simulations.html">Fluid Simulations</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Modern Physics</h1>
+<h1 class="title">Fluid Simulations</h1>
 </div>
 
 
@@ -159,11 +342,80 @@ window.MathJax = {
 </header>
 
 
-<p>Co-taught course covering <em>Six Ideas That Shaped Physics</em>, Units R (Relativity) and Q (Quantum).</p>
-<p><em>This page is a placeholder — course content is still being migrated here.</em></p>
-<p>Grades, assignments, and quizzes are managed in Canvas.</p>
+<p><strong>Objectives</strong></p>
+<ul>
+<li>Investigate the physics of fluids — buoyancy, pressure, and flow rate.</li>
+</ul>
+<p>Fluid mechanics is a vast and complex subject, but it is built upon the laws of physics we have learned this term. For example, the buoyant force on an object can be derived by applying Newton’s Second Law, and Bernoulli’s Principle is equivalent to the conservation of energy. In this lab, we will investigate some of these properties.</p>
+<p>The lab consists of three parts.</p>
+<ol type="1">
+<li>Measure the buoyant force on an object.</li>
+<li>Investigate properties fluid columns.</li>
+<li>Analyze flowing fluids.</li>
+</ol>
+<p>You will investigate three different simulations today. <strong>Keep detailed notes.</strong> Record your procedure, data, and observations in your lab notes. Data will include tables and plots. In your memo, summarize your findings and discuss any conclusions you draw from your data.</p>
+<section id="buoyant-force" class="level2">
+<h2 class="anchored" data-anchor-id="buoyant-force">Buoyant Force</h2>
+<p>The density of an object is its mass divided by its volume: <span class="math inline">\(\rho = M/V\)</span>. Objects that are less dense than water will float, and those that are more dense will sink. But what is the nature of the buoyant force?</p>
+<p>Open the <a href="http://www.thephysicsaviary.com/Physics/Programs/Labs/ForceBuoyancy/"><code>Force Buoyancy Lab</code></a> simulation from <a href="https://www.thephysicsaviary.com/"><code>The Physics Aviary</code></a>. This simulation allows you to measure the force on an object as it is lowered into a fluid. Play with this simulation to see how it works. The force required to suspend the bottle is plotted below the animation.</p>
+<p><strong>Observe.</strong> What happens to the force as you lower the bottle into the water?</p>
+<p><strong>Measure.</strong> You can vary the mass and volume of the bottle, to adjust its density. Set the volume of the bottle to its maximum value of <span class="math inline">\(600\,\mathsf{mL}\)</span> and set the fluid to “Fresh Water”, and then carry out the following measurements.</p>
+<ul>
+<li>Construct three bottles with a density greater than <span class="math inline">\(1.0\,\mathsf{g/cm^3}\)</span>, and record the weight of the bottle and the minimum force.</li>
+<li>Construct three bottles with a density less than <span class="math inline">\(1.0\,\mathsf{g/cm^3}\)</span>, and record the weight of the bottle and the minimum force.</li>
+</ul>
+<p>Note that <span class="math inline">\(1\,\mathsf{mL} = 1\,\mathsf{cm^3}\)</span>.</p>
+<p><strong>Analyze.</strong> The <strong>buoyant force</strong> on the object is the difference between its dry weight (the maximum force reading) and its submerged weight (the minimum force reading). Compute the buoyant force you measured for all six objects. Summarize your findings and describe any patterns you notice in your memo.</p>
+<p>For theoretical background on this simulation, see Section 14.4 of <a href="https://drive.google.com/open?id=1NycFMqe1uLSSEhOhAMqWHVLaIhBOu1A9"><code>OpenStax — Volume 1</code></a>.</p>
+</section>
+<section id="fluid-columns" class="level2">
+<h2 class="anchored" data-anchor-id="fluid-columns">Fluid Columns</h2>
+<p>When applying Newton’s laws to solid objects, we focus on the force on an object and the mass of an object. When dealing with fluids, we focus on the <strong>pressure</strong> in the fluid and the <strong>density</strong> of a fluid instead. The concepts are related: pressure is force per unit area (<span class="math inline">\(P = F/A\)</span>) and density is mass per unit volume (<span class="math inline">\(\rho = M/V\)</span>). But the differences lead to some interesting effects with fluids.</p>
+<p>Open the <a href="http://www.thephysicsaviary.com/Physics/Programs/Labs/YouTubeLab/"><code>Fluids in U-Tube Lab</code></a> from <a href="https://www.thephysicsaviary.com/"><code>The Physics Aviary</code></a>. In this simulation, we will examine two columns of fluid connected by a tube. It is similar to a balance or seesaw, but has fluid on either side instead of solid objects.</p>
+<p><strong>Predict.</strong> Before you begin, consider the following questions.</p>
+<ul>
+<li>If you have columns of the <em>same fluid</em> on either side and each column has the <em>same radius</em>, will the final heights of the two columns be the same?</li>
+<li>If you have columns of the <em>same fluid</em> on either side and each column has a <em>different radius</em>, will the final heights of the two columns be the same?</li>
+<li>If you have columns of <em>different fluids</em> on either side and each column has the <em>same radius</em>, will the final heights of the two columns be the same?</li>
+<li>If you have columns of the <em>different fluids</em> on either side and each column has a <em>different radius</em>, will the final heights of the two columns be the same?</li>
+<li>Can you set up the experiment so that the final height of columns of <em>different fluids</em> will be the same?</li>
+</ul>
+<p><strong>Test.</strong> Do a series of experiments to test your hypotheses. Keep notes of your setup for each trial and your results. Remember that a single test does not confirm a hypothesis, though it may disprove it.</p>
+<p><strong>Analyze.</strong> Based on your measurements — including any additional measurements you choose to make — what factors determine the final heights of the columns of fluid in this experiment?</p>
+<p>Be sure to discuss any differences between your predictions and your observations in your memo.</p>
+<p>For theoretical background on this simulation, see Section 14.3 of <a href="https://drive.google.com/open?id=1NycFMqe1uLSSEhOhAMqWHVLaIhBOu1A9"><code>OpenStax — Volume 1</code></a>.</p>
+</section>
+<section id="fluid-flow" class="level2">
+<h2 class="anchored" data-anchor-id="fluid-flow">Fluid Flow</h2>
+<p>In this last set of experiments, we will examine properties of a flowing fluid. Open the <a href="http://www.thephysicsaviary.com/Physics/Programs/Labs/BernoulliLab/"><code>Fluid Dynamics Lab</code></a> from <a href="https://www.thephysicsaviary.com/"><code>The Physics Aviary</code></a>. This simulation allows us to examine how the diameter and pressure in a pipe affect the speed of a flowing fluid.</p>
+<p><strong>Predict.</strong> Think about and answer the following questions before you begin taking measurements.</p>
+<ul>
+<li>What will happen to the <em>speed</em> of the fluid on the right as you <em>increase the pressure</em> on the left?</li>
+<li>What will happen to the <em>pressure</em> in the fluid on the right as you <em>increase the pressure</em> on the left?</li>
+<li>What will happen to the <em>speed</em> and <em>pressure</em> on the right as you <em>decrease the radius</em> of the pipe on the left?</li>
+<li>How can you make the <em>pressure</em> on the right as large as possible?</li>
+<li>How can you make the <em>speed</em> on the right as large as possible?</li>
+</ul>
+<p><strong>Test.</strong> Do a series of experiments to test your hypotheses. Keep notes of your setup for each trial and your results. Remember that a single test does not confirm a hypothesis, though it may disprove it.</p>
+<p><strong>Analyze.</strong> Based on your measurements — including any additional measurements you choose to make — what factors determine the speed of the fluid in this experiment?</p>
+<p>Be sure to discuss any differences between your predictions and your observations in your memo.</p>
+<p>For theoretical background on this simulation, see Sections 14.5–6 of <a href="https://drive.google.com/open?id=1NycFMqe1uLSSEhOhAMqWHVLaIhBOu1A9"><code>OpenStax — Volume 1</code></a>.</p>
+</section>
+<section id="further-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="further-exploration">Further Exploration</h2>
+<p>The following activities are not required. If you have the time and the inclination, you may carry out these investigations for extra credit. You are also free to use any of the materials available in the lab to carry out your own investigations. You need to <strong>keep a record of your work</strong> (setup, procedure, data, analysis) to get credit for your efforts.</p>
+<p><strong>Density from Buoyancy.</strong> Use the <a href="http://www.thephysicsaviary.com/Physics/Programs/Labs/ForceBuoyancy/"><code>Force Buoyancy Lab</code></a> simulation Part 1 to determine the density of an unknown fluid: mercury, gasoline, maple syrup, or crude oil. You can place a lower and upper bound on the density of the fluid by seeing what floats and sinks. You can also determine the density by measuring the buoyant force on an object. Describe how your method and your results in your notes.</p>
+<p><strong>Density from Column Height.</strong> According to Pascal’s Principle, the pressure at the bottom of a column of fluid height <span class="math inline">\(h\)</span> and density <span class="math inline">\(\rho\)</span> is <span class="math inline">\(P = P_{\tt atm} + \rho g h\)</span>. The two columns of fluid are in contact with each other at the bottom of the tube, and so the pressure must be the same at the bottom. Use the <em>difference</em> in the height of two columns of fluid to determine the density of an unknown fluid: gasoline, maple syrup, crude oil, ethanol, brine (seawater), or glycerine. (Water is a good fluid to compare with: Its density is <span class="math inline">\(1\,\mathsf{g/cm^3}\)</span>, or <span class="math inline">\(1.00 \times 10^{3}\,\mathsf{kg/m^3}\)</span>.)</p>
+<p><strong>Flow Rate.</strong> What affects the rate of fluid flow? In this experiment you can analyze the rate at which fluid flows out of a Gatorade cooler to gain some insight. Open the <a href="http://www.thephysicsaviary.com/Physics/Programs/Labs/FlowRateFromBeverageDispenserLab/"><code>Flow Rate From Beverage Dispenser Lab</code></a>. Play around with the simulation to see how it works. Then, make a quantitative study of the rate of fluid flow. Plot the flow rate (in <span class="math inline">\(\mathsf{L/s}\)</span>) as a function of the following parameters (at least three data points for each plot) and draw some conclusions.</p>
+<ul>
+<li>density</li>
+<li>fluid height</li>
+<li>faucet radius</li>
+</ul>
+<p>The beaker has an area of <span class="math inline">\(100\,\mathsf{cm^2}\)</span>, so when the fluid height reaches a height of <span class="math inline">\(1\,\mathsf{m}\)</span>, then <span class="math inline">\(10\,\mathsf{L}\)</span> have flowed out of the container.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
