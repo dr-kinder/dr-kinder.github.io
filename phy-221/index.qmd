@@ -21,7 +21,7 @@ By the end of this course, you should be able to:
 - **Do experiments like a scientist.** Keep a record, make careful observations, collect and
   analyze data, design experiments to test hypotheses, and communicate your findings clearly.
 - **Solve problems.** Apply Polya's problem-solving heuristic. Think critically. Communicate
-  sollutions clearly.
+  solutions clearly.
 
 ## Format
 
