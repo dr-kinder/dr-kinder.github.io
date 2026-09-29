@@ -70,34 +70,34 @@ you on OneDrive. This is where your case for a grade comes from, so keep it curr
 
 | Week | Date | Lab | Reading | Problems |
 | ---- | ---- | --- | ------- | -------- |
-| 1    |      | Measurement and Uncertainty | | **1.M6, 1.R3** |
+| 1    |      | [Measurement and Uncertainty](../labs/01-uncertainty.qmd) | | **1.M6, 1.R3** |
 | | 9/30 | | — | — |
 | | 10/2 | | C1 | _T1,T3,B1,B5,B6_ |
-| 2 | | Visualizing Motion | | |
+| 2 | | [Visualizing Motion](../labs/02-motion.qmd) | | |
 | | 10/5 | | C2 | |
 | | 10/7 | | C3 | |
 | | 10/9 | | C4 | |
-| 3 | | Collisions | | |
+| 3 | | [Collisions](../labs/07-collisions.qmd) | | |
 | | 10/12 | | C5 | |
 | | 10/14 | | C6 | |
 | | 10/16 | | C7 | |
-| 4 | | Work and Energy | | |
+| 4 | | [Work and Energy](../labs/10-work-and-energy.qmd) | | |
 | | 10/19 | | C8 | |
 | | 10/21 | | C9 | |
 | | 10/23 | | C10 | |
-| 5 | | Rotation | | |
+| 5 | | [Rotation](../labs/08-rotation.qmd) | | |
 | | 10/26 | | C11 | |
 | | 10/28 | | C12 | |
 | | 10/30 | | C13 | |
-| 6 | | Simple Machines | | |
+| 6 | | [Simple Machines](../labs/09-simple-machines.qmd) | | |
 | | 11/2 | | C14 | |
 | | 11/4 | | N1 | |
 | | 11/6 | | N2 | |
-| 7 | | Newton's Second Law | | |
+| 7 | | [Newton's Second Law](../labs/05-newtons-second.qmd) | | |
 | | 11/9 | | N3 | |
 | | 11/11 | | — (no class) | |
 | | 11/13 | | N4 | |
-| 8 | | Friction | | |
+| 8 | | [Friction](../labs/06-friction.qmd) | | |
 | | 11/16 | | N5 | |
 | | 11/18 | | N6 | |
 | | 11/20 | | N7 | |
@@ -105,11 +105,11 @@ you on OneDrive. This is where your case for a grade comes from, so keep it curr
 | | 11/23 | | — | |
 | | 11/25 | | — (no class) | |
 | | 11/27 | | — (no class) | |
-| 10 | | Projectile | | |
+| 10 | | [Projectile](../labs/04-projectile.qmd) | | |
 | | 11/30 | | N8 | |
 | | 12/2 | | N9 | |
 | | 12/4 | | N10 | |
-| 11 | | Gravity | | |
+| 11 | | [Gravity](../labs/03-gravity.qmd) | | |
 | | 12/7 | | N11 | |
 | | 12/9 | | N12 | |
 | | 12/11 | | — (flex) | |
@@ -119,6 +119,8 @@ Attempt the _italicized_ problems BEFORE we discuss the chapter in class.
 The **bold** problems are to be done AFTER we discuss the chapter in class. Solutions will be
 made available for self-assessment and corrections. (You can substitute a different problem of
 the same category from the same chapter and request a solution.)
+
+[Introductory Physics Labs](../labs/index.qmd)
 
 ## Academic Integrity
 
