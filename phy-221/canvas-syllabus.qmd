@@ -1,6 +1,8 @@
 ---
 title: "PHY 221 — Classical Mechanics"
-format: pdf
+format:
+  pdf:
+    geometry: margin=0.75in
 ---
 
 Fall 2026 · CEET 234A · MWF
@@ -67,6 +69,10 @@ Aside from your lab notebook, everything you do for this class — problem solvi
 lab memos, data and analysis, grade reflections — goes in your portfolio, a folder shared with
 you on OneDrive. This is where your case for a grade comes from, so keep it current.
 
+```{=latex}
+\newpage
+```
+
 ## Schedule
 
 | Week | Date | Lab | Reading |
@@ -115,7 +121,13 @@ you on OneDrive. This is where your case for a grade comes from, so keep it curr
 | | 12/9 | | N12 |
 | | 12/11 | | — (flex) |
 
+: {tbl-colwidths="[8,14,50,28]"}
+
 [Introductory Physics Labs](https://dr-kinder.github.io/labs/index.html)
+
+```{=latex}
+\newpage
+```
 
 ## Academic Integrity
 
