@@ -10,7 +10,7 @@ Fall 2026 · CEET 234A · MWF
 **Text:** *Six Ideas That Shaped Physics*, Thomas A. Moore — Units C (Conservation Laws) and N
 (Newton's Laws), 4th edition (3rd edition is fine).
 
-Grades, assignments, and quizzes live on Canvas.  Everything else is here.
+Grades, assignments, and quizzes live on Canvas. Everything else is here.
 
 ## Learning Objectives
 
@@ -117,8 +117,8 @@ you on OneDrive. This is where your case for a grade comes from, so keep it curr
 Attempt the _italicized_ problems BEFORE we discuss the chapter in class.
 
 The **bold** problems are to be done AFTER we discuss the chapter in class. Solutions will be
-made available for these, for self-assessment and corrections. (You can substitute a different
-problem of the same category from the same chapter and request a solution.)
+made available for self-assessment and corrections. (You can substitute a different problem of
+the same category from the same chapter and request a solution.)
 
 ## Academic Integrity
 

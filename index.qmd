@@ -9,6 +9,7 @@ Klamath Falls, OR — SE214
 
 - [PHY 221 — Classical Mechanics](phy-221/index.qmd)
 - [Modern Physics](modern-physics/index.qmd)
+- [Introductory Physics Labs](labs/index.qmd)
 
 ## Background
 
