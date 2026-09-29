@@ -150,7 +150,7 @@ energy. The following table may be a useful way to organize the calculations.
 - Based on your calculations, is momentum conserved in this simulation?
 - Based on your calculations, is this a simulation of an elastic or an inelastic collision?
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

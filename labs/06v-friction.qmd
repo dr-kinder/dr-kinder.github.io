@@ -132,7 +132,7 @@ Acceleration vs. Time.
   semilog, and log-log plots, and try to determine the mathematical relationship between
   velocity and radius.
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

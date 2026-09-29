@@ -123,7 +123,7 @@ predictions.**
 Summarize any trends or patterns you observe in your memo.
 Compare your measurements with the predictions of Newton's Second Law.
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

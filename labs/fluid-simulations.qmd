@@ -125,7 +125,7 @@ Be sure to discuss any differences between your predictions and your observation
 
 For theoretical background on this simulation, see Sections 14.5–6 of [`OpenStax — Volume 1`][OpenStax].
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

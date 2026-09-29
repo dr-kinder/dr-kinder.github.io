@@ -122,7 +122,7 @@ on a graph to copy it to the clipboard, and then paste it into another document.
 successfully reproduced a graph, compare your prediction with how you actually matched the
 graph. Discuss any surprises or challenges in your notes or in your memo.
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

@@ -163,7 +163,7 @@ Trial | Mass 1 [`kg`] | Distance 1 [`m`] | Mass 2 [`kg`] | Distance 2 [`m`]
 **Reflect.**
 Can you explain your findings? In your memo, discuss useful applications for a balance.
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

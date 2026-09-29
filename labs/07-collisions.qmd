@@ -144,7 +144,7 @@ cart, not just the speed. This will determine the sign of the momentum. A sketch
 | $V_{B1}$ | final velocity of Cart A |
 | $V_{B2}$ | final velocity of Cart B |
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

@@ -141,7 +141,7 @@ Question to ponder:
 - What limits the precision of the value of $g$ with this method?
 - If you had more time and resources, how would you set up an even better experiment?
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials

@@ -126,7 +126,7 @@ simulation. Play with the simulation to see how it works.
   mean $\bar{x}$ for this trial.
 - What trends, similarities, and differences you observe in these three sets of measurements?
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You need to **keep a record of your work**

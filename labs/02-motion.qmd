@@ -71,17 +71,32 @@ Once you are familiar with the detector and the software, move on to the next ph
 In the second phase of this investigation, you will predict the motion that corresponds to a
 given graph, then test your hypotheses.
 
-The `Physics with Vernier` folder in LoggerPro contains several files with titles like `01a
-Graph Matching`. Each file contains a motion graph. When you collect data, the motion recorded
-by the detector will be plotted on the same graph. Your notes should include at least 5 graphs:
+Below are five target graphs — three of position, two of velocity. Notice what's missing: no
+units, no tick marks, no numbers. Your goal is to reproduce the **shape** of each graph, not
+land on a specific sequence of positions or velocities. That's deliberate, and worth sitting
+with: we're starting to talk about reference frames and vectors in class, and position and
+velocity are only ever defined relative to some choice of origin, direction, and scale — none of
+which the graph itself pins down for you.
 
-- Match at least 2 **position** graphs.
-- Match at least 2 **velocity** graphs.
-- Create a **position graph** that is an inverted parabola.
+Match all five:
 
-*(If you can't access the Logger Pro files, ask in class for the offline graph-matching
-handout — not included on this page, since the graphs themselves come from Vernier's "Physics
-with Vernier" curriculum.)*
+![Position 1](assets/motion-graphs/position-1.png){width=60%}
+
+![Position 2](assets/motion-graphs/position-2.png){width=60%}
+
+![Position 3 — an inverted parabola](assets/motion-graphs/position-3.png){width=60%}
+
+![Velocity 1](assets/motion-graphs/velocity-1.png){width=60%}
+
+![Velocity 2](assets/motion-graphs/velocity-2.png){width=60%}
+
+For each graph, first look at the plot and discuss how you should move so that your motion
+matches it. Record your prediction. Then make your best effort to reproduce the graph with your
+own motion, recording with the motion detector as you go. Strive for accuracy — but not
+perfection. Once you're done, put your recorded graph next to the target and compare them
+directly (LoggerPro doesn't have the target built in the way the Vernier files did, so this is a
+side-by-side comparison rather than a live overlay). Sketch your result, export the graph, or
+take a screenshot for your notes.
 
 For each graph that you attempt to match, first look at the plot and discuss how you should move
 so that the plot of your motion matches the graph. Record your prediction. Then, make your best
@@ -106,7 +121,7 @@ Record your data using the motion detector and make a sketch of the actual motio
 your prediction. Compare your predictions with your findings. Discuss any surprises or
 challenges in your notes or in your memo.
 
-## Above and Beyond
+## Further Exploration
 
 The following activities are not required. If you have the time and the inclination, you may
 carry out these investigations for extra credit. You are also free to use any of the materials
