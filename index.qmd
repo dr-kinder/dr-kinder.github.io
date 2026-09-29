@@ -1,0 +1,31 @@
+---
+title: "Jesse Kinder"
+---
+
+Professor of Physics, Oregon Institute of Technology
+Klamath Falls, OR — SE214
+
+## Courses
+
+- [PHY 221 — Classical Mechanics](phy-221/index.qmd)
+- [Modern Physics](modern-physics/index.qmd)
+
+## Background
+
+I am a computational and theoretical physicist who loves to teach. I enjoy working with
+students on research projects and bringing contemporary physics research into the classroom.
+
+- Ph.D., Physics and Astronomy, University of Pennsylvania
+- M.S., Physics and Astronomy, University of Pennsylvania
+- B.A., Physics and Astronomy, DePauw University
+
+## Research
+
+Nanotechnology, quantum chemistry, biological physics, epidemic models, radio astronomy,
+gravitational lensing, and quantum computing. My doctoral work modified the electronic and
+optical properties of carbon nanotubes using electromagnetic fields.
+
+## Contact
+
+Grades, assignments, and office hours for enrolled students are in Canvas. Everyone else can
+reach me through the [OIT directory](https://www.oit.edu/directory/jesse-kinder).

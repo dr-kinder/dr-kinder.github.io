@@ -1,0 +1,10 @@
+---
+title: "PHY 221 — Classical Mechanics"
+---
+
+Studio-format course combining lecture and lab. Textbook: *Six Ideas That Shaped Physics*,
+Units C (Conservation Laws) and N (Newton's Laws).
+
+_This page is a placeholder — course content is still being migrated here._
+
+Grades, assignments, and quizzes are managed in Canvas.

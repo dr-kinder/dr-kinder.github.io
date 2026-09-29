@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "Jesse Kinder"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: phy-221/index.qmd
+        text: PHY 221
+      - href: modern-physics/index.qmd
+        text: Modern Physics
+  page-footer:
+    left: "Oregon Institute of Technology"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme: cosmo
+    toc: false
