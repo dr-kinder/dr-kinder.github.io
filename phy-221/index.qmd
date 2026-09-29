@@ -4,9 +4,9 @@ title: "PHY 221 — Classical Mechanics"
 
 Fall 2026 · CEET 234A · MWF
 
-**Instructor:** Jesse Kinder, Professor of Physics
-**Office:** SE 214, or SE 204 (open study/group-work space)
-**Office hours:** Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m.
+**Instructor:** Jesse Kinder, Professor of Physics\
+**Office:** SE 214, or SE 204 (open study/group-work space)\
+**Office hours:** Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m.\
 **Text:** *Six Ideas That Shaped Physics*, Thomas A. Moore — Units C (Conservation Laws) and N
 (Newton's Laws), 4th edition (3rd edition is fine).
 
