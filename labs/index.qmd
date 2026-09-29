@@ -29,6 +29,4 @@ days you can't be in the room or want more practice on your own.
 9. [Simple Machines](09-simple-machines.qmd)
     - [Simple Machines Simulations](09v-simple-machines.qmd)
 10. [Work and Energy](10-work-and-energy.qmd)
-
-Also: [Fluid Simulations](fluid-simulations.qmd), a standalone lab not tied to the numbered
-sequence above.
+11. [Fluid Simulations](fluid-simulations.qmd)
