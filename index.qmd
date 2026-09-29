@@ -21,9 +21,10 @@ students on research projects and bringing contemporary physics research into th
 
 ## Research
 
-Nanotechnology, quantum chemistry, biological physics, epidemic models, radio astronomy,
-gravitational lensing, and quantum computing. My doctoral work modified the electronic and
-optical properties of carbon nanotubes using electromagnetic fields.
+Nanotechnology, quantum chemistry, biological physics, epidemic models, radio
+astronomy, gravitational lensing, and quantum computing. My doctoral work
+focused on modifying the electronic and optical properties of carbon nanotubes
+using electromagnetic fields.
 
 ## Contact
 

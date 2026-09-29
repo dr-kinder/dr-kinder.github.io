@@ -10,6 +10,17 @@ Fall 2026 · CEET 234A · MWF
 **Text:** *Six Ideas That Shaped Physics*, Thomas A. Moore — Units C (Conservation Laws) and N
 (Newton's Laws), 4th edition (3rd edition is fine).
 
+## Learning Objectives
+
+By the end of this course, you should be able to:
+
+- **Think like a physicist.** Apply the fundamental principles of classical mechanics to explain,
+  analyze, and predict real-world phenomena.
+- **Do experiments like a scientist.** Keep a record, collect and analyze data, and design
+  experiments to test hypotheses.
+- **Solve problems.** Apply Polya's problem-solving heuristic. Think critically. Communicate
+  clearly.
+
 ## Format
 
 This is a studio course: lecture and lab are one class, not two. Physics education research is
