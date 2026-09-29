@@ -2,4 +2,164 @@
 title: "Simple Machines"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Investigate levers, ramps, and pulleys.
+- Measure the mechanical advantage of simple machines.
+- Apply the principles of static equilibrium.
+
+Simple machines are devices that change the direction or magnitude of an applied force.
+Renaissance scholars identified six such machines. We will explore three today: the pulley, the
+ramp, and the lever.[^Note1] Unlike early Renaissance scholars, we have classical mechanics to
+aid us! We will analyze these devices using forces, work, and energy.
+
+This lab consists of three major parts
+
+1. Investigate a simple pulley system.
+1. Investigate an inclined plane.
+1. Investigate three different classes of levers.
+
+You will have your choice among several methods today. **Keep detailed notes.** Record your
+setup, procedure, data, and observations in your lab notebook. Data will include tables and
+plots. In your memo, summarize your findings and discuss any conclusions you draw from your data.
+
+## Mechanical Advantage
+
+A simple machine is a device for redirecting or multiplying a ___force.___ We often think of
+such machines in terms of the **applied force** and the **load.** The applied force is the force
+you put into the machine. The load is the force the machine applies to something else. In this
+lab, it will be the weight you lift.
+
+The **mechanical advantage** of a machine is the ratio of the load to the applied force:
+
+```
+                           load
+mechanical advantage = -------------
+                       applied force
+```
+
+For example, if you apply a force of $\SI{100}{lbs}$ and you are able to lift a load of
+$\SI{200}{lbs}$, the system has a mechanical advantage of 2: It doubles your applied force. In
+principle, the mechanical advantage is a constant for a particular machine. Thus, if we measure
+and plot the load as a function of applied force, the mechanical advantage will be the slope of
+this line.
+
+Note, however, that conservation of energy implies that the ___work___ done by each force be
+equal in magnitude. When a system is in equilibrium, the net work for any small displacement of
+the system must be zero. This is known as the **principle of virtual work.**
+
+There are at least three ways to measure forces in this lab. One approach is to use the weight of
+a known mass. If you hang a $\SI{100}{g}$ mass from a pulley, the applied force will be equal to
+the weight: $\SI{0.980}{N}$. A second approach is to use a spring scale. A third option is a
+strain gauge force sensor that connects to the LabQuest interface. You can record and read out
+force data on LoggerPro.
+
+You may use any of these methods. Be sure to investigate the equipment before you start
+collecting data. You should understand the proper use and limitations of any equipment you use.
+
+## Pulley
+
+In a pulley system, a mass hangs on one side of the pulley (the load) and you apply a force by
+pulling on a string on the other side of the pulley (the applied force). The mechanical advantage
+of a pulley is the ratio of the load to the applied force.
+
+**Predict.**
+Consider the following questions before you make any measurements.
+
+- Will the mechanical advantage depend on the angle at which you apply the force?
+- Will the mechanical advantage depend on the size of the pulley wheel?
+- What do you think the mechanical advantage of your pulley will be?
+
+**Measure.**
+
+- Measure the applied force for a fixed load at three different angles.
+- Measure the applied force for three different loads at a fixed angle.
+
+**Reflect.**
+Were your predictions correct? Can you explain your findings? In your memo, discuss useful
+applications for a simple pulley, in light of your measurements.
+
+## Inclined Plane
+
+An inclined plane can be used to raise a weight gradually instead of lifting it directly. We can
+use a pulley to apply a force to a string (applied force) and pull a cart (load) up the ramp.
+
+**Predict.**
+Consider the following questions before you make any measurements.
+
+- How will the angle of the ramp affect its mechanical advantage?
+- How can you lift the largest weight using the smallest force with a ramp?
+
+**Measure.**
+
+- Measure the applied force for three different loads at two different angles (6 trials total).
+
+**Analyze.**
+
+- Plot load vs. applied force. Compute the slope or calculate the mechanical advantage directly
+  for each angle you investigated.
+
+**Reflect.**
+Were your predictions correct? Can you explain your findings? In your memo, discuss useful
+applications for an inclined plane, in light of your measurements.
+
+## Lever
+
+A lever uses a beam and a fulcrum (a pivot point) to multiply an applied force. It may also
+redirect the applied force. A **Class 1** lever places the load and applied force on opposite
+sides of the fulcrum — like a teeter-totter or a balance. A **Class 2** lever places the load and
+applied force are on the same side of the fulcrum, with the load closer to the fulcrum — like a
+crowbar. A **Class 3** lever places the load and applied force are on the same side of the
+fulcrum, with the applied force closer to the fulcrum — like a bicep or a fishing pole.
+
+**Predict.**
+Consider the following questions before you make any measurements.
+
+- Do you think one kind of lever can generate a larger mechanical advantage than the others?
+- Can you balance a $\SI{1}{kg}$ mass with a $\SI{100}{g}$ mass using a lever?
+
+**Measure.**
+Experiment with all three types of lever.
+
+1. **Class 1 Lever:** Suspend a meter stick from a post. Use two additional meter stick hangers
+   to investigate the relation between load, applied force, and distance from the fulcrum.
+
+1. **Class 2 Lever:** Anchor one end of a meter stick so that it can pivot freely. Use two meter
+   stick hangers to investigate the relation between load, applied force, and distance from the
+   fulcrum.
+
+1. **Class 3 Lever:** Anchor one end of a meter stick so that it can pivot freely. Use two meter
+   stick hangers to investigate the relation between load, applied force, and distance from the
+   fulcrum.
+
+**Analyze.**
+Use your data for at least one equilibrium configuration of each lever to ...
+
+- Compute the mechanical advantage.
+- Compute $\textsf{force} \times \textsf{distance}$.
+
+**Reflect.**
+Can you explain your findings? In your memo, discuss useful applications for the three different
+classes of levers, in light of your measurements.
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Complex Machine:**
+Combine three or more simple machines into a single complex machine. Take a photo. Make
+measurements of the load and applied force.
+
+**Lever Investigation:**
+Suspend a meter stick from a post. Use additional meter stick hangers to investigate the relation
+between mass and distance from the fulcrum for three or more masses hanging in equilibrium.
+
+**Theoretical Analysis:**
+Apply the conditions for static equilibrium to your data for each of the levers you investigated.
+For the loads you studied, how does the applied force you measured compare with the theoretical
+prediction? Don't neglect the mass of the meter stick and the meter stick hangers!
+
+[^Note1]: The other three are the wheel and axle, the wedge, and the screw.

@@ -2,4 +2,176 @@
 title: "Collisions"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Observe interactions in collisions.
+- Investigate conservation of momentum and energy in collisions.
+
+One-dimensional collisions are an excellent topic for study in an introductory physics course.
+The analysis is straightforward (but not necessarily simple!) and apparatus like our motion carts
+permit an experimental test of important principles like conservation of energy and momentum.
+
+In this lab, you and your group will explore collisions in one dimension. The lab consists of two
+parts.
+
+1. Observe collisions. Make predictions and qualitative observations of collisions.
+1. Investigate collisions. Take data for both elastic and inelastic collisions.
+
+Record your setup, procedure, data, and observations in your lab notes. **Keep detailed notes.**
+Data for this lab will include tables and plots. In your memo, summarize your findings and
+describe any conclusions you draw from them.
+
+## Observe Collisions
+
+Later in this lab, we will try to make precise measurements of collisions. In this first portion
+of the lab, we will focus on qualitative observations. Using motion carts, investigate the
+following collisions. For each, follow the three-step process:
+
+- **Predict.** What do you expect to happen?
+- **Observe.** What actually happened? Does the same thing happen every time?
+- **Analyze.** Resolve any conflicts between your predictions and observations.
+
+Discuss any surprises or easy predictions in your memo. Try to draw some general conclusions
+about the patterns you observe, too.
+
+### Elastic Collisions
+
+For the following, use magnets or springs so that carts will collide and bounce off of each
+other.
+
+1. **Equal Masses, One Stationary.** One cart moves to the right. The other is at rest.
+1. **Equal Masses, Head On.** One cart moves to the right. The other moves to the left.
+1. **Equal Masses, Same Direction.** One cart moves quickly. The other moves slowly.
+1. **Different Masses, One Stationary.** A large cart moves to the right. A small cart is at
+   rest.
+1. **Different Masses, One Stationary, Again.** A small cart moves to the right. A large cart is
+   at rest.
+1. **Different Masses, Head On.** A large cart moves to the right. A small cart moves to the
+   left.
+1. **Different Masses, Same Direction.** A large cart moves quickly. A small cart moves slowly.
+1. **Different Masses, Same Direction, Again.** A small cart moves quickly. A large cart moves
+   slowly.
+
+### Inelastic Collisions
+
+For the following, use velcro so that the carts will collide and stick together.
+
+1. **Equal Masses, Head On, Same Speed.** One cart moves right. The other moves left at the same
+   speed.
+1. **Different Masses, Head On.** A large cart moves right. A small cart moves left.
+1. **Different Masses, One Stationary.** A large cart moves right. A small cart is at rest.
+1. **Different Masses, One Stationary, Again.** A small cart moves right. A large cart is at
+   rest.
+1. **Different Masses, Same Direction.** A large cart moves quickly. A small cart moves slowly.
+1. **Different Masses, Same Direction, Again.** A small cart moves quickly. A large cart moves
+   slowly.
+
+## Study the Equipment
+
+Take some time to familiarize yourself with the equipment. We will be using the Vernier motion
+carts. You can use a pair of motion sensors, or the carts with internal sensors. Keep a record of
+your investigation in your notes.
+
+Set up a pair of motion detectors (one for each cart) or link a pair of Bluetooth carts to the
+[`Graphical Analysis`][GraphicalAnalysis] software. Investigate the cart, track, and launching
+mechanism.
+
+- Can you plot the position of both carts on the same axes? Velocity?
+- Figure a method to securely add mass to the carts.
+
+Once you are able to track both carts, investigate the following questions. Take data. Answer
+each question with a measurement or experimental observation.
+
+- Does a cart at rest remain at rest? Try to eliminate any drift.
+- How significant are friction and drag forces? I.e., how much does a cart slow down?
+- What percent of its speed does a cart lose over $\SI{50}{cm}$?
+
+## Collisions
+
+In an **elastic collision,** two objects collide and rebound. In an **inelastic collision,** they
+collide and stick together.
+
+**Conservation of Momentum** — In any collision, Newton's Second and Third Laws imply that total
+momentum should be conserved. The momentum of a single particle is $\vec{p} = m\vec{v}$. If
+momentum is conserved, then we expect the **total momentum** to be constant in a collision. In
+particular, the momentum before and after a collision between two gliders ($A$ and $B$) should be
+the same:
+$$\vec{P}_{\tt total} = M_{A} \vec{V}_{A1} + M_{B} \vec{V}_{B1} = M_{A} \vec{V}_{A2} + M_{B} \vec{V}_{B2}$$
+Note that momentum is a vector, so **direction is important.**
+
+**Kinetic Energy** — The kinetic energy of a particle is $E = \frac{1}{2} mv^2$. In a perfect
+elastic collision, the total kinetic energy is conserved. In an inelastic collision, some kinetic
+energy is converted to other forms — most often, heat.
+
+In this final portion of the lab, the goal is to experimentally determine the degree to which
+momentum and kinetic energy are conserved. You should collect data for **two elastic collisions**
+and **two inelastic collisions.** Record the mass of the gliders or carts involved in each
+collision, and take determine the initial and final velocities of each cart or glider.
+
+1. **Elastic Collisions** — Use magnets or springs to study elastic collisions. Collect data for
+   at least one collision with equal masses and one collision for unequal masses.
+
+2. **Inelastic Collisions** — Use velcro to study elastic collisions. Collect data for at least
+   one collision with equal masses and one collision for unequal masses.
+
+- Do your data support the claim that total momentum is conserved?
+- Are any of the collisions you observed elastic?
+- What fraction of kinetic energy is lost in each collision?
+
+### Organizing Data
+
+Organizing data for this portion of the lab can be challenging. The following tables may be
+useful guides.
+
+The raw data for this experiment consists of masses and velocities. The following table will
+contain all of the data you need. Be sure to record the **initial and final directions** of each
+cart, not just the speed. This will determine the sign of the momentum. A sketch of "Before" and
+"After" is a great way to record this information.
+
+| Trial       | $M_A$ [$\si{kg}$] | $M_B$ [$\si{kg}$] | $V_{A1}$ [$\si{m/s}$] | $V_{A2}$ [$\si{m/s}$] | $V_{B1}$ [$\si{m/s}$] | $V_{B2}$ [$\si{m/s}$] |
+| ---         | ---             | ---             | ---                 | ---                 | ---                 | ---                 |
+| Elastic 1   |                 |                 |                     |                     |                     |                     |
+| Elastic 2   |                 |                 |                     |                     |                     |                     |
+| Inelastic 1 |                 |                 |                     |                     |                     |                     |
+| Inelastic 2 |                 |                 |                     |                     |                     |                     |
+
+| Variable | Meaning |
+| ---      | ---     |
+| $M_A$    | mass of Cart A |
+| $M_B$    | mass of Cart B |
+| $V_{A1}$ | initial velocity of Cart A |
+| $V_{A2}$ | initial velocity of Cart B |
+| $V_{B1}$ | final velocity of Cart A |
+| $V_{B2}$ | final velocity of Cart B |
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Elasticity:** A common measure of elasticity in collisions is the **coefficient of
+restitution** or COR:
+$$e = \left|\dfrac{V_{A2} - V_{B2}}{V_{A1} - V_{B1}}\right|$$
+where $V_{A1}$ and $V_{B1}$ are the incoming velocities and $V_{A2}$ and $V_{B2}$ are the outgoing
+velocities of two objects of equal mass. $e=1$ for a perfectly elastic collision and $e=0$ for a
+perfectly inelastic collision.
+
+Compute the coefficient of restitution for each of the collisions you studied in Part 3. How
+does your elastic collision compare with the theoretical limit of $e=1$?
+
+**Friction:** Accurately measure the friction and drag forces by studying the motion of carts as
+they move along the track. Study the dependence of these forces on speed. Try to determine the
+nature of these forces using your data.
+
+I.e., do you see a constant force? A force that grows linearly with speed? A force that grows
+quadratically with speed? Something else?
+
+| Force          | Force Law     |
+| ---            | ---           |
+| friction       | $f = -\mu N$  |
+| viscous drag   | $f = -bv$     |
+| air resistance | $f = -cv^2$   |
+
+[GraphicalAnalysis]: https://www.vernier.com/product/graphical-analysis-4/

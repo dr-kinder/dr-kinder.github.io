@@ -2,4 +2,166 @@
 title: "Friction Simulations"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Determine the coefficients of friction.
+- Investigate drag forces in fluids.
+
+Friction is a ubiquitous phenomenon in the real world, but it is frequently ignored in
+introductory physics courses. Today, we will examine some of the effects of friction.
+
+This lab consists of three major parts
+
+1. Measure the coefficients of static and kinetic friction.
+1. Measure the critical angle of an object on an inclined plane.
+1. Investigate drag forces in fluids.
+
+You will investigate three different simulations today. **Keep detailed notes.** Record your
+setup, procedure, data, and observations in your lab notes. Data will include tables and plots.
+In your memo, summarize your findings and discuss any conclusions you draw from your data.
+
+## Static and Kinetic Friction
+
+Despite the complex interactions that give rise to friction, the force obeys a simple law:
+$$f = \mu N.$$
+The force due to friction is directly proportional to the normal force acting on an object. The
+constant of proportionality, $\mu$, is called the **coefficient of friction.** If an object is
+stationary, the constant is called the **coefficient of static friction,** and the formula gives
+the maximum force that can be applied before the object starts slipping. If the object is
+sliding along, it is called the **coefficient of kinetic friction.** Typically, the coefficient
+of kinetic friction is less than the coefficient of static friction: it is harder to get
+something moving than it is to keep it going.
+
+Open the [`Friction Lab`][FrictionForce] from [`Physics Aviary`][PhysicsAviary]. This simulation
+provides a force sensor to investigate friction for different blocks and surfaces. The
+simulation will gradually increase the force you are pulling with until the block starts to
+slide, then pull the block with constant velocity. Play with the simulation to see how it works.
+
+**Predict.** Before you start making measurements, consider the following questions.
+
+- How can you use the graph of Force vs. Time to determine the coefficients of friction?
+- What will happen to the force required to move the block if you increase its mass?
+- What will happen to coefficients of friction if you increase the mass of the block?
+
+**Measure.**
+
+- Determine the coefficients of static friction and kinetic friction for 3 different interfaces.
+- Investigate the dependence of the forces and coefficients on the mass of the block and
+  orientation of the block. Pick one pair of surfaces and measure the coefficients for 3
+  different masses: $\SI{100}{g}$, $\SI{2000}{g}$, and one intermediate value of your choice.
+
+**Analyze.** Summarize your results and discuss your findings in your lab memo.
+
+## Critical Angle
+
+Direct measurements with a spring scale or force sensor provide one way to measure the
+coefficient of friction. A simple alternative is the following.
+
+1. Place an object on a board.
+2. Tilt the board until the object starts to slide down.
+3. Use Newton's Second Law and trig to calculate the coefficient of friction.
+
+The maximum angle $\theta$ to which you can tilt the ramp before the object starts sliding down
+is called the **critical angle.**
+
+We can investigate this relationship with the [`Forces on an Incline`][FrictionRamp] simulation
+from [`Physics Aviary`][PhysicsAviary]. Play with the simulation to see how it works.
+
+**Predict.** Discuss the following questions before you begin.
+
+- What effect will increasing the coefficient of friction have on the critical angle?
+- What effect will increasing the mass of the block have on the critical angle?
+
+**Measure.**
+
+- Hold the mass constant and measure the critical angle for at least 5 different coefficients of
+  friction.
+- Hold coefficients of friction constant and measure the critical angle for at least 3 different
+  masses.
+
+**Analyze.** Summarize your results and discuss your findings in your lab memo.
+
+- There is a relation between the critical angle and the coefficient of friction. Make 4 plots
+  and try to determine this relationship:
+    1. $\theta$ vs. $\mu$
+    2. $\cos \theta$ vs. $\mu$
+    3. $\sin \theta$ vs. $\mu$
+    4. $\tan \theta$ vs. $\mu$
+- What trends do you notice in the relationship between critical angle and mass?
+
+## Drag Forces
+
+In the last portion of today's lab, we will investigate the drag forces in fluids.
+
+Open up the [`Ball in Viscous Fluid`][FluidDrag] simulation from [`Andrew Duffy`][AndrewDuffy].
+This simulation gives you control over the properties of a ball bearing and the fluid it is
+dropped in, and allows you to view its position, velocity, and acceleration graphs. Play around
+with the simulation to see how it works.
+
+**Predict.** Before you make any measurements, consider the following questions.
+
+- If you drop a ball bearing in air, what will its position, velocity, and acceleration graphs
+  look like?
+- If you drop the same ball bearing in honey, what will its position, velocity, and acceleration
+  graphs look like as a function of time?
+- The simulation gives us control over the ball bearing's density and radius. We can also vary
+  the **viscosity** by choosing different fluids. (Loosely speaking, the viscosity is the
+  "thickness" of the fluid. It is large for honey, intermediate for oil, and small for water.)
+  Which factors do you think will affect the motion of the ball bearing the most? How? Why?
+
+**Measure.**
+
+- First make a series of comparisons of steel ball bearings. Our "control" will be a large steel
+  bearing in honey. We will compare it with a small bearing in other fluids.
+
+Trial | Density 1 | Radius 1   | Fluid 1 | Density 2 | Radius 2   | Fluid 2
+----- | --------- | --------   | ------- | --------- | --------   | -------
+1     | Steel     | $\SI{6}{mm}$ | Honey   | Steel     | $\SI{2}{mm}$ | Water
+2     | Steel     | $\SI{6}{mm}$ | Honey   | Steel     | $\SI{2}{mm}$ | Olive Oil
+3     | Steel     | $\SI{6}{mm}$ | Honey   | Steel     | $\SI{2}{mm}$ | Honey
+
+For each trial, look at all three kinematic graphs: Position vs. Time, Velocity vs. Time, and
+Acceleration vs. Time.
+
+- Measure the final velocity as a function of radius for a steel ball bearing in honey. Record
+  the final velocity for five possible radii.
+
+**Analyze.** Summarize your results and discuss your findings in your lab memo.
+
+- Plot the final velocity of a steel bearing in honey as a function of radius using linear,
+  semilog, and log-log plots, and try to determine the mathematical relationship between
+  velocity and radius.
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Further Investigations:** Carry out more or different experiments with any of the simulations
+you used today. Describe your experimental design, your hypothesis, and your results. For
+example, you could make another series of measurements with the fluids simulation: you could
+repeat the radius measurements for a different density in a different fluid (e.g., rubber in
+olive oil), or design your own experiment.
+
+**Theoretical Analysis:** The drag force on a sphere in a viscous fluid is $f = -\zeta v$, where
+$\zeta$ is the drag coefficient. If the ball is falling under the influence of gravity, it will
+eventually reach a **terminal velocity.**
+
+(a) Derive terminal velocity. Your result should depend on the mass of the sphere $M$, the
+    acceleration due to gravity $g$, and the drag coefficient $\zeta$. (You can use dimensional
+    analysis or Newton's Second Law.)
+(b) The drag coefficient for a sphere in a viscous fluid is predicted to be $\zeta = 6 \pi \eta R$,
+    where $\eta$ is the viscosity of the fluid and $R$ is the radius of the sphere. The mass of
+    the sphere will be $M = \frac{4}{3} \pi \rho R^3$, where $\rho$ is the density of the sphere
+    and $R$ is its radius. Use these relationships and your result from (a) to find another
+    expression for the terminal velocity that depends on $R$, $\eta$, $\rho$, $g$.
+(c) How does your result from (b) compare with the plot you made in Part 3?
+
+[PhysicsAviary]: https://www.thephysicsaviary.com/
+[FrictionForce]: http://thephysicsaviary.com/Physics/Programs/Labs/ForceFriction/
+[FrictionRamp]: http://thephysicsaviary.com/Physics/Programs/Labs/ForcesOnInclineLab/
+
+[AndrewDuffy]: http://physics.bu.edu/~duffy/classroom.html
+[FluidDrag]: http://physics.bu.edu/~duffy/HTML5/ball_in_viscous_fluid.html

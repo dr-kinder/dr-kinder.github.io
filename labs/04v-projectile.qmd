@@ -2,4 +2,130 @@
 title: "Projectile Motion with Simulations"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Investigate projectile motion in two dimensions.
+- Hit a target without "practice" shots.
+- Analyze the effects of air resistance.
+
+In this lab, we will explore two-dimensional kinematics, the mathematical analysis of motion in
+two dimensions. Our focus will be the motion of a projectile. We will investigate a launcher, and
+then construct a mathematical model to predict where a projectile will land for a given launch
+angle, speed, and height. Finally, we will investigate how air resistance affects the range of a
+projectile.
+
+There are three stages of this investigation:
+
+1. Investigate the range of a projectile.
+2. Analyze and predict projectile range as a function of launch angle.
+3. Hit a target selected and placed by your instructor.
+
+You can — and should — apply your knowledge of kinematics in this lab.
+
+Record your setup, procedure, data, and observations in your lab notes. **Keep detailed notes.**
+Data for this lab will include data tables and plots. In your memo, summarize your findings and
+describe how you tackled the design and measurement problems of this lab.
+
+## Horizontal Range
+
+When a projectile is fired horizontally, it moves with **constant velocity** in the horizontal
+direction and falls with **constant acceleration** in the vertical direction. In this portion of
+the experiment, we will investigate the range of a projectile as a function of **height** and
+**initial speed.**
+
+Start by opening the [`Projectile Motion`][ProjectileMotion] simulation from [`PhET`][PhETPhysics].
+Use the "Intro" option. This simulation gives you control over several factors that affect the
+range of a projectile. Play with the simulation to learn how it works.
+
+### Range vs. Height
+
+Select an object and set the initial speed between 10 and $\SI{20}{m/s}$. Adjust the launch angle
+to zero (horizontal). Turn off air resistance. Hold these parameters constant as you investigate
+the range of the projectile as a function of launch height.
+
+**Create a table and a plot of range vs. height.** Record the range of the projectile for at
+least 5 different heights that span the range of 2 to $\SI{15}{m}$.
+
+### Range vs. Speed
+
+Select an object and set the initial height between 10 and $\SI{20}{m}$. Adjust the launch angle
+to zero (horizontal). Turn off air resistance. Hold these parameters constant as you investigate
+the range of the projectile as a function of launch speed.
+
+**Create a table and a plot of range vs. speed.** Record the range of the projectile for at least
+5 different speeds that span the range of 0 to $\SI{20}{m/s}$.
+
+### Analysis
+
+Use kinematics to derive a formula for range $D$ as a function of launch height $H$ and launch
+speed $V$ for a horizontal shot. Compare this function with your data.
+
+## Target Practice
+
+It is possible to solve the kinematic equations for distance as a function of launch angle — as
+long as we ignore air resistance. However, in this portion of the lab, we will use
+**interpolation** to predict the range of a projectile given its launch angle. (Interpolation
+means using measured values of a function to predict values between the data points.)
+
+Open the [`Projectile Motion`][ProjectileMotion] simulation from [`PhET`][PhETPhysics]. Use the
+"Lab" option. This simulation gives you fine control over almost every factor that affects the
+range of a projectile. Play around with the new options to learn how they work.
+
+### Collect Your Data
+
+Select an object and set the initial height to $\SI{7}{m}$ and set the initial speed to
+$\SI{17}{m/s}$. Turn off air resistance. Hold these parameters constant as you investigate the
+range of the projectile as a function of launch angle.
+
+**Create a table and a plot of range vs. launch angle.** Record the range of the projectile for
+at least 5 different angles. Make sure the projectile range covers a wide range of distances from
+$\SI{5}{m}$ to $\SI{30}{m}$.
+
+### Use Your Data
+
+Use your data to predict the angle required to hit the following target distances and then
+record the actual range of the projectile.
+
+**Do not use trial and error!** You must explain how you used your data to predict each angle.
+You can use the plot, use linear interpolation, fit a mathematical function to your data, create
+a deep neural network, etc. The point of this exercise is to **use your data to make the
+prediction.** (If you are not sure where to begin, try the Wikipedia page for
+[`Linear Interpolation`](https://en.wikipedia.org/wiki/Linear_interpolation).)
+
+Target Distance [`m`] | Predicted Angle | Actual Distance [`m`] | Optimal Angle
+---                   | ---             | ---                   | ---
+8.4 `m`               |                 |                       |
+18.2 `m`              |                 |                       |
+29.0 `m`              |                 |                       |
+
+After you have made your predictions and measurements — and only after — use trial and error to
+find the optimal launch angle. Discuss agreement or disagreement with your model in your memo.
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Air Resistance:** We have ignored air resistance in our analysis of projectile motion, but it
+can make a big difference. Use either the "Lab" or the "Drag" option of the simulation to explore
+the effects of air resistance.
+
+Set the launch height, launch speed, and launch angle to give you a range of about $\SI{20}{m}$
+for the default projectile. **Make a table and a plot of the range for one of the following
+parameters:** mass, drag coefficient, elevation. Take at least 5 data points that cover the full
+range of allowed values. Discuss the relationship you observe. Is it linear or nonlinear? Can you
+think of a physical reason for the effect — e.g., *why* might the range depend on the elevation?
+You can repeat this analysis for all three factors, for up to 3 bonus points.
+
+**Theoretical Analysis:** Derive the theoretical function that should fit your data from Part 2
+of the experiment. I.e., use kinematics to derive a mathematical formula for distance as a
+function of angle $D(\theta)$ for a given launch height $H$ and speed $V$.
+
+**Video Analysis:** Use slow-motion video and the Tracker software to analyze the motion of a
+real projectile that you set in motion: a free throw, a baseball, any tossed object. Determine
+the launch speed of the projectile and its range.
+
+[PhETPhysics]: https://phet.colorado.edu/en/simulations/category/physics
+[ProjectileMotion]: https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_en.html

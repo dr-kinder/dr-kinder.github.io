@@ -2,8 +2,9 @@
 window.MathJax = {
   tex: {
     macros: {
-      Quantity: ["#1 = #2\\,\\mathrm{#3}", 3],
-      Variable: ["#1 = #2\\,\\mathrm{#3}", 3],
+      unit: ["\\mathtt{#1}", 1],
+      Quantity: ["#1\\ \\mathtt{#2}", 2],
+      Variable: ["#1 = #2\\ \\mathtt{#3}", 3],
       diff: ["\\dfrac{\\mathrm{d}#1}{\\mathrm{d}#2}", 2],
       ddiff: ["\\dfrac{\\mathrm{d}^2#1}{\\mathrm{d}#2^2}", 2],
       pdiff: ["\\dfrac{\\partial#1}{\\partial#2}", 2],

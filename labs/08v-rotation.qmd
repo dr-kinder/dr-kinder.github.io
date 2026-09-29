@@ -2,4 +2,122 @@
 title: "Angular Momentum Simulations"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Investigate the acceleration of objects rolling down a ramp.
+- Calculate the moment of inertia of a pulley.
+
+The mathematical and physical description of rotating objects is fascinating and full of
+surprises. In this lab, you will carry a few experiments to investigate phenomena associated with
+rotation. There are **three experiments:**
+
+1. Moment of Inertia
+1. Rolling Motion
+1. Massive Pulley
+
+Do all three of these experiments. **Keep detailed notes.** Record your setup, procedure, data,
+and observations in your lab notes. Data will include tables and plots. In your memo, summarize
+your findings and discuss any conclusions you draw from your data.
+
+## Rolling Motion
+
+In this portion of the experiment, we will investigate how the acceleration of a rolling object
+depends on its mass, radius, and mass distribution.
+
+Open the [`Disk Rolling Down Incline`][RollingDisk] simulation from [`The Physics
+Aviary`][PhysicsAviary]. Play with the simulation to see how it works.
+
+We will measure the acceleration using either the velocity graphs or the data points generated
+by the simulation. Be sure you understand how to measure the acceleration before you proceed to
+the next step.
+
+When you are ready, proceed to the studies below.
+
+**Measure.** The goal is to determine which factors have the strongest effect on the
+acceleration of the object. There are 3 to investigate: Outer Radius, Inner Radius, and Mass.
+This set of measurements will isolate one variable at a time.
+
+1. **Outer Radius.** First, we will investigate the acceleration of solid disks of different
+   sizes. Set the Inner Radius to $\SI{0}{mm}$, and set the mass to a value of your choice. Leave
+   these parameters fixed. Measure the acceleration for three different values of Outer Radius:
+   $\SI{75}{mm}$, $\SI{120}{mm}$, and one intermediate value of your choice.
+
+1. **Inner Radius.** Next, we will investigate the acceleration of hollow disks of different
+   shapes. Set the Outer Radius to $\SI{100}{mm}$, and set the mass to a value of your choice.
+   Leave these parameters fixed. Measure the acceleration for three different values of Inner
+   Radius: $\SI{50}{mm}$, $\SI{95}{mm}$, and one other value of your choice.
+
+1. **Mass.** Finally, we will investigate the acceleration of hollow disks of different masses.
+   Set the Outer Radius to $\SI{100}{mm}$, and set the Inner Radius to some value of your choice.
+   Leave these parameters fixed. Measure the acceleration for three different values of Mass:
+   $\SI{25}{g}$, $\SI{200}{g}$, and one intermediate value of your choice.
+
+Make more measurements if you are interested. Try to observe how the acceleration depends on the
+size, shape, and mass of the disk.
+
+**Analyze.**
+
+- Based on your measurements, which factor have the strongest influence on the acceleration of a
+  rolling disk? Which have the least effect?
+- How should you design a wheel to have the fastest acceleration?
+
+**Critical Thinking.** Solid rubber tires on cars would never go flat. Discuss the pros and cons
+of solid tires, based on your measurements and other factors, like cost, weight, etc.
+
+## Moment of Inertia
+
+The moment of inertia of an object describes its distribution of mass. It affects how easy or
+difficult it is to make an object rotate, and it is part of the angular momentum of the object.
+For a point particle of mass $m$ distance $r$ from the axis of rotation, the moment of inertia is
+$I = mr^2$. The first simulation today will allow you to explore the effect of changing the mass
+and location of a particle on the rotation of system.
+
+Open the [`Person on a Rotating Platform`][MerryGoRound] simulation from [`oPhysics`][oPhysics].
+This simulation holds the total angular momentum of the system constant as you adjust the size,
+mass, and location of the objects in it. Play with the simulation to see how it works, and then
+carry out the following studies.
+
+**Measure.**
+
+First, make the "Radius of Cylinder" as large as possible and the "Mass of Cylinder" as small as
+possible.
+
+- Set the mass of the person to $\SI{100}{kg}$ and measure the angular velocity at 5 different
+  settings of "Radius of Person's Path": $\SI{0.5}{m}$, $\SI{5.0}{m}$, and 3 intermediate values
+  of your choice.
+
+- Set the radius of the person's path to $\SI{1}{m}$ and measure the angular velocity at 5
+  different settings of "Mass of Person": $\SI{50}{kg}$, $\SI{200}{kg}$, and 3 intermediate values
+  of your choice.
+
+**Analyze.**
+
+- Plot your data for Angular Velocity vs. Radius.
+- Plot your data for Angular Velocity vs. Mass.
+- What relationships do you observe? Try to be as precise as possible — is it a linear
+  relationship? exponential? power law? Use linear, semilog, and log-log plots to back up your
+  conclusion.
+
+## Massive Pulley
+
+The moment of inertia of a pulley affects the rate at which a mass will fall. In this final
+section of the lab, you will design your own set of measurements to investigate this effect.
+
+Use the [`Moment of Inertia of Pulley`][MassivePulley] simulation from [`The Physics
+Aviary`][PhysicsAviary] to investigate the effect of a pulley on a falling mass. Remember: if we
+were to ignore the mass of the pulley, the acceleration of the mass would be $\SI{9.8}{m/s^2}$.
+
+Measure the acceleration of the hanging mass for different masses, sizes, and shapes of pulleys,
+and different hanging masses. Try to determine the how the acceleration depends on the pulley.
+
+This section of the lab is intentionally open-ended. Real research in science and engineering
+almost never comes with instructions! Do your best, and discuss any challenges you encounter in
+your memo.
+
+[PhysicsAviary]: https://www.thephysicsaviary.com/
+[RollingDisk]: http://thephysicsaviary.com/Physics/Programs/Labs/DiskDownIncline/
+[MassivePulley]: http://thephysicsaviary.com/Physics/Programs/Labs/UnwindingCableLab/
+
+[oPhysics]: http://ophysics.com
+[RollingMotion]: http://ophysics.com/r2.html
+[MerryGoRound]: http://ophysics.com/r9.html

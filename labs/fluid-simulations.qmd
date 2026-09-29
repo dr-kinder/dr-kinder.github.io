@@ -2,4 +2,170 @@
 title: "Fluid Simulations"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Investigate the physics of fluids — buoyancy, pressure, and flow rate.
+
+Fluid mechanics is a vast and complex subject, but it is built upon the laws of physics we have
+learned this term. For example, the buoyant force on an object can be derived by applying
+Newton's Second Law, and Bernoulli's Principle is equivalent to the conservation of energy. In
+this lab, we will investigate some of these properties.
+
+The lab consists of three parts.
+
+1. Measure the buoyant force on an object.
+1. Investigate properties fluid columns.
+1. Analyze flowing fluids.
+
+You will investigate three different simulations today. **Keep detailed notes.** Record your
+procedure, data, and observations in your lab notes. Data will include tables and plots. In your
+memo, summarize your findings and discuss any conclusions you draw from your data.
+
+## Buoyant Force
+
+The density of an object is its mass divided by its volume: $\rho = M/V$. Objects that are less
+dense than water will float, and those that are more dense will sink. But what is the nature of
+the buoyant force?
+
+Open the [`Force Buoyancy Lab`][BuoyantForce] simulation from [`The Physics Aviary`][PhysicsAviary].
+This simulation allows you to measure the force on an object as it is lowered into a fluid. Play
+with this simulation to see how it works. The force required to suspend the bottle is plotted
+below the animation.
+
+**Observe.**
+What happens to the force as you lower the bottle into the water?
+
+**Measure.**
+You can vary the mass and volume of the bottle, to adjust its density. Set the volume of the
+bottle to its maximum value of $\SI{600}{mL}$ and set the fluid to "Fresh Water", and then carry
+out the following measurements.
+
+- Construct three bottles with a density greater than $\SI{1.0}{g/cm^3}$, and record the weight
+  of the bottle and the minimum force.
+- Construct three bottles with a density less than $\SI{1.0}{g/cm^3}$, and record the weight of
+  the bottle and the minimum force.
+
+Note that $\SI{1}{mL} = \SI{1}{cm^3}$.
+
+**Analyze.**
+The **buoyant force** on the object is the difference between its dry weight (the maximum force
+reading) and its submerged weight (the minimum force reading). Compute the buoyant force you
+measured for all six objects. Summarize your findings and describe any patterns you notice in
+your memo.
+
+For theoretical background on this simulation, see Section 14.4 of [`OpenStax — Volume 1`][OpenStax].
+
+## Fluid Columns
+
+When applying Newton's laws to solid objects, we focus on the force on an object and the mass of
+an object. When dealing with fluids, we focus on the **pressure** in the fluid and the
+**density** of a fluid instead. The concepts are related: pressure is force per unit area
+($P = F/A$) and density is mass per unit volume ($\rho = M/V$). But the differences lead to some
+interesting effects with fluids.
+
+Open the [`Fluids in U-Tube Lab`][UTube] from [`The Physics Aviary`][PhysicsAviary]. In this
+simulation, we will examine two columns of fluid connected by a tube. It is similar to a balance
+or seesaw, but has fluid on either side instead of solid objects.
+
+**Predict.**
+Before you begin, consider the following questions.
+
+- If you have columns of the _same fluid_ on either side and each column has the _same radius_,
+  will the final heights of the two columns be the same?
+- If you have columns of the _same fluid_ on either side and each column has a _different
+  radius_, will the final heights of the two columns be the same?
+- If you have columns of _different fluids_ on either side and each column has the _same radius_,
+  will the final heights of the two columns be the same?
+- If you have columns of the _different fluids_ on either side and each column has a _different
+  radius_, will the final heights of the two columns be the same?
+- Can you set up the experiment so that the final height of columns of _different fluids_ will be
+  the same?
+
+**Test.**
+Do a series of experiments to test your hypotheses. Keep notes of your setup for each trial and
+your results. Remember that a single test does not confirm a hypothesis, though it may disprove
+it.
+
+**Analyze.**
+Based on your measurements — including any additional measurements you choose to make — what
+factors determine the final heights of the columns of fluid in this experiment?
+
+Be sure to discuss any differences between your predictions and your observations in your memo.
+
+For theoretical background on this simulation, see Section 14.3 of [`OpenStax — Volume 1`][OpenStax].
+
+## Fluid Flow
+
+In this last set of experiments, we will examine properties of a flowing fluid. Open the
+[`Fluid Dynamics Lab`][BernoulliLab] from [`The Physics Aviary`][PhysicsAviary]. This simulation
+allows us to examine how the diameter and pressure in a pipe affect the speed of a flowing fluid.
+
+**Predict.**
+Think about and answer the following questions before you begin taking measurements.
+
+- What will happen to the _speed_ of the fluid on the right as you _increase the pressure_ on the
+  left?
+- What will happen to the _pressure_ in the fluid on the right as you _increase the pressure_ on
+  the left?
+- What will happen to the _speed_ and _pressure_ on the right as you _decrease the radius_ of the
+  pipe on the left?
+- How can you make the _pressure_ on the right as large as possible?
+- How can you make the _speed_ on the right as large as possible?
+
+**Test.**
+Do a series of experiments to test your hypotheses. Keep notes of your setup for each trial and
+your results. Remember that a single test does not confirm a hypothesis, though it may disprove
+it.
+
+**Analyze.**
+Based on your measurements — including any additional measurements you choose to make — what
+factors determine the speed of the fluid in this experiment?
+
+Be sure to discuss any differences between your predictions and your observations in your memo.
+
+For theoretical background on this simulation, see Sections 14.5–6 of [`OpenStax — Volume 1`][OpenStax].
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Density from Buoyancy.**
+Use the [`Force Buoyancy Lab`][BuoyantForce] simulation Part 1 to determine the density of an
+unknown fluid: mercury, gasoline, maple syrup, or crude oil. You can place a lower and upper
+bound on the density of the fluid by seeing what floats and sinks. You can also determine the
+density by measuring the buoyant force on an object. Describe how your method and your results in
+your notes.
+
+**Density from Column Height.**
+According to Pascal's Principle, the pressure at the bottom of a column of fluid height $h$ and
+density $\rho$ is $P = P_{\tt atm} + \rho g h$. The two columns of fluid are in contact with each
+other at the bottom of the tube, and so the pressure must be the same at the bottom. Use the
+_difference_ in the height of two columns of fluid to determine the density of an unknown fluid:
+gasoline, maple syrup, crude oil, ethanol, brine (seawater), or glycerine. (Water is a good fluid
+to compare with: Its density is $\SI{1}{g/cm^3}$, or $\SI{1.00e3}{kg/m^3}$.)
+
+**Flow Rate.**
+What affects the rate of fluid flow? In this experiment you can analyze the rate at which fluid
+flows out of a Gatorade cooler to gain some insight. Open the
+[`Flow Rate From Beverage Dispenser Lab`][FluidFlow]. Play around with the simulation to see how
+it works. Then, make a quantitative study of the rate of fluid flow. Plot the flow rate (in
+$\si{L/s}$) as a function of the following parameters (at least three data points for each plot)
+and draw some conclusions.
+
+- density
+- fluid height
+- faucet radius
+
+The beaker has an area of $\SI{100}{cm^2}$, so when the fluid height reaches a height of
+$\SI{1}{m}$, then $\SI{10}{L}$ have flowed out of the container.
+
+[PhysicsAviary]: https://www.thephysicsaviary.com/
+[BuoyantForce]:  http://www.thephysicsaviary.com/Physics/Programs/Labs/ForceBuoyancy/
+[UTube]:         http://www.thephysicsaviary.com/Physics/Programs/Labs/YouTubeLab/
+[BernoulliLab]:  http://www.thephysicsaviary.com/Physics/Programs/Labs/BernoulliLab/
+[FluidFlow]:     http://www.thephysicsaviary.com/Physics/Programs/Labs/FlowRateFromBeverageDispenserLab/
+
+[OpenStax]:      https://drive.google.com/open?id=1NycFMqe1uLSSEhOhAMqWHVLaIhBOu1A9

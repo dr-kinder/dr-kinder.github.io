@@ -2,4 +2,152 @@
 title: "Rotation and Angular Momentum"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- **Observe and Describe** phenomena associated with rotation and angular momentum.
+
+The mathematical and physical description of rotating objects is fascinating and full of
+surprises. In this lab, you will carry out a variety of experiments to investigate many of the
+phenomena associated with rotation. There are **three experiments:**
+
+1. Rolling Objects
+1. Moment of Inertia
+1. Gyroscope
+
+Do all of these experiments. For each, **observe & describe** the system as accurately as you
+can. The goal this week to to make detailed qualitative observations. Record your observations
+in your notes. Make diagrams and sketches. Try to interpret what you observe using the concepts
+of torque, angular momentum, and moment of inertia when you summarize your findings in this
+week's memo.
+
+## Key Ideas
+
+This section briefly describes the fundamental quantities in rotating systems.
+
+**Angular Momentum:** For a single particle, angular momentum is defined as
+$$\vec{L} = \vec{r} \times \vec{p}$$
+Angular momentum is a *vector* that depends on both the position and momentum of a particle. It
+points in a direction perpendicular to both. To find the direction of the angular momentum
+vector, curl the fingers of your *right hand* in the direction of rotation. Your thumb will point
+in the direction of the angular momentum vector.
+
+**Conservation of Angular Momentum:** Like energy and momentum, angular momentum is a quantity
+that is conserved in all interactions. This concept is the key to understanding many of the
+phenomena in today's lab.
+
+**Moment of Inertia:** For a collection of particles like a wheel or pulley, we describe the
+collective rotational motion with two quantities: the **moment of inertia** $I$ and the **angular
+velocity** $\vec{\omega}$.
+$$\vec{L} = I \vec{\omega}$$
+The angular velocity describes both the direction and speed of rotation. The moment of inertia
+depends on how the mass of an object is distributed about the rotation axis. The moment of
+inertia of a single particle rotating around an axis distance $R$ away is $$I = mR^2.$$ The total
+moment of inertia of an object is the sum of contributions from all of the particles that
+comprise it.
+
+**Torque:** Just as a *force* is required to change the *momentum* of an object, a *torque* is
+required to change the *angular momentum* of an object. Torque is defined as a *moment of force:*
+$$\vec{\tau} = \dfrac{\Delta \vec{L}}{\Delta t}
+\qquad \qquad
+\qquad \qquad
+\vec{\tau} = \vec{r} \times \vec{F}$$
+
+You are not expected to be an expert on these topics, but try to use these concepts in describing
+the phenomena you observe in today's lab.
+
+## Rolling Objects
+
+For this experiment, we will use a ramp and a collection of spherical or cylindrical objects. The
+objects have different masses and mass distributions. Some are hollow and some are solid.
+
+Make a set of observations to determine what factors affect how quickly an object rolls down a
+ramp. Compare pairs of objects side by side and try to answer the following questions. Answer
+them with **experimental observations** — not speculation or theorizing.
+
+- How does the **radius** of an object affect its acceleration down the ramp?
+- How does the **mass** of an object affect its acceleration down the ramp?
+- How does the **shape** of an object affect its acceleration down the ramp?
+- Which factors have the strongest influence on the acceleration?
+
+## Rotating Platform
+
+This set of experiments will allow you to experience torque and angular momentum directly. As
+you work through these activities, **observe and describe** the effects and your sensations. No
+measurements are required. Try instead to explain the phenomena in terms of torque, angular
+momentum, angular velocity, and moment of inertia.
+
+- Step on the platform without causing it to rotate. While you are standing on the platform, try
+  to make yourself rotate. What happens? Why?
+
+### Moment of Inertia
+
+Stand on the rotating platform. Spin yourself or have your partner spin you — slowly at first.
+Raise and lower your arms as you spin.
+
+- What happens to your rotational speed? What quantity are you changing, and why does this
+  affect your motion?
+
+Now grab a pair of $\SI{1}{kg}$ weights — one in each hand. Raise and lower your arms as you are
+spinning.
+
+- What happens to your rotational speed this time? Why does a little extra mass make such a
+  difference?
+
+### Bicycle Wheel
+
+- Hold the bicycle wheel. Give it a spin. Try to rotate the spinning wheel. What happens? Why?
+
+Next, (carefully) stand on the rotating platform. Have your partner hand you the bicycle wheel.
+Start with both the bicycle wheel and yourself at rest.
+
+- What happens as you or your partner make the bicycle wheel spin?
+- What happens as you change the orientation the spinning bicycle wheel?
+
+Draw some simple sketches that illustrate the effects you observed. Try to illustrate the angular
+momentum vectors of yourself and the bicycle wheel.
+
+## Gyroscope
+
+Each table has a pair of gyroscopes. Play with a gyroscope for a while. The fascinating behavior
+of a gyroscope is a consequence of conservation of angular momentum.
+
+### Observation
+
+- Observe and describe the behavior of a spinning gyroscope. Describe how it moves or something
+  interesting you can do with it.
+- Draw a simple sketch that depicts the angular momentum vector of a spinning gyroscope.
+
+### Precession
+
+If you set a gyroscope spinning, tilt it at an angle, and set it on a table or a post, the
+gyroscope undergoes **precession.** It will maintain a constant angle as it rotates, without
+falling over. Make some detailed qualitative observations of this phenomenon.
+
+- How does the rate of precession depend on the tilt angle? The rate at which the gyroscope is
+  spinning?
+- If two gyroscopes are spinning in opposite directions, will they also precess in the opposite
+  directions?
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Gyroscope Analysis:** Draw a free body diagram of a precessing gyroscope. Indicate all forces
+acting on it. Draw another diagram that shows the angular momentum vector and the net torque on
+the gyroscope. Use your diagrams to explain why the spinning gyroscope precesses instead of
+falling over.
+
+**Quantitative Study:** Make quantitative measurements of any of the phenomena you investigate in
+this lab. Record and analyze numerical data. For example, measure the acceleration of an object
+rolling down a ramp, or the rate of precession of a gyroscope, then analyze your findings.
+
+**Moment of Inertia:** Design and carry out an experiment to measure the moment of inertia of a
+pulley in the lab.
+
+**Mathematical Modeling:** Make a quantitative mathematical model of your experience on the
+rotating platform. Estimate your moment of inertia and the changes when you raise and lower your
+arms. Are the predictions of this model consistent with your experience? If not, try to improve
+the model.

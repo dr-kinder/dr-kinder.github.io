@@ -2,4 +2,197 @@
 title: "Simple Machines Simulations"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Investigate levers, ramps, and pulleys.
+- Measure the mechanical advantage of simple machines.
+- Apply the principles of static equilibrium.
+
+Simple machines are devices that change the direction or magnitude of an applied force.
+Renaissance scholars identified six such machines. We will explore three today: the pulley, the
+ramp, and the lever.[^Note1] Unlike early Renaissance scholars, we have classical mechanics to
+aid us! We will attempt to analyze these devices using forces, work, and energy.
+
+This lab consists of three major parts
+
+1. Investigate a pulley system.
+1. Investigate an inclined plane.
+1. Investigate three different classes of levers.
+
+You will investigate three different simulations today. **Keep detailed notes.** Record your
+setup, procedure, data, and observations in your lab notes. Data will include tables and plots.
+In your memo, summarize your findings and discuss any conclusions you draw from your data.
+
+## Mechanical Advantage
+
+A simple machine is a device for redirecting or multiplying a force. We often think of such
+machines in terms of the **applied force** and the **load.** The applied force is the force you
+put into the machine. The load is the force the machine applies to something else. In this lab,
+it will be the weight you lift.
+
+The **mechanical advantage** of a machine is the ratio of the load to the applied force:
+
+```
+                           load
+mechanical advantage = -------------
+                       applied force
+```
+
+For example, if you apply a force of $\Quantity{100}{lbs}$ and you are able to lift a load of
+$\Quantity{200}{lbs}$, the system has a mechanical advantage of 2: It doubles your applied force. In
+principle, the mechanical advantage is a constant for a particular machine. Thus, if we measure
+and plot the load as a function of applied force, the mechanical advantage will be the slope of
+this line.
+
+Note, however, that conservation of energy implies that the ___work___ done by each force be
+equal in magnitude. When a system is in equilibrium, the net work for any small displacement of
+the system must be zero. This is known as the **principle of virtual work.**
+
+## Pulleys
+
+In a simple pulley system, a mass hangs on one side of the pulley (the load) and you apply a
+force by pulling on a string on the other side of the pulley (the applied force). We can also
+combine multiple pulleys. The mechanical advantage of the pulley system is the ratio of the load
+to the applied force.
+
+Open the [`Pulley Lab`][PulleyLab] from [`Physics Aviary`][PhysicsAviary]. Play with this
+simulation to see how it works. When you are comfortable with the controls, carry out the
+following investigations.
+
+**Predict.**
+Consider the following questions before you make any measurements.
+
+- How do you think the mechanical advantage will change with the number of pulleys — if at all?
+  I.e., for a given load, how will the applied force you need to lift that load depend on the
+  number of pulleys?
+
+**Measure.**
+
+- For a fixed mass, measure the applied force for all six pulley combinations. The load is the
+  weight of the hanging mass ($W=mg$), and the applied force is the reading on the force sensor.
+  What is the mechanical advantage of each pulley system?
+
+**Reflect.**
+Were your predictions correct? Can you explain your findings? In your memo, discuss useful
+applications for a simple pulley, in light of your measurements.
+
+## Inclined Plane
+
+An inclined plane can be used to raise a weight gradually instead of lifting it directly. We can
+use a pulley to apply a force to a string (applied force) and pull a cart (load) up the ramp.
+
+Open the [`Atwood's Machine and Inclined Plane with Friction`][InclinedPlane] simulation from
+[`oPhysics`][oPhysics]. Play with the simulation to see how it works. You can adjust the two
+masses, the angle of the ramp, and the coefficient of friction.
+
+**Predict.**
+Consider the following questions before you start collecting data.
+
+- How will the angle of the ramp affect its mechanical advantage?
+- How can you lift the largest weight using the smallest force with a ramp?
+
+**Measure.**
+In this simulation, the weight of $m_1$ is the applied force and the weight of $m_2$ is the load.
+The ratio $m_2 / m_1$ ___when the acceleration is zero___ gives the mechanical advantage.
+
+- Determine the angle required to achieve the mechanical advantages in the table below. Record
+  the mass combinations you used in your notes. **Set the coefficient of friction to zero before
+  you collect data.**
+
+Mechanical Advantage | Mass 1 [`kg`] | Mass 2 [`kg`] | Required Angle
+---                  | ---           | ---           | ---
+1                    |               |               |
+1.5                  |               |               |
+2                    |               |               |
+3                    |               |               |
+5                    |               |               |
+10                   |               |               |
+
+**Reflect.**
+Were your predictions correct? Can you explain your findings? In your memo, discuss useful
+applications for an inclined plane, in light of your measurements.
+
+## Balance
+
+A lever uses a beam and a fulcrum (a pivot point) to multiply an applied force. It may also
+redirect the applied force. A **Class 1** lever places the load and applied force on opposite
+sides of the fulcrum — like a teeter-totter or a balance. In this portion of the lab, we will
+investigate the relation between forces and distance from the fulcrum in a Class 1 Lever.
+
+Open the [`Balancing Act`][BalanceLab] from [`PhET`][PhETPhysics]. Select the "Balance Lab"
+simulation. Play around with the simulation to figure out how it works.
+
+**Predict.**
+Consider the following questions before you make any measurements.
+
+- Will two equal masses on either side of the lever always balance?
+- Can you arrange the system to balance an $\SI{80}{kg}$ man and a $\SI{20}{kg}$ child?
+
+**Measure.**
+Attempt all three of the following investigations.
+
+1. **Mass and Distance.**
+   Record the locations at which two masses balance in a table like the one below. Investigate
+   at least 5 different mass combinations. **Only one combination should include equal masses.**
+
+Trial | Mass 1 [`kg`] | Distance 1 [`m`] | Mass 2 [`kg`] | Distance 2 [`m`]
+---   | ---           | ---              | ---           | ---
+1     | 10            |                  | 10            |
+2     | 20            |                  | 80            |
+3     |               |                  |               |
+4     |               |                  |               |
+5     |               |                  |               |
+
+2. **Mystery Objects.**
+
+   - Balance Mystery Object B and Mystery Object G. Record their locations.
+   - Determine the mass of Mystery Object B, using objects of known mass.
+   - Determine the mass of Mystery Object G, using objects of known mass.
+
+3. **Game.**
+   Click on the "Game" tab at the bottom of the simulation. Work through "Level 2". Describe the
+   problems you work through and how you solved them. Send a screen shot of your final score with
+   your lab. (It won't affect your grade. Dr. Kinder just wants to see that you worked all the way
+   through it.)
+
+**Analyze.**
+
+- What patterns do you notice in your data from the first investigation, "Mass and Distance"?
+- How do the masses and locations of the mystery objects in the second investigation compare?
+
+**Reflect.**
+Can you explain your findings? In your memo, discuss useful applications for a balance.
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Gravity on Other Planets:**
+Use the [`Pulley Lab`][PulleyLab] on [`Physics Aviary`][PhysicsAviary] to measure the
+acceleration due to gravity on the Jupiter and on the asteroid Vesta by comparing measurements on
+these planets with measurements on Earth.
+
+**Theoretical Analysis — Pulley:**
+Apply Newton's Laws to the systems of 1 and 2 pulleys that you investigated. Show — by using free
+body diagrams, Newton's Second Law, and Newton's Third Law — that the mechanical advantage of
+these two systems should be the same. (The simulation ignores the mass of the pulleys. You can,
+too.)
+
+**Game — Balance:**
+Complete the Level 3 or Level 4 games on the [`Balancing Act`][BalanceLab] simulation from
+[`PhET`][PhETPhysics]. One point each, as long as you keep good notes and describe your progress
+through each level.
+
+[^Note1]: The other three are the wheel and axle, the wedge, and the screw.
+
+[PhysicsAviary]: https://www.thephysicsaviary.com/
+[PulleyLab]: https://www.thephysicsaviary.com/Physics/Programs/Labs/PulleyLab/
+
+[oPhysics]: http://ophysics.com/
+[InclinedPlane]: http://ophysics.com/f3.html
+
+[PhETPhysics]: https://phet.colorado.edu/en/simulations/category/physics
+[BalanceLab]: https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_en.html

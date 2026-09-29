@@ -2,4 +2,201 @@
 title: "Acceleration Due to Gravity (Remote)"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Determine the acceleration due to gravity in Klamath Falls, Oregon.
+- Fit a line to data and interpret the slope and intercept.
+
+Although you can look up the value of "g" in a textbook, the acceleration due to gravity is not
+constant over the surface of the earth. The standard textbook value of
+$\Variable{g}{9.80665}{m/s^2}$ is used to define a standard weight for an object of specific
+mass.
+
+In this lab, we will calculate the acceleration due to gravity in two different ways. Both
+approaches are based on kinematics. If the measurements have enough precision, you may be able
+to observe a difference between the acceleration due to gravity in Klamath Falls and the
+textbook value.
+
+This lab consists of two parts:
+
+1. Analyze and plot data from a spark timer to determine the acceleration due to gravity.
+2. Use video analysis software to determine the acceleration due to gravity.
+
+First, we will analyze data from a spark timer, which records the position of a falling object
+as a function of time. From these data, we will compute the acceleration due to gravity. Next,
+we will use a camera and video analysis software to measure the acceleration of a falling
+object.
+
+Strive for accuracy, and try to identify any sources of uncertainty or experimental error that
+may influence your results in this lab.
+
+Record your setup, procedure, data, and observations in your lab notes. **Keep detailed notes.**
+Data for this lab will include data tables and plots. In your memo, summarize your findings and
+describe any conclusions you draw from them. Report the values of $g$ that you compute and
+include any tables or graphs not in your notes.
+
+If you need additional materials to carry out the experiments below or your own, just ask Dr.
+Kinder.
+
+When you finish **both measurements,** please submit your results here:
+<https://forms.gle/AwVN6qTzvCxrRPpq5>
+
+## Data from the Spark Timer
+
+A spark timer uses a frequency generator to create electrical impulses at regular intervals.
+These impulses can arc across a falling object and through heat sensitive paper to leave a
+series of burn marks on the paper, tracking the position of the falling object. The following
+data sets were collected in the lab in previous years. The frequency generator creates sparks at
+a frequency of $\Quantity{30}{Hz}$, or one spark every 1/30th of a second. The tables give the
+position of the burn marks.
+
+Questions to consider:
+
+- What do you expect the position and velocity plots to look like?
+- What might limit the precision of the value of g with this method?
+
+**Select two of the four data sets for your analysis this week.** You can analyze more, but you
+should report at least two independent measurements of "g".
+
+| Mark Number | Position A [cm] | Position B [cm] | Position C [m] | Position D [mm] |
+| --- | --- | --- | --- | --- |
+| 0 | 40.0 | 2.5 | 0 | 0 |
+| 1 | 42.7 | 5.9 | 0.023 | 23 |
+| 2 | 46.5 | 10.4 | 0.058 | 55 |
+| 3 | 51.6 | 16 | 0.104 | 99 |
+| 4 | 57.5 | 22.7 | 0.161 | 154 |
+| 5 | 64.6 | 31.5 | 0.229 | 220 |
+| 6 | 72.8 | 39.4 | 0.307 | 296 |
+| 7 | 82.0 | 49.3 | 0.397 | 383 |
+| 8 | 92.2 | 60.4 | 0.497 | 480 |
+| 9 | 103.4 | 72.6 | 0.609 | 589 |
+| 10 | 115.9 | 85.8 | 0.731 | 708 |
+| 11 | 129.4 | 100.2 | 0.863 | 838 |
+| 12 | 160.0 | 115.7 | 1.007 | 980 |
+| 13 | --- | 132.1 | 1.164 | 1134 |
+| 14 | --- | 149.7 | 1.329 | 1297 |
+| 15 | --- | --- | 1.506 | 1463 |
+
+- Note the units used for each set of measurements.
+- These are **real data sets.** Look for anomalies as you do your analysis.
+
+## Analyze Data from the Spark Timer
+
+Your raw data this week will be the locations of points on a strip of paper. From these data,
+you will need to compute the velocity and acceleration, and to make plots of position and
+velocity. You can do this using a spreadsheet, a calculator, or by hand.
+
+**Plan your analysis before you start crunching numbers.** What columns should you include in
+your table? What range of values will you need to display in your plots? Planning now can save a
+lot of time in the analysis.
+
+**Create a graph of your velocity data.**
+
+Make sure your notes and analysis includes the following:
+
+- A plot of position vs. time
+- A plot of velocity vs. time
+- A line of best fit for your velocity graph, with values of slope and intercept (including
+  units)
+- Your best numerical estimate of "g" in Klamath Falls
+
+To find the line of best fit, you can draw a line of best fit by hand using a ruler, use linear
+regression, use software like Excel or MATLAB, or write a computer program. Whatever method you
+use, be sure to plot the line of best fit along with your velocity data and report the slope and
+intercept.
+
+Questions to consider (and answer in your notes or your memo):
+
+- Do your velocity data follow a linear relationship?
+- What is the physical meaning of the slope of your velocity graph? The intercept?
+
+## Video Analysis
+
+For the second measurement of $g$ in Klamath Falls, we will use computer analysis of video of a
+falling object. A program called "Tracker" should be installed on the laptops in the lab, and
+you can download and install it on your own laptop: [`Tracker`][Tracker]. This program can carry
+out a frame-by-frame analysis of the position of moving objects in a video recording.
+
+**Learn about the software.** Explore the software on your own, [`Read The
+Manual`][TrackerHelp], or watch a [`Video Tutorial`][TrackerVideo] from the creator of the
+software. (Be sure to read about the [`Autotracker`][Autotracker] feature.) Don't hesitate to
+ask Dr. Kinder for directions or tips.
+
+**Make and analyze a video.** Record the motion of a falling object, then use Tracker to analyze
+the footage. You can use your phone to record the video, or borrow a camera from the lab.
+
+**Estimate the acceleration due to gravity.** Extract data from your video to make your best
+estimate of $g$. It is often more accurate to fit a line to the velocity data than to read
+values from an acceleration plot.
+
+Make sure your notes and analysis includes the following:
+
+- A description of your setup for making the video
+- A plot of position vs. time extracted from your video
+- A plot of velocity vs. time extracted from your video
+- Your best numerical estimate of "g" in Klamath Falls
+
+Question to ponder:
+
+- What limits the precision of the value of $g$ with this method?
+- If you had more time and resources, how would you set up an even better experiment?
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Additional Measurements:** Make yet another measurement of the acceleration due to gravity.
+Some possibilities include the following:
+
+- Measure the period of a pendulum. The period of a pendulum is the time it takes the pendulum
+  to swing back and forth once. For small amplitude swings, it is given by $T = 2\pi
+  \sqrt{L/g}$. By accurately measuring the length and period of a pendulum, you can deduce the
+  value of $g$. *Note:* The "length" of a pendulum, $L$, is the distance from the pivot point to
+  the center of mass of the swinging object — not necessarily the length of the string you use.
+
+- Measure the velocity of cart rolling down a ramp. You can use the LoggerPro software and
+  motion detector, a stopwatch, Tracker, or a method of your own design. For a cart on an
+  incline, Newton's Second Law predicts that the acceleration down the ramp will be
+  $a = g \, \sin \theta$.
+
+- Use Tracker to measure the acceleration of two different falling objects. Textbook equations
+  imply they should be the same. Are they, to within the uncertainty of the experiment? (Explain
+  what these uncertainties are.) If not, is the problem with the experiment or with the
+  textbook? (Justify your choice.)
+
+**Numerical Analysis:** An important part of this lab is determining the acceleration from a
+discrete set of data points. Use calculus to determine the error in the following approximations
+for the velocity, as a function of the time step $\epsilon = \Delta t$:
+
+$$
+v_n = \dfrac{s_n - s_{n-1}}{\Delta t}
+\qquad \implies \qquad v(t) \approx \dfrac{s(t) - s(t-\epsilon)}{\epsilon}
+$$
+
+$$
+v_n = \dfrac{s_{n+1} - s_{n-1}}{2\Delta t}
+\qquad \implies \qquad v(t) \approx \dfrac{s(t+\epsilon) - s(t-\epsilon)}{2\epsilon}
+$$
+
+For each approximation, use a **Taylor series** to approximate $v(t \pm \epsilon)$ out to terms
+of order $\mathcal{O}(\epsilon^3)$. Then, evaluate the fractions. The **error** of the
+approximation is the power of the first power of $\epsilon$ in the resulting expression. For
+example, saying "the error is linear" means that the coefficient of $\epsilon$ in the result is
+not zero; "the error is quadratic" means the coefficient of $\epsilon$ is zero, but the
+coefficient of $\epsilon^2$ is not; and so on. A higher-order error implies a more accurate
+approximation when $\epsilon$ is small.
+
+**Helmert's Equation:** The acceleration due to gravity is not a universal constant. Read the
+[`handout on Helmert's Equation`][Helmert]. Use Helmert's equation to calculate the expected
+acceleration due to gravity in Klamath Falls, Oregon. Are your data precise enough to measure
+the deviation from the textbook value? Can Helmert's equation explain any discrepancy between
+your data and the standard value?
+
+[Tracker]: https://physlets.org/tracker/
+[TrackerVideo]: https://www.youtube.com/watch?v=La3H7JywgX0&ab_channel=DouglasBrown
+[TrackerHelp]: https://physlets.org/tracker/help/frameset.html
+[Autotracker]: https://physlets.org/tracker/help/frameset.html
+[Helmert]: https://drive.google.com/open?id=1JhwYd3gOJLuN1ppyrbV3ECeCEIfkscSy

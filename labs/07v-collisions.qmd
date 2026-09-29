@@ -2,4 +2,176 @@
 title: "Collision Simulations"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Observe a wide variety of collisions.
+- Investigate conservation of momentum and energy in collisions.
+
+One-dimensional collisions are an excellent topic for study in an introductory physics course.
+The analysis is straightforward (but not necessarily simple!) and simple equipment permits an
+experimental test of important principles like conservation of energy and momentum.
+
+In this lab, you and your group will explore collisions in one and two dimensions. The lab
+consists of two parts.
+
+1. Observe 1D collisions. Make predictions and qualitative observations of collisions in one
+   dimension.
+1. Analyze 2D collisions. Analyze conservation of energy and momentum in two dimensions.
+
+Record your setup, procedure, data, and observations in your lab notes. **Keep detailed notes.**
+Data for this lab will include tables and plots. In your memo, summarize your findings and
+describe any conclusions you draw from them.
+
+## Observe 1D Collisions
+
+In this first portion of the lab, we will focus on qualitative observations. Open the
+[`Collisions`][Collisions] lab from [`Andrew Duffy`][AndrewDuffy]. Use it to investigate the
+following collisions. For each, follow the three-step process:
+
+- **Predict.** What do you expect to happen?
+- **Observe.** What actually happened? Does the same thing happen every time?
+- **Analyze.** Resolve any conflicts between your predictions and observations.
+
+Discuss any surprises or easy predictions in your memo. Try to draw some general conclusions
+about the patterns you observe, too.
+
+### Elastic Collisions
+
+For the following, set "Elasticity of the collision" to 1.0. The carts will collide and bounce
+off of each other.
+
+1. **Equal Masses, One Stationary.** One cart moves to the right. The other is at rest.
+1. **Equal Masses, Head On.** One cart moves to the right. The other moves to the left.
+1. **Equal Masses, Same Direction.** One cart moves quickly. The other moves slowly.
+1. **Different Masses, One Stationary.** A large cart moves to the right. A small cart is at
+   rest.
+1. **Different Masses, One Stationary, Again.** A small cart moves to the right. A large cart is
+   at rest.
+1. **Different Masses, Head On.** A large cart moves to the right. A small cart moves to the
+   left.
+1. **Different Masses, Same Direction.** A large cart moves quickly. A small cart moves slowly.
+1. **Different Masses, Same Direction, Again.** A small cart moves quickly. A large cart moves
+   slowly.
+
+### Inelastic Collisions
+
+For the following, set "Elasticity of the collision" to 0.0. The carts will collide and stick
+together.
+
+1. **Equal Masses, Head On, Same Speed.** One cart moves right. The other moves left at the same
+   speed.
+1. **Different Masses, Head On.** A large cart moves right. A small cart moves left.
+1. **Different Masses, One Stationary.** A large cart moves right. A small cart is at rest.
+1. **Different Masses, One Stationary, Again.** A small cart moves right. A large cart is at
+   rest.
+1. **Different Masses, Same Direction.** A large cart moves quickly. A small cart moves slowly.
+1. **Different Masses, Same Direction, Again.** A small cart moves quickly. A large cart moves
+   slowly.
+
+## Analyze 2D Collisions
+
+**Conservation of Momentum** — In any collision, Newton's Second and Third Laws imply that
+momentum should be conserved. The momentum of a single particle is $\vec{p} = m\vec{v}.$ If
+momentum is conserved, then we expect the **total momentum** to be constant in a collision. In
+particular, the momentum before and after a collision between two objects ($A$ and $B$) should be
+the same:
+$$\vec{P}_{\tt total} = M_{A} \vec{V}_{A1} + M_{B} \vec{V}_{B1} = M_{A} \vec{V}_{A2} + M_{B} \vec{V}_{B2}$$
+Momentum is a vector. Conservation of momentum implies that, in two dimensions, the horizontal
+and vertical components of the total momentum are conserved independently.
+
+**Kinetic Energy** — The kinetic energy of a particle is
+$$E = \dfrac{1}{2} MV^2 = \dfrac{P^2}{2M}$$
+In a perfect elastic collision, total kinetic energy is conserved. In an inelastic collision, a
+fraction of kinetic energy is converted to other forms — often heat. We can characterize a
+collision by looking at the change in energy:
+$$
+E_1 = \dfrac{1}{2} M_A V_{A1}{}^2 + \dfrac{1}{2} M_B V_{B1}{}^2
+\qquad \qquad \qquad
+E_2 = \dfrac{1}{2} M_A V_{A2}{}^2 + \dfrac{1}{2} M_B V_{B2}{}^2
+\qquad \qquad \qquad
+\Delta E = E_2 - E_1
+$$
+
+### Collect Data
+
+In this portion of the lab, the goal is to determine the degree to which momentum and kinetic
+energy are conserved in a simulated collision of curling stones. Open the [`Curling Stone
+Momentum Lab`][Curling] from [`The Physics Aviary`][PhysicsAviary]. Play with the simulation to
+figure out how it works. When you are ready, begin collecting data.
+
+Take data for 3 different collisions. For the first, use the following parameters in the table.
+You can choose the parameters for the other two as long as (1) the masses are not equal, and (2)
+the separation is greater than $\SI{0}{cm}$.
+
+| Trial | Separation [$\si{cm}$] | Red Mass [$\si{kg}$] | Yellow Mass [$\si{kg}$] | Red Speed [$\si{m/s}$] |
+| ---   | ---                  | ---                | ---                   | ---                  |
+| 1     | 50                   | 16                 | 16                    | 4                    |
+| 2     |                      |                    |                       |                      |
+| 3     |                      |                    |                       |                      |
+
+Record the final speed and angle of both stones, and carry out the following analysis for each
+collision.
+
+### Analysis: Conservation of Momentum
+
+Use trigonometry to compute the initial and final momentum of each stone in the horizontal
+direction and the vertical direction. Calculate the change in momentum. The following tables may
+be a useful way to organize the calculations.
+
+| Trial | $P_{\tt red, in, x}$ | $P_{\tt yellow, in, x}$ | $P_{\tt total, in, x}$ | $P_{\tt red, out, x}$ | $P_{\tt yellow, out, x}$ | $P_{\tt total, out, x}$ | $\Delta P_{\tt total, x}$ |
+| ---   | ---                  | ---                     | ---                    | ---                   | ---                      | ---                     | ---                       |
+| 1     |                      |                         |                        |                       |                          |                         |                           |
+| 2     |                      |                         |                        |                       |                          |                         |                           |
+| 3     |                      |                         |                        |                       |                          |                         |                           |
+
+| Trial | $P_{\tt red, in, y}$ | $P_{\tt yellow, in, y}$ | $P_{\tt total, in, y}$ | $P_{\tt red, out, y}$ | $P_{\tt yellow, out, y}$ | $P_{\tt total, out, y}$ | $\Delta P_{\tt total, y}$ |
+| ---   | ---                  | ---                     | ---                    | ---                   | ---                      | ---                     | ---                       |
+| 1     |                      |                         |                        |                       |                          |                         |                           |
+| 2     |                      |                         |                        |                       |                          |                         |                           |
+| 3     |                      |                         |                        |                       |                          |                         |                           |
+
+**Note:** Direction matters! Make sure you account for the direction of the outgoing stones when
+calculating components of momentum. If one stone is moving upward and the other is moving
+downward, their vertical components of momentum should have opposite signs. If one stone is
+moving right and the other is moving left, their horizontal components of momentum should have
+opposite signs.
+
+### Analysis: Conservation of Energy
+
+Compute the initial and final kinetic energy of each stone. Calculate the change in kinetic
+energy. The following table may be a useful way to organize the calculations.
+
+| Trial | $E_{\tt red, in}$ | $E_{\tt yellow, in}$ | $E_{\tt total, in}$ | $E_{\tt red, out}$ | $E_{\tt yellow, out}$ | $E_{\tt total, out}$ | $\Delta E_{\tt total}$ |
+| ---   | ---               | ---                  | ---                 | ---                | ---                   | ---                  | ---                    |
+| 1     |                   |                      |                     |                    |                       |                      |                        |
+| 2     |                   |                      |                     |                    |                       |                      |                        |
+| 3     |                   |                      |                     |                    |                       |                      |                        |
+
+- Based on your calculations, is momentum conserved in this simulation?
+- Based on your calculations, is this a simulation of an elastic or an inelastic collision?
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**Ballistic Pendulum.** The total momentum and energy in a system are conserved, but energy can
+change forms. In a ballistic pendulum, the initial kinetic energy of a bullet is partially
+converted to gravitational potential energy. The rest is dissipated as heat. Open the [`Ballistic
+Pendulum`][BallisticPendulum] simulation from [`oPhysics`][oPhysics] and investigate this system.
+
+Measure the change in height as the pendulum swings. Use the mass of the block and bullet to
+determine its total energy after the collision, and compute the fraction of initial kinetic
+energy lost in the collision. Is this an elastic or an inelastic collision?
+
+[PhysicsAviary]: https://www.thephysicsaviary.com/
+[Curling]: http://thephysicsaviary.com/Physics/Programs/Labs/CurlingStoneMomentumLab/
+[Recoil]: http://thephysicsaviary.com/Physics/Programs/Labs/EnergyLossLab/
+
+[oPhysics]: http://ophysics.com
+[BallisticPendulum]: http://ophysics.com/e3.html
+
+[AndrewDuffy]: http://physics.bu.edu/~duffy/classroom.html
+[Collisions]: http://physics.bu.edu/~duffy/HTML5/collisions_1D.html

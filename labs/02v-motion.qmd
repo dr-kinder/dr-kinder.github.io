@@ -2,4 +2,157 @@
 title: "Visualizing Motion with Simulations"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Make precise graphs.
+- Compare constant velocity and constant acceleration.
+- Create and interpret plots of motion.
+
+Motion lies at the foundation of classical mechanics. In class, we will develop a mathematical
+description of motion. We will explore this in lab, too. However, today our goal is to develop
+an intuition for kinematics. We will use a variety of simulations to visualize the position,
+velocity, and acceleration of moving objects as a function of time. By the end of the lab, you
+should be able to describe the motion that corresponds to a particular graph and make plots to
+represent the motion of an object.
+
+There are three stages to today's investigation:
+
+1. Plot the position and velocity of a moving particle.
+2. Match the motion of an object to a given motion graph.
+3. Predict the graphs that will be created by a motion you plan.
+
+Describe your procedure, and record your data and observations in your lab notes. **Keep
+detailed notes.** Data for this lab will include several plots as well as qualitative
+observations. In your memo, summarize your findings and describe any conclusions you draw from
+them.
+
+## Key Ideas
+
+There are four important quantities in kinematics: time, position, velocity, and acceleration.
+We will denote these by $t$, $s(t)$, $v(t)$, and $a(t)$ respectively. Position, velocity, and
+acceleration are related as follows:
+$$v(t) = \diff{s}{t}
+  \qquad \qquad
+  a(t) = \diff{v}{t}$$
+We will not need to take derivatives today. However, this relation allows us to interpret motion
+graphs as follows:
+
+- **Velocity is the slope of position; acceleration is the slope of velocity.**
+- If a function is increasing, then its slope is positive (and vice versa).
+- If a function is decreasing, then its slope is negative (and vice versa).
+- If a function is constant, then its slope is zero (and vice versa).
+
+Use these ideas today as you try to interpret your motion graphs.
+
+## Graph the Motion
+
+It is important to be able to move between different representations of motion — from tables of
+numbers to graphs of position and velocity. In this first portion of the lab, you will translate
+a series of snapshots of the position of two objects into graphs of position versus time.
+
+Open the [`Comparing motion diagrams`][MotionDiagrams] simulation from [Andrew
+Duffy][AndrewDuffy]. This simulation gives you slider that will adjust the initial position,
+velocity, and acceleration of two different particles. When you press the "Play" button, you
+will see the corresponding motion of the two particles, along with a snapshots of their position
+every two seconds. Play around with the sliders and run a few trials to learn how the simulation
+works.
+
+Once you are familiar with how the simulation works, set the sliders to the following values:
+
+| Car | Position [m] | Velocity [m/s] | Acceleration [m/s/s] |
+| --- | --- | --- | --- |
+| 1 | 0 | 10 | -0.5 |
+| 2 | 0 | 0 | 0.5 |
+
+1. Run the simulation.
+2. Make a **table** of the position of each particle every 2 seconds.
+3. Make a **motion graph** of position versus time for each particle.
+
+Comment on any interesting or unexpected features of your simulation, data, or plot.
+
+## Race
+
+In this simulation, we will compare motion with constant velocity to motion with constant
+acceleration.
+
+Open the [`Constant velocity vs. constant acceleration`][MarbleRace] simulation from [Andrew
+Duffy][AndrewDuffy]. This simulation pits a red car with a "running start" against a blue car
+that starts from rest. However, the red car moves with **constant speed** while the blue car
+moves with **constant acceleration.**
+
+Play around with the simulation to see how it works. Set up a few races. Observe both the
+position graphs and the velocity graphs during a few races. Jot down any general patterns or
+interesting results you observe. Can you draw any conclusions about which car wins the race? We
+are going to explore two scenarios.
+
+**Race 1:** Start Car 1 (red) at position 0, and set its velocity to the maximum of
+$\Quantity{10}{m/s}$. Set the acceleration of Car 2 (blue) to its maximum value of
+$\Quantity{2}{m/s^2}$.
+
+- **Before you run the simulation ...** Which car do you think will win the race? Why?
+- Run the race. **Describe what happens.** Sketch both the position graph and the velocity graph
+  for this race.
+
+**Race 2:** For this race, Start Car 1 (red) at position 0, and set the acceleration of Car 2
+(blue) to $\Quantity{1}{m/s^2}$. By trial and error, determine the minimum initial speed that
+Car 1 needs to win the race.
+
+## Match Motion to a Graph
+
+You have now seen several examples of motion with constant velocity and with constant
+acceleration. In this final portion of the lab, we are going to try to match specific motion
+graphs by adjusting the position, velocity, and acceleration of a moving particle.
+
+Open the [`Graph matching`][GraphMatching] simulation from [Andrew Duffy][AndrewDuffy]. This
+simulation has the same sliders as previous simulations, but it also has a collection of 10
+motion graphs you can attempt to match. First, select the "No match" option and make a few trial
+runs to observe the graphs you create when you change position, velocity, and acceleration while
+the particle is moving.
+
+When you are ready, attempt to match at least 4 graphs.
+
+- Match at least 2 **position** graphs: Graph 3 and Graph 4.
+- Match at least 2 **velocity** graphs: Graph 9 and Graph 10.
+
+For each graph, **make a prediction before you start the simulation.** First look at the plot
+and consider how you will reproduce the motion graph. Record your prediction. Then, make your
+best effort reproduce the graph. Strive for accuracy — but not perfection — in your graph
+matching. Sketch your best result, export the graph, or take a screenshot. (You can right-click
+on a graph to copy it to the clipboard, and then paste it into another document.) Once you have
+successfully reproduced a graph, compare your prediction with how you actually matched the
+graph. Discuss any surprises or challenges in your notes or in your memo.
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**More Motion Graphs:** The following simulations from [`oPhysics`][oPhysics] allow you to input
+a graph of either velocity or acceleration and observe the resulting motion:
+
+- You can input a velocity graph in [`Position, Velocity, and Acceleration vs. Time
+  Graphs`][AdjustVelocity].
+- You can input an acceleration graph in [`Kinematics Graphs: Adjust the
+  Acceleration`][AdjustAcceleration].
+
+Make the most interesting graphs you can and include a screenshot in your notes.
+
+**Video Analysis:** Download the [`Tracker`][Tracker] video analysis software. Load one of the
+videos that come with the program, create your own using a smartphone, or download a video from
+the Web. Use Tracker to analyze the motion of an object in the video. Include a screenshot of
+your video and graphs, or export the graphs and include them with your memo and notes.
+
+You don't have to limit yourself to these suggestions. Feel free to play with other simulations
+on these Web sites. Record your procedure, data, and observations in your lab notes if you would
+like extra points for your efforts.
+
+[oPhysics]: http://ophysics.com
+[AdjustVelocity]: http://ophysics.com/k4b.html
+[AdjustAcceleration]: http://ophysics.com/k5.html
+[AndrewDuffy]: http://physics.bu.edu/~duffy/classroom.html
+[MotionDiagrams]: http://physics.bu.edu/~duffy/HTML5/motion_diagrams.html
+[MarbleRace]: http://physics.bu.edu/~duffy/HTML5/1Dmotion_constantv_constanta.html
+[GraphMatching]: http://physics.bu.edu/~duffy/HTML5/1Dmotion_graph_matching.html
+[Tracker]: https://physlets.org/tracker/

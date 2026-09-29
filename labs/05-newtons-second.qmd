@@ -2,4 +2,139 @@
 title: "Newton's Second Law"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Analyze the motion of accelerating carts and pulley systems.
+- Test Newton's Second Law with experimental data.
+
+Newton's Second Law, $\vec{F} = m \vec{a}$, is a cornerstone of classical mechanics. It relates
+the interactions of a system with its environment — forces — to its motion — kinematics. In this
+lab, we will measure the motion of accelerating systems and compare these measurements with the
+predictions of Newton's Second Law.
+
+For this lab, you should **choose two** of the following experiments.
+
+1. Investigate force and acceleration for a cart on a ramp.
+1. Investigate force and acceleration for a cart and pulley system.
+1. Investigate force and acceleration for a pulley system.
+
+You will have your choice among several methods and investigations today. **Keep detailed
+notes.** Record your setup, procedure, data, and observations in your lab notes. Data will
+include tables and plots. Be sure to include block diagrams and sketches of your setup, too. In
+your memo, summarize your findings and describe how you tackled the design and measurement
+problems of this lab.
+
+## Measuring Force and Acceleration
+
+You will need to measure forces in this lab. The simplest approach is to use the weight of a
+known mass. If you hang a 100 $\unit{g}$ mass from a pulley, the applied force will be equal to
+the weight: $F = mg = \Quantity{0.980}{N}$. However, pulley systems also involve tension forces.
+**If the
+system is accelerating, then the tension is not equal to the weight.** Keep this in mind when you
+are comparing your measurements to your theoretical predictions.
+
+There are multiple options for measuring the acceleration. One is to use a ruler and a stopwatch.
+If an object starts from rest and travels distance $D$ in time $T$ under the action of a constant
+force, then the average acceleration will be $a = 2D/T^2$. Another option is the motion detectors
+and Vernier software. A third option is to use the Tracker video analysis software introduced in
+Lab 3. (The most reliable method for determining the acceleration with the motion detector or
+video analysis is to fit a line to your velocity data.)
+
+## Experimental Systems
+
+You can investigate three different systems today. **Choose two.** If you do a third, you will
+earn an extra point, but this is not required.
+
+After you take your data — but before you leave, work out the predictions of Newton's Second Law
+for the systems you studied. In your memo, compare your data with these theoretical predictions.
+
+As you design your experiments and make your measurements, keep the following two points in
+mind.
+
+- Small accelerations are easier to measure than large accelerations.
+- Distances are easier to measure than angles. Use trigonometry to find angles.
+
+## Cart on a Ramp
+
+A cart on a ramp will roll downhill due to gravity, but its acceleration is not
+$\Variable{g}{9.80}{m/s^2}$. With this system, we can vary the mass of the cart and the angle of
+the ramp.
+
+**Before you take any data,** consider the following questions. Try to make **quantitative
+predictions.**
+
+- What will happen to the acceleration of the cart as you increase its mass?
+- What will happen to the acceleration of the cart as you increase the angle of the ramp?
+
+**Now collect data.**
+
+- Keep the angle of the ramp constant. Measure the acceleration of the cart for at least three
+  different masses. Record your data in a table and plot acceleration vs. mass.
+- Keep the mass of the cart constant. Measure the acceleration of the cart for at least three
+  different angles. Record your data in a table and plot acceleration vs. angle.
+
+Summarize any trends or patterns you observe in your memo.
+Compare your measurements with the predictions of Newton's Second Law.
+
+## Cart and Pulley
+
+A mass hanging over a pulley will accelerate a cart on a horizontal track. With this system, we
+can vary the mass of the cart and the hanging mass.
+
+**Before you take any data,** consider the following questions. Try to make **quantitative
+predictions.**
+
+- What will happen to the acceleration of the cart as you increase its mass?
+- What will happen to the acceleration of the cart as you increase the hanging mass?
+
+**Now collect data.**
+
+- Keep the hanging mass constant. Measure the acceleration of the cart for at least three
+  different cart masses. Record your data in a table and plot acceleration vs. cart mass.
+- Keep the cart mass constant. Measure the acceleration of the cart for at least three different
+  hanging masses. Record your data in a table and plot acceleration vs. hanging mass.
+
+Summarize any trends or patterns you observe in your memo.
+Compare your measurements with the predictions of Newton's Second Law.
+
+## Atwood's Machine
+
+Atwood's "machine" is simply two masses hanging over a pulley. With this system, we can vary
+each of the two masses, $m_1$ and $m_2$ independently. However, in this portion of the lab we
+will vary the **difference** and the **sum** of the two masses separately: $|m_1 - m_2|$ and
+$(m_1 + m_2)$.
+
+**Before you take any data,** consider the following questions. Try to make **quantitative
+predictions.**
+
+- If you keep the total mass constant, what will happen to the acceleration of the system as you
+  increase the difference of the masses?
+- If you keep the difference of the masses constant, what will happen to the acceleration of the
+  system as you increase the total mass?
+
+**Now collect data.**
+
+- Keep the total mass constant. Measure the acceleration of the system for at least three
+  separate mass differences. Record your data in a table and plot acceleration vs. mass
+  difference.
+- Keep the mass difference constant. Measure the acceleration of the system for at least three
+  separate total masses. Record your data in a table and plot acceleration vs. total mass.
+
+Summarize any trends or patterns you observe in your memo.
+Compare your measurements with the predictions of Newton's Second Law.
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+- **Additional Experiment:** Carry out all three experiments today instead of just two.
+- **Alternative Measurements:** Repeat one or more of your investigations using a different
+  method for measuring the acceleration. If you used a motion detector, make the same set of
+  measurements with video analysis or a stopwatch. Which method seems more precise?
+- **Design your own system.** Investigate a combination of ramps and pulleys different than the
+  three described above — for instance, a cart on an inclined plane and a mass on a pulley, or
+  two carts on two different inclined planes connected by a pulley. Be creative, but try to
+  compare your measurements to the predictions of Newton's Second Law.

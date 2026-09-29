@@ -2,4 +2,104 @@
 title: "Projectile Motion"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Investigate the range and accuracy of a spring gun.
+- Hit a target without "practice" shots.
+
+In this lab, we will explore two-dimensional kinematics, the mathematical analysis of motion in
+two dimensions. Our focus will be the motion of a projectile. You will investigate a launcher,
+and then make a mathematical model to predict where a projectile will land when the launcher is
+inclined to a specific launch angle. When you are satisfied with your model, you will use it to
+hit a target selected by your instructor.
+
+There are three stages of this investigation:
+
+1. Investigate the launcher.
+2. Analyze projectile range as a function of launch angle.
+3. Hit a target selected and placed by your instructor.
+
+You can — and should — apply your knowledge of kinematics in this lab.
+
+Record your setup, procedure, data, and observations in your lab notes. **Keep detailed notes.**
+Data for this lab will include data tables and plots. In your memo, summarize your findings and
+describe how you tackled the design and measurement problems of this lab.
+
+## Safety
+
+The launching device is a spring gun. It is part of an apparatus called a ballistic pendulum. We
+will not be using the pendulum this week — only the launcher. The spring gun will fire a solid
+metal sphere at a moderate speed, so some precautions are in order.
+
+- **Always make certain you have a clear path before launching a projectile.**
+- **Never load the spring gun until you are ready to fire.**
+- **Never walk in front of a loaded spring gun.**
+
+In other words, use common sense. Be certain no human is in the line of fire.
+
+## Investigate the Launcher
+
+Your objective is to hit a target by adjusting the position and launch angle of the spring gun.
+As a first step toward this goal, you should investigate the following:
+
+- the range of a horizontal shot
+- the spread in impact points for "identical" initial conditions
+
+To conclude this portion of the lab, use your knowledge of kinematics and the range of a
+horizontal shot to **calculate the initial speed** of the projectile as it leaves the launcher.
+Remember: When a projectile is fired horizontally, it moves with **constant velocity** in the
+horizontal direction and falls with **constant acceleration** in the vertical direction.
+
+## Investigate Range and Inclination
+
+In this portion of the lab, you will gather data and model the range of the projectile as a
+function of launch angle. Before you begin taking measurements, adjust the location of your
+spring gun for maximum range. You should be able to hit points as close as $\SI{1}{m}$ and as
+far as the barricade.
+
+You will have to determine how to investigate a range of inclinations and how to interpret
+your data. (Part of experimental science and engineering is imagining what you could do if you
+had the ideal equipment. The more important part is accomplishing your objective with the
+materials available!)
+
+Use your data to predict where the projectile will land for a given launch angle. Once you are
+confident in your model, practice hitting targets of your own. When you are satisfied, you may
+move on to the final stage.
+
+## Hit the Target
+
+Your instructor will place a small target a fixed distance from the launcher. Your group will
+then adjust your launcher to hit the target.
+
+[View the target diagram](assets/target.pdf)
+
+You must land one shot inside the target square full credit. If you hit the target using your
+first three shots, your group will earn 1 extra point toward your lab score. If you hit the
+bullseye, you will earn 2 points. However, for a given distance, **you are not allowed to make
+any adjustments to the launcher after your first shot.** After you fire the first shot, you have
+two options. You may fire two more shots without making any adjustments to the launcher; or, you
+may redo your calculations and try to hit a target placed at a different location.
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You are also free to use any of the materials
+available in the lab to carry out your own investigations. You need to **keep a record of your
+work** (setup, procedure, data, analysis) to get credit for your efforts.
+
+**A Second Launcher:** Repeat your study of initial velocity and model the relation between
+elevation and range for a second launcher. Compare this to the first. How consistent are the
+spring guns in the lab?
+
+**Slow Motion:** Use slow-motion video and the Tracker software to determine the launch speed of
+your spring gun. Compare the result to your earlier analysis.
+
+**Long Shot:** Compute the maximum range of the projectile based on your estimate of its initial
+speed. Collect data for the maximum range — in the hallway — and compare to your estimate.
+
+**Theoretical Analysis:** Derive the theoretical function that should fit your data from Part 2
+of the experiment. I.e., use kinematics to derive a mathematical formula for distance as a
+function of angle $D(\theta)$ for a given launch height $H$ and speed $V$.
+
+**Forces:** Compute the spring constant of the spring gun. Explain your method and record any
+additional measurements you take.
