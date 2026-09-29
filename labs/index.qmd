@@ -1,0 +1,26 @@
+---
+title: "Labs"
+---
+
+This is a studio course: labs happen in class, not on the side. Each lab produces a short memo
+rather than a formal report — see the [Lab Writing Guide](writing-guide.qmd) for notebook
+conventions and the memo format before your first lab.
+
+Most labs have a companion page built around simulations rather than physical equipment, for
+days you can't be in the room or want more practice on your own.
+
+## Labs
+
+1. [Measurement and Uncertainty](01-uncertainty.qmd)
+2. [Visualizing Motion](02-motion.qmd) · [with Simulations](02v-motion.qmd)
+3. [Acceleration Due to Gravity](03-gravity.qmd) · [Remote](03v-gravity.qmd)
+4. [Projectile Motion](04-projectile.qmd) · [with Simulations](04v-projectile.qmd)
+5. [Newton's Second Law](05-newtons-second.qmd) · [Simulations](05v-newtons-second.qmd)
+6. [Friction](06-friction.qmd) · [Simulations](06v-friction.qmd)
+7. [Collisions](07-collisions.qmd) · [Simulations](07v-collisions.qmd)
+8. [Rotation and Angular Momentum](08-rotation.qmd) · [Simulations](08v-rotation.qmd)
+9. [Simple Machines](09-simple-machines.qmd) · [Simulations](09v-simple-machines.qmd)
+10. [Work and Energy](10-work-and-energy.qmd)
+
+Also: [Fluid Simulations](fluid-simulations.qmd), a standalone lab not tied to the numbered
+sequence above.

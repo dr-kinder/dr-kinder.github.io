@@ -12,11 +12,42 @@ website:
         text: PHY 221
       - href: modern-physics/index.qmd
         text: Modern Physics
+      - href: labs/index.qmd
+        text: Labs
   page-footer:
     left: "Oregon Institute of Technology"
     right: "Built with [Quarto](https://quarto.org)"
+  sidebar:
+    - id: labs
+      title: "Labs"
+      style: docked
+      contents:
+        - labs/index.qmd
+        - labs/writing-guide.qmd
+        - section: "Labs"
+          contents:
+            - labs/01-uncertainty.qmd
+            - labs/02-motion.qmd
+            - labs/02v-motion.qmd
+            - labs/03-gravity.qmd
+            - labs/03v-gravity.qmd
+            - labs/04-projectile.qmd
+            - labs/04v-projectile.qmd
+            - labs/05-newtons-second.qmd
+            - labs/05v-newtons-second.qmd
+            - labs/06-friction.qmd
+            - labs/06v-friction.qmd
+            - labs/07-collisions.qmd
+            - labs/07v-collisions.qmd
+            - labs/08-rotation.qmd
+            - labs/08v-rotation.qmd
+            - labs/09-simple-machines.qmd
+            - labs/09v-simple-machines.qmd
+            - labs/10-work-and-energy.qmd
+            - labs/fluid-simulations.qmd
 
 format:
   html:
     theme: cosmo
     toc: false
+    include-in-header: _includes/mathjax-macros.html

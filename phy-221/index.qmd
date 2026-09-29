@@ -10,30 +10,32 @@ Fall 2026 · CEET 234A · MWF
 **Text:** *Six Ideas That Shaped Physics*, Thomas A. Moore — Units C (Conservation Laws) and N
 (Newton's Laws), 4th edition (3rd edition is fine).
 
+Grades, assignments, and quizzes live on Canvas.  Everything else is here.
+
 ## Learning Objectives
 
 By the end of this course, you should be able to:
 
-- **Think like a physicist.** Apply the fundamental principles of classical mechanics to explain,
-  analyze, and predict real-world phenomena.
-- **Do experiments like a scientist.** Keep a record, collect and analyze data, and design
-  experiments to test hypotheses.
+- **Think like a physicist.** Apply the fundamental principles of classical mechanics to
+  explain, analyze, and predict real-world phenomena.
+- **Do experiments like a scientist.** Keep a record, make careful observations, collect and
+  analyze data, design experiments to test hypotheses, and communicate your findings clearly.
 - **Solve problems.** Apply Polya's problem-solving heuristic. Think critically. Communicate
-  clearly.
+  sollutions clearly.
 
 ## Format
 
-This is a studio course: lecture and lab are one class, not two. Physics education research is
+This is a studio course: lecture and lab are combined in one class. Physics education research is
 consistent on one point — you learn physics by doing it, not by watching someone talk about it —
 so most of our time together is discussion, problem solving, and hands-on lab work. Come
-prepared: read the assigned section *before* class, and bring pencil, paper, and a calculator
-(laptop/tablet welcome too).
+prepared: read the assigned material *before* class, and bring pencil, a calculator, 
+and your laptop or tablet.
 
 **A typical class:**
 
 - Your questions (~10 min)
-- Quick problems, key ideas (~20 min)
-- Group work on a Rich Context problem (~30 min)
+- Quick problems, discussion of key ideas (~20 min)
+- Group work on problem solving (~30 min)
 - Lab activity (~60 min)
 
 ## Grading
@@ -46,7 +48,7 @@ are three tiers: **Fail**, **Pass** (with an argued grade of D, C, or B), and **
 - 6 labs and lab memos completed satisfactorily
 - Problem-solving evidence from 6 chapters in each unit
 - 60% or higher on both unit quizzes (Canvas, open book/note, retake as often as you want
-  through Week 10 — only your best score counts)
+  — only your best score counts)
 
 **If you pass**, you argue your own grade — D, C, or B — from the evidence in your portfolio:
 effort, progress, and mastery over the term. Rough guide: D is minimal effort and progress; C is
@@ -55,22 +57,16 @@ well-organized portfolio.
 
 **For an A**, you additionally need to pass an A-level exam — a chalk talk or written exam,
 entirely optional, scheduled during office hours — for each unit. These test whether you can
-think like a physicist under pressure, not whether you can do algebra. You can attempt them more
-than once.
+think like a physicist on your own, not whether you can do algebra, query Google, or prompt
+AI. You can attempt them more than once.
 
 ## Portfolio
 
-Everything you do for this class — problem solving, group work, lab memos, data and analysis,
-grade reflections — goes in your portfolio, a folder shared with you on OneDrive. This is where
-your case for a grade comes from, so keep it current, not reconstructed in Week 10.
+Aside from your lab notebook, everything you do for this class — problem solving, group work,
+lab memos, data and analysis, grade reflections — goes in your portfolio, a folder shared with
+you on OneDrive. This is where your case for a grade comes from, so keep it current.
 
 ## Schedule
-
-The **bold** problems are to be done AFTER we discuss the chapter in class. Solutions will be
-made available for these, the following Monday, for self-assessment and corrections. (You can
-substitute a different problem of the same category and request a solution.)
-
-The _italicized_ problems are to be done BEFORE we discuss the chapter in class.
 
 | Week | Date | Lab | Reading | Problems |
 | ---- | ---- | --- | ------- | -------- |
@@ -118,9 +114,11 @@ The _italicized_ problems are to be done BEFORE we discuss the chapter in class.
 | | 12/9 | | N12 | |
 | | 12/11 | | — (flex) | |
 
-## Contact
+Attempt the _italicized_ problems BEFORE we discuss the chapter in class.
 
-Grades, assignments, and quizzes live on Canvas.
+The **bold** problems are to be done AFTER we discuss the chapter in class. Solutions will be
+made available for these, for self-assessment and corrections. (You can substitute a different
+problem of the same category from the same chapter and request a solution.)
 
 ## Academic Integrity
 

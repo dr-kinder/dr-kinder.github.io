@@ -1,0 +1,114 @@
+---
+title: "Lab Writing Guide"
+---
+
+> *You will be judged in industry not on your work but on how well you communicate your work.*
+
+This course gives you practice in a common form of technical writing and in keeping a proper
+record of your work in a lab notebook. You'll summarize each week's activities in a brief memo.
+The basis of the memo is the information you record in your notebook while carrying out the
+experiments, simulations, and other group activities.
+
+What follows are guidelines for lab notebooks and memos.
+
+## The Lab Notebook
+
+A lab notebook is a permanent record of what you did, when you did it, and how you did it. Lab
+notebooks are frequently used by researchers to replicate each other's work and as evidence when
+assigning priority for discoveries and inventions, so it's important to keep a proper record of
+your work. Being able to keep a lab notebook following common conventions in science and industry
+is a useful skill.
+
+In a professional lab, data and calculations for all experiments must be recorded in a dedicated
+notebook. The notebook often contains bound sheets of graph paper and remains in the laboratory
+between sessions. Scientists and engineers use the following conventions in keeping their
+notebooks:
+
+- Write in pen. If you make a mistake, cross it out neatly. Do not erase. Do not tear out sheets.
+- Reserve the first 2 pages for a Table of Contents. Update it every day.
+- Write the title of the experiment and the date at the top of each page.
+- Record your group members' names for each experiment.
+- Always record raw data — the numbers you read from an instrument. Always.
+- Organize data in tables: one quantity per column, one set of measurements and calculations per
+  row.
+- Include a list of the equipment you used, along with any identifying information.
+- Include sketches of equipment, circuit diagrams, and block diagrams of your experimental setup.
+- Calculate results in your notebook. Include a sample calculation.
+- Include graphs in your notebook. Make them neat, precise, and accurate. Label your axes.
+- Assign an error or uncertainty to your results. Use an appropriate number of significant
+  figures.
+- Briefly describe your procedure and make notes to yourself so that you will have a good record
+  later.
+
+Don't get lost in the details. Focus on the Big Picture: *anyone who reads your notebook should
+be able to reproduce your work and understand your conclusions.*
+
+## The Memo
+
+Instead of writing a detailed lab report each week, you'll write a short memorandum, or *memo*.
+This is a common form of communication in business, science, and industry.
+
+> Memos are written by all "knowledge workers." They are most often designed to be used within
+> the writer's own company or organization. They may note the existence of a problem, propose
+> some course of action, describe a procedure, or report the results of a test or an
+> investigation. They are sometimes referred to as informal writing, which is not the same as
+> sloppy, casual, or careless writing. A memo must be carefully prepared, thoughtfully written,
+> and thoroughly proofread for errors.
+>
+> — from *A Survey of Industrial Mathematics* by Charles R. MacCluer. Dover (2010). Pages 282–283.
+
+A lab memo is a clear and concise report on your thoughts, work, observations, and conclusions.
+Communication is the goal. It should be an organized and coherent narrative of what you did and
+what you learned — after you've had a chance to reflect and make sense of it.
+
+You'll write one lab memo each week. When you finish gathering data and crunching the numbers,
+outline a short memo. Your memo should be typed, and it's due 48 hours after your lab session
+ends. Add it to your portfolio. You may include tables, graphs, and other notes in the
+Discussion.
+
+Memos follow a standard format. The one we'll use for this lab is simple.
+
+```
+To:                 [Your Lab Instructor]
+                     Department of Natural Sciences
+                     Oregon Institute of Technology
+
+From:                [Your Name], Research Assistant
+                     [Your Lab Section]
+
+Subject:             [The topic of the memo]
+
+Date:                [Today's Date]
+
+Foreword:
+
+
+Summary:
+
+
+Discussion:
+
+```
+
+The body of your memo should contain three sections:
+
+**Foreword:** In one or two sentences, describe the problem under investigation. What was the
+goal of this week's experiments? Provide a clear and concise overview. Focus on the Big Picture.
+Save the details for the summary.
+
+**Summary:** In one or two paragraphs, briefly describe your hypotheses, summarize your
+procedure, and report your observations. Include numerical results — with appropriate units and
+significant figures — when relevant.
+
+**Discussion:** Provide information that an interested reader might need to better understand
+your summary. A good discussion is at least one paragraph long and does at least one of the
+following:
+
+- Summarize and interpret graphs, drawings, or calculations.
+- Reflect on the lab. What did you find interesting? Tedious? Frustrating?
+- Describe technical challenges. What problems did you run into?
+- Assess your work. How confident are you in your numerical results? How did you quantify
+  uncertainty?
+- Look ahead. If we were to study this topic further, what would be the next steps?
+- Describe special equipment you used for the first time.
+- Improve the lab. Is there a better way to do the experiments or the analyses?

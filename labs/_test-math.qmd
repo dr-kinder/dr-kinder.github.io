@@ -1,0 +1,5 @@
+---
+title: "Math Test"
+---
+
+Test: $\SI{9.8}{m/s^2}$, $\si{kg}$, $\num{3.2}$, $\diff{v}{t}$
