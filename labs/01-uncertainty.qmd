@@ -2,4 +2,167 @@
 title: "Measurement and Uncertainty"
 ---
 
-*Content coming soon.*
+**Objectives**
+
+- Practice keeping a record of your work in the lab.
+- Determine the densities of an unknown metal and wood.
+- Review significant figures.
+- Simulate a random process.
+
+In this lab, you and your group will make a series of measurements to determine the densities
+of aluminum, copper, and wood. You will also work through a simulation of a random process. The
+purpose of the exercise is to practice keeping a good record of your work in lab and to analyze
+the uncertainty of a series of measurements.
+
+Describe your apparatus and procedure, and record your data, analysis, and observations in your
+lab notebook. **Keep detailed notes.** Data for this lab will include several numerical
+measurements. In your memo, summarize your findings and observations and describe any
+conclusions you draw from the data and this exercise.
+
+## Find the Density
+
+The density of an object is the ratio of its mass to its volume: $\rho = M/V$. Density is an
+**intrinsic property** of a material: a gold ring and a gold bar may have different masses and
+take up different volumes, but they will have the same density because they are made of gold.
+In SI units, density is reported in $\si{kg/m^3}$. It is also common to report density in
+$\si{g/cm^3}$.
+
+In the lab, you will find cylinders of a variety of materials: wood, aluminum, copper, steel,
+brass. Work with your lab group to determine the density of three of these objects. Each person
+should make measurements on one wood sample, one aluminum sample, and one other metal sample. If
+you would like, you can make more measurements on different samples.
+
+- What data will you need?
+- What measurements will you make?
+- How will you use your measurements to determine the density?
+
+**Organize your measurements and calculations in a table.**
+
+Once you have taken your measurements, determine the density of each substance. You will have to
+decide how to report your final result, since you will have at least two sets of measurements
+for each material. Try to use your data as effectively as possible. Estimate the uncertainty in
+your reported value, too.
+
+After you have completed your calculations, enter your results in this online form:
+<https://forms.gle/pJRgJ2LpYsSebUfc7>. You only need to submit one form for your group.
+
+If you finish quickly, make more measurements. Try a spherical sample.
+
+## Calculation Exercises
+
+See the "Calculation Exercises" handout. *(Not yet ported to this site — ask in class if you
+need it before then.)*
+
+## Random Processes
+
+Many measurements involve randomness and uncertainty. This is often called **experimental
+error**, even though they do not imply any mistake in the measurements. Some processes are
+inherently unpredictable: flipping a coin, rolling a dice, radioactive decay, genetic mutations,
+earthquakes, the movement of the stock market. But even measuring the length of an aluminum
+cylinder will not give exactly the same result every time. There may be fluctuations in the
+length due to vibrations or thermal expansion, and it may be difficult to determine exactly where
+the end of the bar falls between divisions on your ruler.
+
+Even with randomness and experimental error, we can still summarize a set of observations with
+two very useful numbers. In this portion of the lab, we will examine a random process and use
+statistics to summarize our observations.
+
+### Qualitative Observations
+
+Open the [`Plinko Probability`][Plinko] simulation from [`PhET`][PhETPhysics]. Select the "Intro"
+simulation. Press the green Play button to observe the path of a single ball.
+
+You just observed a **random walk.** The probability of the ball bouncing left or right when it
+hits a peg is 50 percent. Before you observe more trials, consider the following questions.
+
+- Can you predict where the next ball will land?
+- Are all ending positions equally likely? Or are some positions more likely than others?
+
+Now we are going to make repeated observations of these random walks.
+
+- Hit the play button 9 more times, so that you have a total of 10 balls in the bins. Record how
+  many balls are in each bin, and draw or sketch a **histogram** of this set of observations that
+  shows the number of balls in each bin.
+- What patterns do you observe?
+
+Now we are going to look at random walks in sets of 10 at a time.
+
+- Clear the bins. Select the "$\times 10$" option near the Play button. Hit the Play button.
+  Compare the result to your previous histogram of 10 balls. How is it similar? How is it
+  different?
+- Clear the bins and hit Play at least 4 more times. What patterns do you observe?
+
+Now we are going to look at random walks in sets of 100 at a time.
+
+- Clear the bins. Select the "$\times 100$" option near the Play button. Hit the Play button.
+  Compare the result to your observations of a single ball and of 10 balls. How is it similar?
+  How is it different?
+- Clear the bins and hit Play at least 4 more times. What patterns do you observe?
+
+You are starting to see the effect of **The Law of Large Numbers.** The outcome of any
+individual random process is unpredictable, but when we make repeated observations of the same
+process, clear patterns emerge. Now we will use mathematics to explore those patterns.
+
+### Statistics
+
+There are two numbers that are useful in describing almost any random process: the mean and the
+standard deviation. The **mean** $\bar{x}$ of a set of numbers is the average value of those
+numbers. The **standard deviation** $s$ quantifies the spread of the data around the mean. Their
+mathematical definitions are
+
+\begin{align*}
+\bar{x} & = \dfrac{1}{N} \sum_{i=1}^{N} x_i                        && \text{Mean} \\
+s       & = \sqrt{\dfrac{1}{N-1} \sum_{i=1}^{N} (x_i - \bar{x})^2} && \text{Standard Deviation}
+\end{align*}
+
+Open the [`Plinko Probability`][Plinko] simulation from [`PhET`][PhETPhysics]. Select the "Lab"
+simulation. Play with the simulation to see how it works.
+
+- Make 5 measurements of 10 balls falling through the Plinko game. Record the mean $\bar{x}$ for
+  each trial.
+- Make 5 measurements of approximately 100 balls falling through the Plinko game. Record the mean
+  $\bar{x}$ for each trial.
+- Make 1 measurement of approximately 1,000 balls falling through the Plinko game. Record the
+  mean $\bar{x}$ for this trial.
+- What trends, similarities, and differences you observe in these three sets of measurements?
+
+## Above and Beyond
+
+The following activities are not required. If you have the time and the inclination, you may
+carry out these investigations for extra credit. You need to **keep a record of your work**
+(procedure, data, analysis) to get credit for your efforts.
+
+### More Statistics
+
+Continue the analysis of "Statistics."
+
+- Make 5 more measurements (10 total) of 10 balls falling through the Plinko game. Record the
+  mean $\bar{x}$ for each trial.
+- Make 5 more measurements (10 total) of approximately 100 balls falling through the Plinko game.
+  Record the mean $\bar{x}$ for each trial.
+- Compute the "mean of the means" and the "standard deviation of the means" for these two data
+  sets.
+- The standard deviation is often used as a measure of uncertainty. What happens to the
+  uncertainty of the mean value as you make more measurements?
+
+### Poisson Process
+
+The random walks we have observed up to this point are unbiased: a step in either direction is
+equally likely. Another important random process is a **Poisson process,** in which the
+probability of an event is small. We can simulate a Poisson process with a **biased random
+walk.**
+
+Open the [`Plinko Probability`][Plinko] simulation from [`PhET`][PhETPhysics]. Select the "Lab"
+simulation.
+
+- Set the number of rows to 20 and the "Binary Probability" to `0.01`. This means a ball has only
+  a 1 percent chance of bouncing to the right and a 99 percent chance of bouncing to the left
+  each time it hits a peg. Before you hit Play, **predict what the resulting distribution will
+  look like.** What will be its mean? Its standard deviation? How will it be similar to an
+  unbiased random walk? How will it be different?
+- Let the simulation run until $N > 1000$. Sketch the resulting distribution.
+- Repeat for a probability of `0.05`. What similarities do you notice with the previous data?
+  What are the major differences?
+
+[PhETPhysics]: https://phet.colorado.edu/en/simulations/category/physics
+[Plinko]: https://phet.colorado.edu/sims/html/plinko-probability/latest/plinko-probability_en.html
