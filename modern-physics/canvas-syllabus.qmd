@@ -1,5 +1,8 @@
 ---
 title: "PHY 311 — Modern Physics"
+format:
+  pdf:
+    geometry: margin=0.75in
 ---
 
 Fall 2026 · Klamath Falls / Portland-Metro (Zoom-linked) · TuTh, 3:00–4:20 p.m.
@@ -103,6 +106,7 @@ Oregon Tech's [Commission on College Teaching syllabus statements](https://www.o
 and the "Campus-Wide Syllabus Information" document on Canvas are part of this syllabus. Where
 they conflict with this document, this document takes precedence.
 
+
 ## Tentative Schedule
 
 - Leapfrog through Unit R (Relativity, ~3 weeks)
@@ -112,34 +116,29 @@ they conflict with this document, this document takes precedence.
 
 Experiment names below are short on purpose — the full story behind each one (context, why it's
 the right test, Nobel Prizes where they genuinely apply) comes out in class.
-Problems aren't assigned yet; we'll fill in the last column as we go.
 
-| Date | Reading | Topic | Experiments | Problems |
-|---|---|---|---|---|
-| Oct 1 | — | Course intro; Moore's notation; start R1 | Michelson–Morley | |
-| Oct 6 | R1 & R2 | Coordinate time | Hafele–Keating | |
-| Oct 8 | R3 | Spacetime interval | Kennedy–Thorndike | |
-| Oct 13 | R4 & R5 | Proper time; coordinate transformations | Rossi–Hall (muons) | |
-| Oct 15 | R6 | Lorentz contraction | *(discussion day — revisit Rossi–Hall)* | |
-| Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell | |
-| Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering | |
-| Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR | *(bridge day — no new experiment)* | |
-| Oct 29 | EBH 3 & 4 | Schwarzschild map; GPS | Pound–Rebka | |
-| Nov 3 | EBH 6, 7 & 16 | Falling in; gravitational waves | LIGO · Cygnus X-1 · EHT | |
-| Nov 5 | EBH 10 & 11 | GR's classic confirmations | Eddington · Mercury's perihelion · 2020 Nobel Prize | |
-| Nov 10 | *review* Q1, Q2 — *new* Q3 | Interference and diffraction | *(bridge/review day)* | |
-| Nov 12 | Q4 & Q5 | Photons; matter waves | Compton / Bothe–Geiger · Davisson–Germer | |
-| Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz | |
-| Nov 19 | QA & Q8 | Complex numbers; quantum weirdness | Bell tests (2022 Nobel Prize) | |
-| Nov 24 | Q9 & Q10 | Wavefunction; simple quantum models | Jönsson (electron double-slit) | |
-| — | — | *No class — Thanksgiving* | | |
-| Dec 1 | Q11 & Q12 | Spectra; the Schrödinger equation | Lamb shift | |
-| Dec 3 | Q13 & Q14 | Nuclei; nuclear stability — background for Jaime's talk | Rutherford · Cowan–Reines | |
-| Dec 8 | — | **Guest speaker: Jaime Evers**, medical physics & nuclear power | | |
-| Dec 10 | Q15 | Nuclear technology — closes the term, follows up on Jaime's talk | | |
+| Date | Reading | Topic | Experiments |
+|---|---|---|---|
+| Oct 1 | — | Course intro; Moore's notation; start R1 | Michelson–Morley |
+| Oct 6 | R1 & R2 | Coordinate time | Hafele–Keating |
+| Oct 8 | R3 | Spacetime interval | Kennedy–Thorndike |
+| Oct 13 | R4 & R5 | Proper time; coordinate transformations | Rossi–Hall (muons) |
+| Oct 15 | R6 | Lorentz contraction | *(discussion day — revisit Rossi–Hall)* |
+| Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell |
+| Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering |
+| Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR | *(bridge day — no new experiment)* |
+| Oct 29 | EBH 3 & 4 | Schwarzschild map; GPS | Pound–Rebka |
+| Nov 3 | EBH 6, 7 & 16 | Falling in; gravitational waves | LIGO · Cygnus X-1 · EHT |
+| Nov 5 | EBH 10 & 11 | GR's classic confirmations | Eddington · Mercury's perihelion · 2020 Nobel Prize |
+| Nov 10 | *review* Q1, Q2 — *new* Q3 | Interference and diffraction | *(bridge/review day)* |
+| Nov 12 | Q4 & Q5 | Photons; matter waves | Compton / Bothe–Geiger · Davisson–Germer |
+| Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz |
+| Nov 19 | QA & Q8 | Complex numbers; quantum weirdness | Bell tests (2022 Nobel Prize) |
+| Nov 24 | Q9 & Q10 | Wavefunction; simple quantum models | Jönsson (electron double-slit) |
+| — | — | *No class — Thanksgiving* | |
+| Dec 1 | Q11 & Q12 | Spectra; the Schrödinger equation | Lamb shift |
+| Dec 3 | Q13 & Q14 | Nuclei; nuclear stability — background for Jaime's talk | Rutherford · Cowan–Reines |
+| Dec 8 | — | **Guest speaker: Jaime Evers**, medical physics & nuclear power | |
+| Dec 10 | Q15 | Nuclear technology — closes the term, follows up on Jaime's talk | |
 
-Attempt the _italicized_ problems BEFORE class.
-
-Attempt the **bold** AFTER we discuss the chapter in class. Solutions will be available the
-following Thursday, for self-assessment and corrections. (You can substitute a different
-problem of the same category from the same chapter and request a solution.)
+: {tbl-colwidths="[9,17,42,32]"}

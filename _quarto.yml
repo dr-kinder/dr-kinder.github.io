@@ -4,6 +4,7 @@ project:
   render:
     - "*.qmd"
     - "!phy-221/canvas-syllabus.qmd"
+    - "!modern-physics/canvas-syllabus.qmd"
 
 filters:
   - _filters/num-si.lua
@@ -17,7 +18,7 @@ website:
       - href: phy-221/index.qmd
         text: PHY 221
       - href: modern-physics/index.qmd
-        text: Modern Physics
+        text: PHY 311
       - href: labs/index.qmd
         text: Labs
   page-footer:
