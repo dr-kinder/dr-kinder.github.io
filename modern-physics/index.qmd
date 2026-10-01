@@ -6,6 +6,7 @@ Fall 2026 · Klamath Falls / Portland-Metro (Zoom-linked) · TuTh, 3:00–4:20 p
 
 | **Instructors** | David Johnston | Jesse Kinder |
 | --- | --- | --- |
+| **Office** | 208 H | SE 214 or SE 204 |
 | **Office hours** | TBD | Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m. |
 
 **Required Text:** *Six Ideas That Shaped Physics*, Units R (Relativity) and Q (Quantum) — Moore  
@@ -77,17 +78,15 @@ written report and peer-review classmates' reports.
 ## Academic Integrity
 
 Work with others, use outside resources, learn from peers and tutors — but submit your own
-original work. What you turn in should show your own reasoning, your own calculations, your own
-conclusions.
+original work.  What you turn in should show your own reasoning, your own calculations, your
+own conclusions.  Generative AI is useful for composing text and as a tutor — you are welcome
+to use it. But don't ask it to do your assignments for you. You do the thinking, you ask the
+questions. If AI contributes substantially to your work, acknowledge it, like any other source
+you would cite.
 
-Generative AI is useful for composing text — use it. But don't ask it to do your assignments for
-you: you do the thinking, AI can help with the writing. If you use it, say so on the assignment
-and share a link to the session. Undisclosed AI use counts as academic dishonesty here, the same
-as any other uncredited source.
-
-Plagiarism — copying someone else's work, or letting your own be copied — earns zero credit for
-the copy, and possibly for the original too. Egregious violations (sabotage, forged documents,
-computer fraud) go to the Student Hearing Commission. Review Oregon Tech's
+Presenting someone else's work — human or AI — as your own is academic dishonesty.  Confirmed
+plagiarism or cheating earns zero credit for the assignment in question, and reporting to the
+Student Affairs Office is mandatory. Review Oregon Tech's
 [Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/document/student-academic-integrity-policy.pdf)
 if you're not already familiar with it.
 
@@ -106,40 +105,35 @@ they conflict with this document, this document takes precedence.
 ## Tentative Schedule
 
 - Leapfrog through Unit R (Relativity, ~3 weeks)
-- Quick survey of general relativity and the experiments that ground the physics (selections
-  from _EBH_, ~2 weeks)
+- Quick survey of general relativity  (selections from _EBH_, ~2 weeks)
 - Leapfrog through Unit Q (Quantum, ~5 weeks)
-
-Experiment names below are short on purpose — the full story behind each one (context, why it's
-the right test, Nobel Prizes where they genuinely apply) comes out in class.
-Problems aren't assigned yet; we'll fill in the last column as we go.
 
 | Date | Reading | Topic | Experiments | Problems |
 |---|---|---|---|---|
-| Oct 1 | — | Course intro; Moore's notation; start R1 | Michelson–Morley | |
-| Oct 6 | R1 & R2 | Coordinate time | Hafele–Keating | |
+| Oct 1 | — | Course intro |  | |
+| Oct 6 | R1 & R2 | Coordinate time | Michelson–Morley, Hafele–Keating | |
 | Oct 8 | R3 | Spacetime interval | Kennedy–Thorndike | |
 | Oct 13 | R4 & R5 | Proper time; coordinate transformations | Rossi–Hall (muons) | |
-| Oct 15 | R6 | Lorentz contraction | *(discussion day — revisit Rossi–Hall)* | |
+| Oct 15 | R6 | Lorentz contraction |  | |
 | Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell | |
 | Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering | |
-| Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR | *(bridge day — no new experiment)* | |
+| Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR |  | |
 | Oct 29 | EBH 3 & 4 | Schwarzschild map; GPS | Pound–Rebka | |
 | Nov 3 | EBH 6, 7 & 16 | Falling in; gravitational waves | LIGO · Cygnus X-1 · EHT | |
 | Nov 5 | EBH 10 & 11 | GR's classic confirmations | Eddington · Mercury's perihelion · 2020 Nobel Prize | |
-| Nov 10 | *review* Q1, Q2 — *new* Q3 | Interference and diffraction | *(bridge/review day)* | |
+| Nov 10 | Q1, Q2, Q3 | Waves, interference, diffraction |  | |
 | Nov 12 | Q4 & Q5 | Photons; matter waves | Compton / Bothe–Geiger · Davisson–Germer | |
 | Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz | |
 | Nov 19 | QA & Q8 | Complex numbers; quantum weirdness | Bell tests (2022 Nobel Prize) | |
 | Nov 24 | Q9 & Q10 | Wavefunction; simple quantum models | Jönsson (electron double-slit) | |
 | — | — | *No class — Thanksgiving* | | |
 | Dec 1 | Q11 & Q12 | Spectra; the Schrödinger equation | Lamb shift | |
-| Dec 3 | Q13 & Q14 | Nuclei; nuclear stability — background for Jaime's talk | Rutherford · Cowan–Reines | |
-| Dec 8 | — | **Guest speaker: Jaime Evers**, medical physics & nuclear power | | |
-| Dec 10 | Q15 | Nuclear technology — closes the term, follows up on Jaime's talk | | |
+| Dec 3 | Q13 & Q14 | Nuclei; nuclear stability | Rutherford · Cowan–Reines | |
+| Dec 8 | — | **Guest speaker: Jaime Evers** | | |
+| Dec 10 | Q15 | Nuclear technology | | |
 
 Attempt the _italicized_ problems BEFORE class.
 
-Attempt the **bold** AFTER we discuss the chapter in class. Solutions will be available the
+Attempt the **bold** problems AFTER we discuss the chapter in class. Solutions will be available the
 following Thursday, for self-assessment and corrections. (You can substitute a different
 problem of the same category from the same chapter and request a solution.)

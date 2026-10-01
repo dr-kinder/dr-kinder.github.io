@@ -124,11 +124,18 @@ the same category from the same chapter and request a solution.)
 
 ## Academic Integrity
 
-Work with others, use outside resources, learn from peers — but submit your own original work.
-Presenting someone else's work as your own undermines the portfolio system this course runs on:
-it stops being *evidence of your learning*. Confirmed plagiarism or cheating means the work in
-question doesn't count as portfolio evidence, and reporting to the Student Affairs Office is
-required regardless. Review Oregon Tech's
+Work with others, use outside resources, learn from peers and tutors — but submit your own
+original work.  What you turn in should show your own reasoning, your own calculations, your
+own conclusions.  Generative AI is useful for composing text and as a tutor — you are welcome
+to use it. But don't ask it to do your assignments for you. You do the thinking, you ask the
+questions. If AI contributes substantially to your work, acknowledge it, like any other source
+you would cite.
+
+Presenting someone else's work — human or AI — as your own is academic dishonesty and it
+undermines the portfolio system this course runs on: it stops being *evidence of your
+learning*. Confirmed plagiarism or cheating means the work in question doesn't count as
+portfolio evidence, and reporting to the Student Affairs Office is mandatory.
+Review Oregon Tech's
 [Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/document/student-academic-integrity-policy.pdf)
 if you're not already familiar with it.
 
