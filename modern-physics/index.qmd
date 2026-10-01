@@ -129,7 +129,7 @@ they conflict with this document, this document takes precedence.
 | — | — | *No class — Thanksgiving* | | |
 | Dec 1 | Q11 & Q12 | Spectra; the Schrödinger equation | Lamb shift | |
 | Dec 3 | Q13 & Q14 | Nuclei; nuclear stability | Rutherford · Cowan–Reines | |
-| Dec 8 | — | **Guest speaker: Jaime Evers** | | |
+| Dec 8 | — | **Guest speaker: Jaime Evers**, medical physics | | |
 | Dec 10 | Q15 | Nuclear technology | | |
 
 Attempt the _italicized_ problems BEFORE class.
