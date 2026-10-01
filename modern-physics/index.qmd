@@ -111,8 +111,8 @@ they conflict with this document, this document takes precedence.
 | Date | Reading | Topic | Experiments | Problems |
 |---|---|---|---|---|
 | Oct 1 | — | Course intro |  | |
-| Oct 6 | R1 & R2 | Coordinate time | Michelson–Morley, Hafele–Keating | |
-| Oct 8 | R3 | Spacetime interval | Kennedy–Thorndike | |
+| Oct 6 | R1 & R2 | Coordinate time | Michelson–Morley, Hafele–Keating | R1: _T1, T2, B1, B2, B5_ — **M2+R2, M7**<br>R2: _T1, B1, B3, B5, B11_ — **M6, R3, A1** |
+| Oct 8 | R3 | Spacetime interval | Kennedy–Thorndike | _T1, T2, B1, B3, B9_ — **M5, R2** |
 | Oct 13 | R4 & R5 | Proper time; coordinate transformations | Rossi–Hall (muons) | |
 | Oct 15 | R6 | Lorentz contraction |  | |
 | Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell | |
