@@ -137,3 +137,5 @@ Attempt the _italicized_ problems BEFORE class.
 Attempt the **bold** problems AFTER we discuss the chapter in class. Solutions will be available the
 following Thursday, for self-assessment and corrections. (You can substitute a different
 problem of the same category from the same chapter and request a solution.)
+
+All "A" problems are optional --- difficult, but worth the effort.

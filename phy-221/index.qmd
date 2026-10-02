@@ -66,15 +66,46 @@ Aside from your lab notebook, everything you do for this class — problem solvi
 lab memos, data and analysis, grade reflections — goes in your portfolio, a folder shared with
 you on OneDrive. This is where your case for a grade comes from, so keep it current.
 
+## Academic Integrity
+
+Work with others, use outside resources, learn from peers and tutors — but submit your own
+original work.  What you turn in should show your own reasoning, your own calculations, your
+own conclusions.  Generative AI is useful for composing text and as a tutor — you are welcome
+to use it. But don't ask it to do your assignments for you. You do the thinking, you ask the
+questions. If AI contributes substantially to your work, acknowledge it, like any other source
+you would cite.
+
+Presenting someone else's work — human or AI — as your own is academic dishonesty and it
+undermines the portfolio system this course runs on: it stops being *evidence of your
+learning*. Confirmed plagiarism or cheating means the work in question doesn't count as
+portfolio evidence, and reporting to the Student Affairs Office is mandatory.
+Review Oregon Tech's
+[Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/document/student-academic-integrity-policy.pdf)
+if you're not already familiar with it.
+
+## Accessibility
+
+If you need accommodation because of a disability, contact me at the start of the term and reach
+out to [Disability Services](http://www.oit.edu/academics/ssc/disability-services) — we rely on
+them to coordinate accommodations.
+
+## University Policies
+
+Oregon Tech's [Commission on College Teaching syllabus statements](https://www.oit.edu/faculty-staff/resources/committees/commission-college-teaching/oregon-tech-syllabi)
+and the "Campus-Wide Syllabus Information" document on Canvas are part of this syllabus. Where
+they conflict with this document, this document takes precedence.
+
 ## Schedule
+
+[Introductory Physics Labs](../labs/index.qmd)
 
 | Week | Date | Lab | Reading | Problems |
 | ---- | ---- | --- | ------- | -------- |
-| 1    |      | [Measurement and Uncertainty](../labs/01-uncertainty.qmd) | | **1.M6, 1.R3** |
+| 1    |      | [Measurement and Uncertainty](../labs/01-uncertainty.qmd) | |  |
 | | 9/30 | | — | — |
-| | 10/2 | | C1 | _T1,T3,B1,B5,B6_ |
+| | 10/2 | | C1 | _T1,T3,B1,B5,B6_ — **M6, R3** |
 | 2 | | [Visualizing Motion](../labs/02-motion.qmd) | | |
-| | 10/5 | | C2 | |
+| | 10/5 | | C2 | _T1,T2,B1,B6,B8_ — **M1, M2** |
 | | 10/7 | | C3 | |
 | | 10/9 | | C4 | |
 | 3 | | [Collisions](../labs/07-collisions.qmd) | | |
@@ -120,33 +151,5 @@ The **bold** problems are to be done AFTER we discuss the chapter in class. Solu
 made available for self-assessment and corrections. (You can substitute a different problem of
 the same category from the same chapter and request a solution.)
 
-[Introductory Physics Labs](../labs/index.qmd)
+All "A" problems are optional --- difficult, but worth the effort.
 
-## Academic Integrity
-
-Work with others, use outside resources, learn from peers and tutors — but submit your own
-original work.  What you turn in should show your own reasoning, your own calculations, your
-own conclusions.  Generative AI is useful for composing text and as a tutor — you are welcome
-to use it. But don't ask it to do your assignments for you. You do the thinking, you ask the
-questions. If AI contributes substantially to your work, acknowledge it, like any other source
-you would cite.
-
-Presenting someone else's work — human or AI — as your own is academic dishonesty and it
-undermines the portfolio system this course runs on: it stops being *evidence of your
-learning*. Confirmed plagiarism or cheating means the work in question doesn't count as
-portfolio evidence, and reporting to the Student Affairs Office is mandatory.
-Review Oregon Tech's
-[Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/document/student-academic-integrity-policy.pdf)
-if you're not already familiar with it.
-
-## Accessibility
-
-If you need accommodation because of a disability, contact me at the start of the term and reach
-out to [Disability Services](http://www.oit.edu/academics/ssc/disability-services) — we rely on
-them to coordinate accommodations.
-
-## University Policies
-
-Oregon Tech's [Commission on College Teaching syllabus statements](https://www.oit.edu/faculty-staff/resources/committees/commission-college-teaching/oregon-tech-syllabi)
-and the "Campus-Wide Syllabus Information" document on Canvas are part of this syllabus. Where
-they conflict with this document, this document takes precedence.
