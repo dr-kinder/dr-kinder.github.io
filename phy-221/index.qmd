@@ -104,15 +104,15 @@ they conflict with this document, this document takes precedence.
 | 1    |      | [Measurement and Uncertainty](../labs/01-uncertainty.qmd) | |  |
 | | 9/30 | | — | — |
 | | 10/2 | | C1 | _T1,T3,B1,B5,B6_ — **M6, R3** |
-| 2 | | [Visualizing Motion](../labs/02-motion.qmd) | | |
+| 2 | | [Gravity](../labs/03-gravity.qmd) | | |
 | | 10/5 | | C2 | _T1,T2,B1,B6,B8_ — **M1, M2** |
-| | 10/7 | | C3 | |
-| | 10/9 | | C4 | |
-| 3 | | [Collisions](../labs/07-collisions.qmd) | | |
+| | 10/7 | | C3 | _T4,T7,B1,B3,B4_ — **M2, M6** |
+| | 10/9 | | C4 | _T1,T4,T8,B2,B8_ — **M1, M5** |
+| 3 | | [Visualizing Motion](../labs/02-motion.qmd) | | |
 | | 10/12 | | C5 | |
 | | 10/14 | | C6 | |
 | | 10/16 | | C7 | |
-| 4 | | [Work and Energy](../labs/10-work-and-energy.qmd) | | |
+| 4 | | [Collisions](../labs/07-collisions.qmd) | | |
 | | 10/19 | | C8 | |
 | | 10/21 | | C9 | |
 | | 10/23 | | C10 | |
@@ -120,11 +120,11 @@ they conflict with this document, this document takes precedence.
 | | 10/26 | | C11 | |
 | | 10/28 | | C12 | |
 | | 10/30 | | C13 | |
-| 6 | | [Simple Machines](../labs/09-simple-machines.qmd) | | |
+| 6 | | [Work and Energy](../labs/10-work-and-energy.qmd) | | |
 | | 11/2 | | C14 | |
 | | 11/4 | | N1 | |
 | | 11/6 | | N2 | |
-| 7 | | [Newton's Second Law](../labs/05-newtons-second.qmd) | | |
+| 7 | | [Simple Machines](../labs/09-simple-machines.qmd) | | |
 | | 11/9 | | N3 | |
 | | 11/11 | | — (no class) | |
 | | 11/13 | | N4 | |
@@ -136,11 +136,11 @@ they conflict with this document, this document takes precedence.
 | | 11/23 | | — | |
 | | 11/25 | | — (no class) | |
 | | 11/27 | | — (no class) | |
-| 10 | | [Projectile](../labs/04-projectile.qmd) | | |
+| 10 | | [Newton's Second Law](../labs/05-newtons-second.qmd) | | |
 | | 11/30 | | N8 | |
 | | 12/2 | | N9 | |
 | | 12/4 | | N10 | |
-| 11 | | [Gravity](../labs/03-gravity.qmd) | | |
+| 11 | | [Projectile](../labs/04-projectile.qmd) | | |
 | | 12/7 | | N11 | |
 | | 12/9 | | N12 | |
 | | 12/11 | | — (flex) | |

@@ -102,15 +102,15 @@ they conflict with this document, this document takes precedence.
 | 1    |      | [Measurement and Uncertainty](https://dr-kinder.github.io/labs/01-uncertainty.html) | |
 | | 9/30 | | — |
 | | 10/2 | The Art of Model Building | C1 |
-| 2 | | [Visualizing Motion](https://dr-kinder.github.io/labs/02-motion.html) | |
+| 2 | | [Gravity](https://dr-kinder.github.io/labs/03-gravity.html) | |
 | | 10/5 | Particles and Interactions | C2 |
 | | 10/7 | Vectors | C3 |
 | | 10/9 | Systems and Frames | C4 |
-| 3 | | [Collisions](https://dr-kinder.github.io/labs/07-collisions.html) | |
+| 3 | | [Visualizing Motion](https://dr-kinder.github.io/labs/02-motion.html) | |
 | | 10/12 | Conservation of Momentum | C5 |
 | | 10/14 | Conservation of Angular Momentum | C6 |
 | | 10/16 | More about Angular Momentum | C7 |
-| 4 | | [Work and Energy](https://dr-kinder.github.io/labs/10-work-and-energy.html) | |
+| 4 | | [Collisions](https://dr-kinder.github.io/labs/07-collisions.html) | |
 | | 10/19 | Conservation of Energy | C8 |
 | | 10/21 | Potential Energy Graphs | C9 |
 | | 10/23 | Work | C10 |
@@ -118,11 +118,11 @@ they conflict with this document, this document takes precedence.
 | | 10/26 | Rotational Energy | C11 |
 | | 10/28 | Thermal Energy | C12 |
 | | 10/30 | Other Forms of Internal Energy | C13 |
-| 6 | | [Simple Machines](https://dr-kinder.github.io/labs/09-simple-machines.html) | |
+| 6 | | [Work and Energy](https://dr-kinder.github.io/labs/10-work-and-energy.html) | |
 | | 11/2 | Collisions | C14 |
 | | 11/4 | Newton's Laws | N1 |
 | | 11/6 | Forces from Motion | N2 |
-| 7 | | [Newton's Second Law](https://dr-kinder.github.io/labs/05-newtons-second.html) | |
+| 7 | | [Simple Machines](https://dr-kinder.github.io/labs/09-simple-machines.html) | |
 | | 11/9 | Motion from Forces | N3 |
 | | 11/11 | | — (no class) |
 | | 11/13 | Statics | N4 |
@@ -134,11 +134,11 @@ they conflict with this document, this document takes precedence.
 | | 11/23 | | — |
 | | 11/25 | | — (no class) |
 | | 11/27 | | — (no class) |
-| 10 | | [Projectile](https://dr-kinder.github.io/labs/04-projectile.html) | |
+| 10 | | [Newton's Second Law](https://dr-kinder.github.io/labs/05-newtons-second.html) | |
 | | 11/30 | Noninertial Frames | N8 |
 | | 12/2 | Projectile Motion | N9 |
 | | 12/4 | Oscillatory Motion | N10 |
-| 11 | | [Gravity](https://dr-kinder.github.io/labs/03-gravity.html) | |
+| 11 | | [Projectile](https://dr-kinder.github.io/labs/04-projectile.html) | |
 | | 12/7 | Kepler's Laws | N11 |
 | | 12/9 | Orbits and Conservation Laws | N12 |
 | | 12/11 | | — (flex) |
