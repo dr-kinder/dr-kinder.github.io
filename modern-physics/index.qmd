@@ -113,8 +113,8 @@ they conflict with this document, this document takes precedence.
 | Oct 1 | — | Course intro |  | |
 | Oct 6 | R1 & R2 | Coordinate time | Michelson–Morley, Hafele–Keating | R1: _T1, T2, B1, B2, B5_ — **M2+R2, M7**<br>R2: _T1, B1, B3, B5, B11_ — **M6, R3, A1** |
 | Oct 8 | R3 | Spacetime interval | Kennedy–Thorndike | _T1, T2, B1, B3, B9_ — **M5, R2** |
-| Oct 13 | R4 & R5 | Proper time; coordinate transformations | Rossi–Hall (muons) | |
-| Oct 15 | R6 | Lorentz contraction |  | |
+| Oct 13 | R4 & R5 | Proper time; coordinate transformations | Rossi–Hall (muons) | R4: _T1, T8, B2, B4_ — **M6, R1, A3**<br>R5: _T1, T2, T3, T9, B1_ — **M3, D4** |
+| Oct 15 | R6 | Lorentz contraction |  | _T1, T3, T7, B1, B8_ — **M4, R1, D4, A2** |
 | Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell | |
 | Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering | |
 | Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR |  | |
@@ -138,4 +138,4 @@ Attempt the **bold** problems AFTER we discuss the chapter in class. Solutions w
 following Thursday, for self-assessment and corrections. (You can substitute a different
 problem of the same category from the same chapter and request a solution.)
 
-All "A" problems are optional --- difficult, but worth the effort.
+All "A" and "D" problems are optional --- difficult, but worth the effort.
