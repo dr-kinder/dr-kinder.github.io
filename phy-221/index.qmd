@@ -109,9 +109,9 @@ they conflict with this document, this document takes precedence.
 | | 10/7 | | C3 | _T4,T7,B1,B3,B4_ — **M2, M6** |
 | | 10/9 | | C4 | _T1,T4,T8,B2,B8_ — **M1, M5** |
 | 3 | | [Visualizing Motion](../labs/02-motion.qmd) | | |
-| | 10/12 | | C5 | |
-| | 10/14 | | C6 | |
-| | 10/16 | | C7 | |
+| | 10/12 | | C5 | _T2,T3,B1,B2,B6_ — **M4, R2, D1** |
+| | 10/14 | | C6 | _T1,T2,B1,B3,B10_ — **M3, M6** |
+| | 10/16 | | C7 | _T1,T2,B2,B3,B10_ — **M2, M7** |
 | 4 | | [Collisions](../labs/07-collisions.qmd) | | |
 | | 10/19 | | C8 | |
 | | 10/21 | | C9 | |
@@ -151,5 +151,5 @@ The **bold** problems are to be done AFTER we discuss the chapter in class. Solu
 made available for self-assessment and corrections. (You can substitute a different problem of
 the same category from the same chapter and request a solution.)
 
-All "A" problems are optional --- difficult, but worth the effort.
+All "A" and "D" problems are optional --- difficult, but worth the effort.
 
