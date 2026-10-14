@@ -5,7 +5,7 @@ jupyter: python3
 
 **Objectives**
 
-- Use a motion detector and LoggerPro software to collect data.
+- Use a motion detector and Vernier Graphical Analysis software to collect data.
 - Create and interpret plots of motion.
 - Make precise graphs.
 
@@ -47,10 +47,9 @@ Use these ideas today as you try to interpret your motion graphs.
 
 ## Learn to Use the Motion Detector
 
-You will need a laptop computer with *Logger Pro* or [*Logger Lite*][LoggerLite] software
-installed, a Vernier LabQuest Mini interface, and a motion detector. Spend some time getting to
-know the equipment and software. Be sure to sketch a block diagram of your setup in your notes,
-too.
+We will use [*Vernier Graphical Analysis*][GraphicalAnalysis] and a motion
+detector to collect data. Spend some time getting to know the equipment and
+software. Be sure to sketch a block diagram of your setup in your notes, too.
 
 Work with your partner or on your own to figure out how to do the following:
 
@@ -212,4 +211,4 @@ software, or make extremely detailed observations. Record your procedure, data, 
 in your lab notes if you would like extra points for your efforts.
 
 [Tracker]: https://physlets.org/tracker/
-[LoggerLite]: https://www.vernier.com/downloads/logger-lite-updates/
+[GraphicalAnalysis]: https://www.vernier.com/product/graphical-analysis/
