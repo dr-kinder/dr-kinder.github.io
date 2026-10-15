@@ -115,8 +115,8 @@ they conflict with this document, this document takes precedence.
 | Oct 8 | R3 | Spacetime interval | Kennedy–Thorndike | _T1, T2, B1, B3, B9_ — **M5, R2** |
 | Oct 13 | R4 & R5 | Proper time; coordinate transformations | Rossi–Hall (muons) | R4: _T1, T8, B2, B4_ — **M6, R1, A3**<br>R5: _T1, T2, T3, T9, B1_ — **M3, D4** |
 | Oct 15 | R6 | Lorentz contraction |  | _T1, T3, T7, B1, B8_ — **M4, R1, D4, A2** |
-| Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell | |
-| Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering | |
+| Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell | R7: _T1, T8, T9, B1, B8_ — **M2, R1, D7**<br>RB: _B1, B2_ — **M1, D3** |
+| Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering | R8: _T6, T9, T10, B1, B6_ — **M10, R1**<br>R9: _T4, T5, T10, B2, B4_ — **M11+R1, M13** |
 | Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR |  | |
 | Oct 29 | EBH 3 & 4 | Schwarzschild map; GPS | Pound–Rebka | |
 | Nov 3 | EBH 6, 7 & 16 | Falling in; gravitational waves | LIGO · Cygnus X-1 · EHT | |
