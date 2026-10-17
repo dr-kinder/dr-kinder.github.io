@@ -139,9 +139,8 @@ a graph of either velocity or acceleration and observe the resulting motion:
 
 Make the most interesting graphs you can and include a screenshot in your notes.
 
-**Video Analysis:** Download the [`Tracker`][Tracker] video analysis software. Load one of the
-videos that come with the program, create your own using a smartphone, or download a video from
-the Web. Use Tracker to analyze the motion of an object in the video. Include a screenshot of
+**Video Analysis:** Download the [`Vernier Video Analysis`][VideoAnalysis] software (the license key is posted on Canvas). Load a video
+you record with your smartphone, or download one from the Web. Use Video Analysis to analyze the motion of an object in the video. Include a screenshot of
 your video and graphs, or export the graphs and include them with your memo and notes.
 
 You don't have to limit yourself to these suggestions. Feel free to play with other simulations
@@ -155,4 +154,4 @@ like extra points for your efforts.
 [MotionDiagrams]: http://physics.bu.edu/~duffy/HTML5/motion_diagrams.html
 [MarbleRace]: http://physics.bu.edu/~duffy/HTML5/1Dmotion_constantv_constanta.html
 [GraphMatching]: http://physics.bu.edu/~duffy/HTML5/1Dmotion_graph_matching.html
-[Tracker]: https://physlets.org/tracker/
+[VideoAnalysis]: https://www.vernier.com/product/video-analysis/

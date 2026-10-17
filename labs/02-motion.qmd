@@ -200,9 +200,8 @@ inclination, you can try the following:
 - Analyze the motion of an object: a bouncing ball, a swinging mass, a mass on a spring, etc.
 - Analyze a collision at your table or using an air track in the back of the room.
 
-**Video Analysis:** Download the [`Tracker`][Tracker] video analysis software. Load one of the
-videos that come with the program, create your own using your smartphone, or download a video
-from the Web. Use Tracker to analyze the motion of an object in the video. Be sure to include a
+**Video Analysis:** Download the [`Vernier Video Analysis`][VideoAnalysis] software (the license key is posted on Canvas). Load a video
+you record with your smartphone, or download one from the Web. Use Video Analysis to analyze the motion of an object in the video. Be sure to include a
 screenshot of your video and graphs, or export the graphs and include them with your memo and
 notes.
 
@@ -210,5 +209,5 @@ You don't have to limit yourself to these suggestions. Feel free to play with th
 software, or make extremely detailed observations. Record your procedure, data, and observations
 in your lab notes if you would like extra points for your efforts.
 
-[Tracker]: https://physlets.org/tracker/
+[VideoAnalysis]: https://www.vernier.com/product/video-analysis/
 [GraphicalAnalysis]: https://www.vernier.com/product/graphical-analysis/

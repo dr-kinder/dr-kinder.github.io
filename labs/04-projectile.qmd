@@ -91,7 +91,7 @@ work** (setup, procedure, data, analysis) to get credit for your efforts.
 elevation and range for a second launcher. Compare this to the first. How consistent are the
 spring guns in the lab?
 
-**Slow Motion:** Use slow-motion video and the Tracker software to determine the launch speed of
+**Slow Motion:** Use slow-motion video and the [`Vernier Video Analysis`][VideoAnalysis] software to determine the launch speed of
 your spring gun. Compare the result to your earlier analysis.
 
 **Long Shot:** Compute the maximum range of the projectile based on your estimate of its initial
@@ -103,3 +103,5 @@ function of angle $D(\theta)$ for a given launch height $H$ and speed $V$.
 
 **Forces:** Compute the spring constant of the spring gun. Explain your method and record any
 additional measurements you take.
+
+[VideoAnalysis]: https://www.vernier.com/product/video-analysis/

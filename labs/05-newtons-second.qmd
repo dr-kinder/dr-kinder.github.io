@@ -36,8 +36,7 @@ are comparing your measurements to your theoretical predictions.
 There are multiple options for measuring the acceleration. One is to use a ruler and a stopwatch.
 If an object starts from rest and travels distance $D$ in time $T$ under the action of a constant
 force, then the average acceleration will be $a = 2D/T^2$. Another option is the motion detectors
-and Vernier software. A third option is to use the Tracker video analysis software introduced in
-Lab 3. (The most reliable method for determining the acceleration with the motion detector or
+and Vernier software. A third option is to use the [`Vernier Video Analysis`][VideoAnalysis] software. (The most reliable method for determining the acceleration with the motion detector or
 video analysis is to fit a line to your velocity data.)
 
 ## Experimental Systems
@@ -138,3 +137,5 @@ work** (setup, procedure, data, analysis) to get credit for your efforts.
   three described above — for instance, a cart on an inclined plane and a mass on a pulley, or
   two carts on two different inclined planes connected by a pulley. Be creative, but try to
   compare your measurements to the predictions of Newton's Second Law.
+
+[VideoAnalysis]: https://www.vernier.com/product/video-analysis/

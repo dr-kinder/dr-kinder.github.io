@@ -113,16 +113,14 @@ Questions to consider (and answer in your notes or your memo):
 ## Video Analysis
 
 For the second measurement of $g$ in Klamath Falls, we will use computer analysis of video of a
-falling object. A program called "Tracker" should be installed on the laptops in the lab, and
-you can download and install it on your own laptop: [`Tracker`][Tracker]. This program can carry
+falling object. We will use [`Vernier Video Analysis`][VideoAnalysis], which you can
+download and install on your own laptop (the license key is posted on Canvas). This program can carry
 out a frame-by-frame analysis of the position of moving objects in a video recording.
 
-**Learn about the software.** Explore the software on your own, [`Read The
-Manual`][TrackerHelp], or watch a [`Video Tutorial`][TrackerVideo] from the creator of the
-software. (Be sure to read about the [`Autotracker`][Autotracker] feature.) Don't hesitate to
-ask Dr. Kinder for directions or tips.
+**Learn about the software.** Explore the software on your own, and don't hesitate to ask
+Dr. Kinder for directions or tips.
 
-**Make and analyze a video.** Record the motion of a falling object, then use Tracker to analyze
+**Make and analyze a video.** Record the motion of a falling object, then use Video Analysis to analyze
 the footage. You can use your phone to record the video, or borrow a camera from the lab.
 
 **Estimate the acceleration due to gravity.** Extract data from your video to make your best
@@ -158,11 +156,11 @@ Some possibilities include the following:
   the center of mass of the swinging object — not necessarily the length of the string you use.
 
 - Measure the velocity of cart rolling down a ramp. You can use the LoggerPro software and
-  motion detector, a stopwatch, Tracker, or a method of your own design. For a cart on an
+  motion detector, a stopwatch, Video Analysis, or a method of your own design. For a cart on an
   incline, Newton's Second Law predicts that the acceleration down the ramp will be
   $a = g \, \sin \theta$.
 
-- Use Tracker to measure the acceleration of two different falling objects. Textbook equations
+- Use Video Analysis to measure the acceleration of two different falling objects. Textbook equations
   imply they should be the same. Are they, to within the uncertainty of the experiment? (Explain
   what these uncertainties are.) If not, is the problem with the experiment or with the
   textbook? (Justify your choice.)
@@ -195,8 +193,5 @@ acceleration due to gravity in Klamath Falls, Oregon. Are your data precise enou
 the deviation from the textbook value? Can Helmert's equation explain any discrepancy between
 your data and the standard value?
 
-[Tracker]: https://physlets.org/tracker/
-[TrackerVideo]: https://www.youtube.com/watch?v=La3H7JywgX0&ab_channel=DouglasBrown
-[TrackerHelp]: https://physlets.org/tracker/help/frameset.html
-[Autotracker]: https://physlets.org/tracker/help/frameset.html
+[VideoAnalysis]: https://www.vernier.com/product/video-analysis/
 [Helmert]: https://drive.google.com/open?id=1JhwYd3gOJLuN1ppyrbV3ECeCEIfkscSy
