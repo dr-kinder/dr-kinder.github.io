@@ -113,9 +113,9 @@ they conflict with this document, this document takes precedence.
 | | 10/14 | | C6 | _T1,T2,B1,B3,B10_ — **M3, M6** |
 | | 10/16 | | C7 | _T1,T2,B2,B3,B10_ — **M2, M7** |
 | 4 | | [Collisions](../labs/07-collisions.qmd) | | |
-| | 10/19 | | C8 | |
-| | 10/21 | | C9 | |
-| | 10/23 | | C10 | |
+| | 10/19 | | C8 | _T1,T9,B1,B3,B12_ — **M2, M11** |
+| | 10/21 | | C9 | _T1,T2,B1,B12_ — **M2, M8** |
+| | 10/23 | | C10 | _T4,T7,T10,B1,B3_ — **M3, M9** |
 | 5 | | [Rotation](../labs/08-rotation.qmd) | | |
 | | 10/26 | | C11 | |
 | | 10/28 | | C12 | |
