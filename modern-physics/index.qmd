@@ -7,10 +7,10 @@ Fall 2026 · Klamath Falls / Portland-Metro (Zoom-linked) · TuTh, 3:00–4:20 p
 | **Instructors** | David Johnston | Jesse Kinder |
 | --- | --- | --- |
 | **Office** | 208 H | SE 214 or SE 204 |
-| **Office hours** | TBD | Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m. |
+| **Office hours** | Mon/Wed 9:00-11:00 a.m., Fri 10:00-11:00 a.m. | Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m. |
 
 **Required Text:** *Six Ideas That Shaped Physics*, Units R (Relativity) and Q (Quantum) — Moore  
-**Supplement:** *Exploring Black Holes* (Taylor & Wheeler) — selected sections for the GR unit  
+**Supplement:** *Exploring Black Holes* (Taylor & Wheeler, 1st edition) — selected sections for the GR unit  
 **Recommended:** *Spacetime Physics* (Taylor & Wheeler) — relativity problem source  
 
 Grades and assignments live on Canvas. Everything else is here.
@@ -117,10 +117,10 @@ they conflict with this document, this document takes precedence.
 | Oct 15 | R6 | Lorentz contraction |  | _T1, T3, T7, B1, B8_ — **M4, R1, D4, A2** |
 | Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell | R7: _T1, T8, T9, B1, B8_ — **M2, R1, D7**<br>RB: _B1, B2_ — **M1, D3** |
 | Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering | R8: _T6, T9, T10, B1, B6_ — **M10, R1**<br>R9: _T4, T5, T10, B2, B4_ — **M11+R1, M13** |
-| Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR |  | |
-| Oct 29 | EBH 3 & 4 | Schwarzschild map; GPS | Pound–Rebka | |
-| Nov 3 | EBH 6, 7 & 16 | Falling in; gravitational waves | LIGO · Cygnus X-1 · EHT | |
-| Nov 5 | EBH 10 & 11 | GR's classic confirmations | Eddington · Mercury's perihelion · 2020 Nobel Prize | |
+| Oct 27 | EBH 1.4–7 & 2 | Special relativity review; Schwarzschild | Pound–Rebka | EBH 1: _1.7_<br>EBH 2: _2.1, 2.3_ — **Project A** |
+| Oct 29 | EBH 3 | Falling in | Cygnus X-1 | _3.1_ — **3.3, 3.6** |
+| Nov 3 | EBH 4 | Orbiting | Mercury's perihelion · LIGO | _4.1_ |
+| Nov 5 | EBH 5 | Seeing | Eddington · EHT · 2020 Nobel Prize | _5.1–5.4, 5.10_ — **Project B–G (choose one)** |
 | Nov 10 | Q1, Q2, Q3 | Waves, interference, diffraction |  | |
 | Nov 12 | Q4 & Q5 | Photons; matter waves | Compton / Bothe–Geiger · Davisson–Germer | |
 | Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz | |
