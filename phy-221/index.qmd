@@ -121,7 +121,7 @@ they conflict with this document, this document takes precedence.
 | | 10/28 | | C12 | _T1,T3,T9,B2,B11_ — **M2, M10** |
 | | 10/30 | | C13 | _T2,T7,B3,B4,B9_ — **M4, M11** |
 | 6 | | [Work and Energy](../labs/10-work-and-energy.qmd) | | |
-| | 11/2 | | C14 | |
+| | 11/2 | | C14 | _T2,T6,T7,B1,B4_ — **M3, M8** |
 | | 11/4 | | N1 | |
 | | 11/6 | | N2 | |
 | 7 | | [Simple Machines](../labs/09-simple-machines.qmd) | | |
