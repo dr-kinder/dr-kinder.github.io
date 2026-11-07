@@ -55,7 +55,7 @@ effort, progress, and mastery over the term. Rough guide: D is minimal effort an
 good, regular effort with most work complete; B is strong, consistent effort with a complete,
 well-organized portfolio.
 
-**For an A**, you additionally need to pass an A-level exam — a chalk talk or written exam,
+**For an A**, you additionally need to pass an [A-level exam](a-level.qmd) — a chalk talk or written exam,
 entirely optional, scheduled during office hours — for each unit. These test whether you can
 think like a physicist on your own, not whether you can do algebra, query Google, or prompt
 AI. You can attempt them more than once.

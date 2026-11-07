@@ -1,0 +1,73 @@
+---
+title: "A-Level Exams"
+subtitle: "What to expect"
+---
+
+To argue for an A in this class, you need a compelling case for a C or better *and* you need to pass one A-level exam for each unit (C and N).
+
+An A-level exam is your chance to show that you can think like a physicist.  It is optional, it is challenging, and you can try as many times as you like.
+
+**Format**
+
+- There are two formats, with the same standard.  In a **chalk talk**, you solve an unseen problem at the chalkboard, in conversation with me.  In a **written exam**, you solve an unseen problem with pencil and paper.
+- You can attempt an exam more than once, with a different problem each time.  You only need to pass once.
+- Schedule a time during office hours.  Do not wait until Week 10.
+- No notes, no Google, no AI --- just you, your brain, and a pencil or a piece of chalk.
+
+**What I Am Looking For**
+
+You need to demonstrate *thinking like a physicist*, not just algebra, calculus, and trig.
+
+I am evaluating your knowledge of physics concepts and your problem-solving technique.  You can get the "wrong answer" and still pass --- if you recognize what went wrong or see that the result makes no sense.  You can get "the right answer" and not pass --- if you pull a formula out of thin air without understanding what it is or why it applies.
+
+**What I Am Not Testing**
+
+I am not testing recall of equations.  If you identify the concepts and develop a plan, but cannot remember something like the moment of inertia of a solid disk, that is fine.  I will provide it.  The important thing is knowing what you need, why you need it, and where it fits into your plan.
+
+If a problem requires a calculator, you can borrow mine --- after you have solved with symbols and estimated the answer.  Solve with symbols, estimate, *then* calculate.
+
+**How to Solve It**
+
+Make sure the steps of the problem-solving heuristic are clear.
+
+1. **Understand the problem.**  Tell the story: what is happening, what is interacting, what is given, and what is being asked.  Sketch it.  Identify variables and unknowns.  Decide what matters and what you can ignore.
+2. **Make a plan.**  Name the principles you will use, and explain *why* they apply.  Map out a clear path to the solution.
+3. **Solve the problem.**  Work with symbols first.  Check dimensions as you go.  Plug in numbers at the end.
+4. **Look back.**  Does the result make sense?  Check the units, the size of the number, a limiting case, or make a quick estimate.  If something is off, figure out what.
+
+{{< pagebreak >}}
+
+**How to Pass**
+
+I use the same criteria to evaluate your work on the chalkboard or on paper.
+
+| Step | Pass | Not yet |
+|:-------------|:------------------------------------|:------------------------------------|
+| **Understand** | You describe the situation in physical terms.  You identify what is given and what is asked.  Your sketch or story captures the essential physics, and you state your assumptions. | You start with an equation.  You miss or misread something essential.  Your assumptions are missing, or they contradict the problem. |
+||||
+| **Plan** | You name the principle(s) and explain why they apply.  Your plan is a sequence of steps that someone else could follow. | Equations appear with no reason.  You name a principle that does not apply, or you do not say why it does.  The plan is "plug numbers into formulas until something comes out." |
+||||
+| **Solve** | You work mostly with symbols and check dimensions.  If you make a slip in algebra or arithmetic, you find it and work through it. | You make errors that you do not notice, or do not fix.  You substitute numbers too early.  You ignore units. |
+||||
+| **Look back** | You evaluate your answer --- units, magnitude, a limit, or an estimate --- and you revise if something is off. | You stop at the number.  You accept an implausible result without comment. |
+
+To pass, you need to show me your thought process in all four steps.  Everyone makes mistakes, and I do not hold them against you, as long as you find them and work through them.  A wrong number with strong reasoning and a clear-eyed look back can pass.  A correct number with no reasoning behind it does not.
+
+If you don't pass, we'll talk about what to work on, and you can try again later with a new problem.
+
+**In a Chalk Talk**
+
+- Think out loud and write more than math on the board.  Explain your work.
+- I will ask questions as you work.  That is normal.  It is how I see your reasoning.
+- Being stuck is fine.  Tell me what you are considering and why.
+
+**In a Written Exam**
+
+- Write more than math.  Use words and draw pictures.  Explain your reasoning.
+- Being stuck is fine.  Use scratch paper.  Ask me questions.
+
+**How to Prepare**
+
+- Modeling and Rich Context problems in *Six Ideas* are good preparation.
+- For every problem, practice telling the story, naming the principle *and why it applies*, estimating before you calculate, and looking back.
+- Describe your solution out loud, or explain it to a classmate.
