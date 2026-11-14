@@ -2,7 +2,7 @@
 title: "PHY 221 — Classical Mechanics"
 format:
   pdf:
-    geometry: margin=0.75in
+    geometry: margin=0.7in
 ---
 
 Fall 2026 · CEET 234A · MWF
@@ -58,7 +58,7 @@ effort, progress, and mastery over the term. Rough guide: D is minimal effort an
 good, regular effort with most work complete; B is strong, consistent effort with a complete,
 well-organized portfolio.
 
-**For an A**, you additionally need to pass an A-level exam — a chalk talk or written exam,
+**For an A**, you additionally need to pass an [A-level exam](https://dr-kinder.github.io/phy-221/a-level.html) — a chalk talk or written exam,
 entirely optional, scheduled during office hours — for each unit. These test whether you can
 think like a physicist on your own, not whether you can do algebra, query Google, or prompt
 AI. You can attempt them more than once.
@@ -71,11 +71,18 @@ you on OneDrive. This is where your case for a grade comes from, so keep it curr
 
 ## Academic Integrity
 
-Work with others, use outside resources, learn from peers — but submit your own original work.
-Presenting someone else's work as your own undermines the portfolio system this course runs on:
-it stops being *evidence of your learning*. Confirmed plagiarism or cheating means the work in
-question doesn't count as portfolio evidence, and reporting to the Student Affairs Office is
-required regardless. Review Oregon Tech's
+Work with others, use outside resources, learn from peers and tutors — but submit your own
+original work.  What you turn in should show your own reasoning, your own calculations, your
+own conclusions.  Generative AI is useful for composing text and as a tutor — you are welcome
+to use it. But don't ask it to do your assignments for you. You do the thinking, you ask the
+questions. If AI contributes substantially to your work, acknowledge it, like any other source
+you would cite.
+
+Presenting someone else's work — human or AI — as your own is academic dishonesty and it
+undermines the portfolio system this course runs on: it stops being *evidence of your
+learning*. Confirmed plagiarism or cheating means the work in question doesn't count as
+portfolio evidence, and reporting to the Student Affairs Office is mandatory.
+Review Oregon Tech's
 [Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/2025/documents/OIT-14-030%20Academic%20Integrity_0.pdf)
 if you're not already familiar with it.
 

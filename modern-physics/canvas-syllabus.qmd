@@ -10,10 +10,10 @@ Fall 2026 · Klamath Falls / Portland-Metro (Zoom-linked) · TuTh, 3:00–4:20 p
 | **Instructors** | David Johnston | Jesse Kinder |
 | --- | --- | --- |
 | **Office** | 208 H | SE 214 or SE 204 |
-| **Office hours** | TBD | Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m. |
+| **Office hours** | Mon/Wed 9:00-11:00 a.m., Fri 10:00-11:00 a.m. | Mon/Wed 3:30–5:30 p.m., Tue/Thu 4:30–5:30 p.m. |
 
 **Required Text:** *Six Ideas That Shaped Physics*, Units R (Relativity) and Q (Quantum) — Moore  
-**Supplement:** *Exploring Black Holes* (Taylor & Wheeler) — selected sections for the GR unit  
+**Supplement:** *Exploring Black Holes* (Taylor & Wheeler, 1st edition) — selected sections for the GR unit  
 **Recommended:** *Spacetime Physics* (Taylor & Wheeler) — relativity problem source  
 
 ## Learning Objectives
@@ -31,12 +31,16 @@ By the end of this course, you should be able to:
 
 ## Format
 
+This course is co-taught by David and Jesse.
+
 Physics education research is consistent on one point — you learn physics by doing it, not by
 watching someone talk about it — so most of our time together is discussion, problem
 solving, and chalk talks at the board, not lecture.
 
-Come prepared: read the assigned material *before* class. Bring a pencil, a calculator, and
-your laptop or tablet.  We will use a leapfrog method as we work through the text.
+Come prepared: read the assigned material *before* class, and bring pencil, a calculator, and
+your laptop or tablet.
+
+We will use a leapfrog method as we work through the text.
 
 - Read the chapter and attempt a few practice problems before class.
 - Ask questions.  Discuss and apply the new concepts during class.
@@ -75,17 +79,15 @@ written report and peer-review classmates' reports.
 ## Academic Integrity
 
 Work with others, use outside resources, learn from peers and tutors — but submit your own
-original work. What you turn in should show your own reasoning, your own calculations, your own
-conclusions.
+original work.  What you turn in should show your own reasoning, your own calculations, your
+own conclusions.  Generative AI is useful for composing text and as a tutor — you are welcome
+to use it. But don't ask it to do your assignments for you. You do the thinking, you ask the
+questions. If AI contributes substantially to your work, acknowledge it, like any other source
+you would cite.
 
-Generative AI is useful for composing text — use it. But don't ask it to do your assignments for
-you: you do the thinking, AI can help with the writing. If you use it, say so on the assignment
-and share a link to the session. Undisclosed AI use counts as academic dishonesty here, the same
-as any other uncredited source.
-
-Plagiarism — copying someone else's work, or letting your own be copied — earns zero credit for
-the copy, and possibly for the original too. Egregious violations (sabotage, forged documents,
-computer fraud) go to the Student Hearing Commission. Review Oregon Tech's
+Presenting someone else's work — human or AI — as your own is academic dishonesty.  Confirmed
+plagiarism or cheating earns zero credit for the assignment in question, and reporting to the
+Student Affairs Office is mandatory. Review Oregon Tech's
 [Student Academic Integrity Policy](https://www.oit.edu/sites/default/files/2025/documents/OIT-14-030%20Academic%20Integrity_0.pdf)
 if you're not already familiar with it.
 
@@ -100,7 +102,6 @@ them to coordinate accommodations.
 Oregon Tech's [Commission on College Teaching syllabus statements](https://www.oit.edu/faculty-staff/resources/committees/commission-college-teaching/oregon-tech-syllabi)
 and the "Campus-Wide Syllabus Information" document on Canvas are part of this syllabus. Where
 they conflict with this document, this document takes precedence.
-
 
 ## Tentative Schedule
 
@@ -117,11 +118,11 @@ they conflict with this document, this document takes precedence.
 | Oct 15 | R6 | Lorentz contraction |  |
 | Oct 20 | R7 & RB | Cosmic speed limit; Doppler effect | Bertozzi · Ives–Stillwell |
 | Oct 22 | R8 & R9 | Four-momentum, and its conservation | Anderson (positron) · Compton scattering |
-| Oct 27 | EBH 1 & 2 | SR review → the curvature bridge to GR |  |
-| Oct 29 | EBH 3 & 4 | Schwarzschild map; GPS | Pound–Rebka |
-| Nov 3 | EBH 6, 7 & 16 | Falling in; gravitational waves | LIGO · Cygnus X-1 · EHT |
-| Nov 5 | EBH 10 & 11 | GR's classic confirmations | Eddington · Mercury's perihelion · 2020 Nobel Prize |
-| Nov 10 | Q1, Q2, Q3 | Waves, interference, diffraction | |
+| Oct 27 | EBH 1.4–7 & 2 | Special relativity review; Schwarzschild | Pound–Rebka |
+| Oct 29 | EBH 3 | Falling in | Cygnus X-1 |
+| Nov 3 | EBH 4 | Orbiting | Mercury's perihelion · LIGO |
+| Nov 5 | EBH 5 | Seeing | Eddington · EHT · 2020 Nobel Prize |
+| Nov 10 | Q1, Q2, Q3 | Waves, interference, diffraction |  |
 | Nov 12 | Q4 & Q5 | Photons; matter waves | Compton / Bothe–Geiger · Davisson–Germer |
 | Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz |
 | Nov 19 | QA & Q8 | Complex numbers; quantum weirdness | Bell tests (2022 Nobel Prize) |
