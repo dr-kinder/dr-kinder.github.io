@@ -129,9 +129,9 @@ they conflict with this document, this document takes precedence.
 | | 11/11 | | — (no class) | |
 | | 11/13 | | N4 | _T1,T5,B1,B3,B6_ — **M3, R1** |
 | 8 | | [Friction](../labs/06-friction.qmd) | | |
-| | 11/16 | | N5 | |
-| | 11/18 | | N6 | |
-| | 11/20 | | N7 | |
+| | 11/16 | | N5 | _T1,T3,T11,B1,B5_ — **M14, R2, D4** |
+| | 11/18 | | N6 | _T1,T3,T9,B1,B5_ — **M3, M8** |
+| | 11/20 | | N7 | _T1,T4,B1,B3,B5_ — **M3, M5, D1** |
 | 9 | | | | |
 | | 11/23 | | — | |
 | | 11/25 | | — (no class) | |
