@@ -123,8 +123,8 @@ they conflict with this document, this document takes precedence.
 | Nov 5 | EBH 5 | Seeing | Eddington · EHT · 2020 Nobel Prize | _5.1–5.4, 5.10_ — **Project B–G (choose one)** |
 | Nov 10 | Q1, Q2, Q3 | Waves, interference, diffraction |  | Q1: _T3, T7, T8, B4, B7_ — **R4**<br>Q2: _T1, T8, T10, B1, B9_ — **R2**<br>Q3: _T5, T6, T10, B7, B8_ — **R2** |
 | Nov 12 | Q4 & Q5 | Photons; matter waves | Compton / Bothe–Geiger · Davisson–Germer | Q4: _T1, T9, T14, B10, B13_ — **D1, R3**<br>Q5: _T1, T2, B7, B8, B10_ — **M8, D1** |
-| Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz | |
-| Nov 19 | QA & Q8 | Complex numbers; quantum weirdness | Bell tests (2022 Nobel Prize) | |
+| Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz | Q6: _T3, T6, B1, B2, B6_ — **R3, D3**<br>Q7: _T1, T8, T9, B1, B5_ — **M6** |
+| Nov 19 | QA & Q8 | Complex numbers; quantum weirdness | Bell tests (2022 Nobel Prize) | QA: _T4, T5, B5, B8, B9_ — **R1**<br>Q8: _T4, T6, B1, B2, B4_ — **R1** |
 | Nov 24 | Q9 & Q10 | Wavefunction; simple quantum models | Jönsson (electron double-slit) | |
 | — | — | *No class — Thanksgiving* | | |
 | Dec 1 | Q11 & Q12 | Spectra; the Schrödinger equation | Lamb shift | |
