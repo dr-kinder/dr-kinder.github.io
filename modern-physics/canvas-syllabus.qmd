@@ -126,11 +126,11 @@ they conflict with this document, this document takes precedence.
 | Nov 12 | Q4 & Q5 | Photons; matter waves | Compton / Bothe–Geiger · Davisson–Germer |
 | Nov 17 | Q6 & Q7 | Spin; rules of QM | Stern–Gerlach · Franck–Hertz |
 | Nov 19 | QA & Q8 | Complex numbers; quantum weirdness | Bell tests (2022 Nobel Prize) |
-| Nov 24 | Q9 & Q10 | Wavefunction; simple quantum models | Jönsson (electron double-slit) |
+| Nov 24 | — | Student presentations |  |
 | — | — | *No class — Thanksgiving* | |
-| Dec 1 | Q11 & Q12 | Spectra; the Schrödinger equation | Lamb shift |
-| Dec 3 | Q13 & Q14 | Nuclei; nuclear stability | Rutherford · Cowan–Reines |
-| Dec 8 | — | **Guest speaker: Jaime Evers**, medical physics | |
+| Dec 1 | Q9 & Q10 | Wavefunction; simple quantum models | Jönsson (electron double-slit) |
+| Dec 3 | Q11 & Q12 | Spectra; the Schrödinger equation | Lamb shift |
+| Dec 8 | Q13 & Q14 | Nuclei; nuclear stability — and **guest speaker: Jaime Evers**, medical physics | Rutherford · Cowan–Reines |
 | Dec 10 | Q15 | Nuclear technology | |
 
 : {tbl-colwidths="[9,17,42,32]"}
