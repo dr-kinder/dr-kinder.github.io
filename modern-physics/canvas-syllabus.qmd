@@ -73,8 +73,9 @@ for a chalk talk. There's a difference between being confused and being unprepar
 **Midterm project.** Research a key experiment in the development of modern physics and present
 it as we discuss the topic in class.  These will be spread throughout the term.
 
-**Final project.** Research a technology application of relativity or quantum physics. Prepare a
-written report and peer-review classmates' reports.
+**Final project.** Write a "How It Works" column (or record a short podcast) that explains a
+technology based on relativity or quantum physics to a reader who has not taken this course.
+Then peer-review three classmates' pieces.
 
 ## Academic Integrity
 
