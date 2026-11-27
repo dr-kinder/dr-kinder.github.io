@@ -137,12 +137,12 @@ they conflict with this document, this document takes precedence.
 | | 11/25 | | — (no class) | |
 | | 11/27 | | — (no class) | |
 | 10 | | [Newton's Second Law](../labs/05-newtons-second.qmd) | | |
-| | 11/30 | | N8 | |
-| | 12/2 | | N9 | |
-| | 12/4 | | N10 | |
+| | 11/30 | | N8 | _T1,T10,T11,B3,B7_ — **M3, M9** |
+| | 12/2 | | N9 | _T2,T4,T7,B2,B7_ — **M6, M8** |
+| | 12/4 | | N10 | _T4,T5,B1,B2,B6_ — **B8, M6** |
 | 11 | | [Projectile](../labs/04-projectile.qmd) | | |
-| | 12/7 | | N11 | |
-| | 12/9 | | N12 | |
+| | 12/7 | | N11 | _T1,T8,T10,B1,B7_ — **M4, M8** |
+| | 12/9 | | N12 | _T2,T3,B1,B2,B3_ — **M4, M7** |
 | | 12/11 | | — (flex) | |
 
 Attempt the _italicized_ problems BEFORE we discuss the chapter in class.
